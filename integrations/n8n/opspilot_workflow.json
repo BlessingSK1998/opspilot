@@ -1,0 +1,64 @@
+{
+  "name": "OpsPilot: inbox to /ingest, Slack/e-mail on P1 escalation",
+  "nodes": [
+    {
+      "parameters": {"mailbox": "INBOX", "postProcessAction": "read", "options": {"downloadAttachments": true}},
+      "id": "a1", "name": "Shared inbox (IMAP)", "type": "n8n-nodes-base.emailReadImap", "typeVersion": 2, "position": [0, 0],
+      "notes": "Create an IMAP credential for the shared operations mailbox (or swap this node for the Gmail Trigger)."
+    },
+    {
+      "parameters": {
+        "jsCode": "// Map the IMAP item to OpsPilot's RawEmail JSON. Attachments become base64 entries.\nconst out = [];\nfor (const item of $input.all()) {\n  const j = item.json;\n  const from = (j.from && j.from.value && j.from.value[0]) || {};\n  const attachments = [];\n  for (const [key, bin] of Object.entries(item.binary || {})) {\n    attachments.push({ filename: bin.fileName || key, content_type: bin.mimeType || 'application/octet-stream', content_b64: bin.data });\n  }\n  out.push({ json: {\n    message_id: j.messageId || null,\n    from_name: from.name || null,\n    from_email: from.address || 'unknown@unknown.invalid',\n    to: (j.to && j.to.text) || 'ops@northwind-supply.de',\n    subject: j.subject || '(no subject)',\n    body: j.textPlain || j.text || '',\n    received_at: j.date || new Date().toISOString(),\n    attachments\n  }});\n}\nreturn out;"
+      },
+      "id": "a2", "name": "Map to RawEmail", "type": "n8n-nodes-base.code", "typeVersion": 2, "position": [240, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST", "url": "http://api:8000/ingest", "sendHeaders": true,
+        "headerParameters": {"parameters": [{"name": "X-API-Key", "value": "={{ $env.OPSPILOT_API_KEY }}"}]},
+        "sendBody": true, "specifyBody": "json", "jsonBody": "={{ JSON.stringify($json) }}", "options": {"timeout": 60000}
+      },
+      "id": "a3", "name": "POST /ingest", "type": "n8n-nodes-base.httpRequest", "typeVersion": 4.2, "position": [480, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {"caseSensitive": true, "typeValidation": "strict"},
+          "combinator": "and",
+          "conditions": [
+            {"id": "c1", "leftValue": "={{ $json.priority }}", "rightValue": "P1", "operator": {"type": "string", "operation": "equals"}},
+            {"id": "c2", "leftValue": "={{ $json.status }}", "rightValue": "interrupted", "operator": {"type": "string", "operation": "equals"}}
+          ]
+        }
+      },
+      "id": "a4", "name": "P1 escalated?", "type": "n8n-nodes-base.if", "typeVersion": 2, "position": [720, 0]
+    },
+    {
+      "parameters": {
+        "select": "channel", "channelId": {"__rl": true, "value": "#ops-escalations", "mode": "name"},
+        "text": "=:rotating_light: P1 escalation waiting for review\nCategory: {{ $json.category }}\nReasons: {{ $json.escalation_reasons.join(', ') }}\nRun: {{ $json.run_id }}\nOpen the Human Review page in the OpsPilot dashboard to decide.",
+        "otherOptions": {}
+      },
+      "id": "a5", "name": "Slack: notify ops", "type": "n8n-nodes-base.slack", "typeVersion": 2.2, "position": [960, -80],
+      "notes": "Needs a Slack credential. Delete this node if you prefer e-mail only."
+    },
+    {
+      "parameters": {
+        "fromEmail": "opspilot@northwind-supply.de", "toEmail": "ops-leads@northwind-supply.de",
+        "subject": "=P1 escalation needs review ({{ $json.category }})",
+        "emailFormat": "text",
+        "text": "=A P1 case is waiting for a human decision.\n\nReasons: {{ $json.escalation_reasons.join(', ') }}\nRun id: {{ $json.run_id }}\n\nNothing has been sent to the customer. Approve, edit or reject the draft in the OpsPilot dashboard."
+      },
+      "id": "a6", "name": "E-mail: notify leads", "type": "n8n-nodes-base.emailSend", "typeVersion": 2.1, "position": [960, 80],
+      "notes": "Needs an SMTP credential."
+    }
+  ],
+  "connections": {
+    "Shared inbox (IMAP)": {"main": [[{"node": "Map to RawEmail", "type": "main", "index": 0}]]},
+    "Map to RawEmail": {"main": [[{"node": "POST /ingest", "type": "main", "index": 0}]]},
+    "POST /ingest": {"main": [[{"node": "P1 escalated?", "type": "main", "index": 0}]]},
+    "P1 escalated?": {"main": [[{"node": "Slack: notify ops", "type": "main", "index": 0}, {"node": "E-mail: notify leads", "type": "main", "index": 0}], []]}
+  },
+  "settings": {"executionOrder": "v1"},
+  "pinData": {}
+}

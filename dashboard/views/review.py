@@ -3,6 +3,8 @@ import streamlit as st
 from dashboard import api, theme
 from dashboard.helpers import priority_chip, reason_chips, sla_label
 
+VERBS = {"approve": "Approved", "edit": "Edited and approved", "reject": "Rejected"}
+
 st.title("Human review queue")
 st.caption(
     "Escalated cases wait here. Nothing is sent: approving makes the draft ready for a person to send."
@@ -61,7 +63,7 @@ for item in pending:
                 res = api.post(f"/reviews/{run_id}", payload)
                 st.session_state["reviewer"] = _r
                 st.session_state["review_flash"] = (
-                    f"{action.title()}d: task is now **{res['task_status']}**."
+                    f"{VERBS[action]}: task is now **{res['task_status']}**."
                 )
                 st.rerun()
             except api.ApiError as exc:

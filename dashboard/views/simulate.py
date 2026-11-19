@@ -53,7 +53,7 @@ if st.button("Run through OpsPilot", type="primary"):
                     st.markdown("⏸️ **paused: waiting for a human decision**")
                 elif ev["event"] == "done":
                     done = ev
-            box.update(label="Finished" if done else "No result", state="complete")
+            box.update(label="Finished" if done else "No result", state="complete", expanded=True)
         except api.ApiError as exc:
             box.update(label="Failed", state="error")
             st.error(str(exc))

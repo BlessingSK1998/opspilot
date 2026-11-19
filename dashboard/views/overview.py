@@ -37,7 +37,7 @@ with cols[0]:
     secs = m["median_processing_seconds"]
     theme.kpi(
         "Median processing time",
-        f"{secs:.1f}s" if secs is not None else "-",
+        ("-" if secs is None else f"{secs * 1000:.0f} ms" if secs < 1 else f"{secs:.1f} s"),
         "ingest → task, excl. human wait",
     )
 with cols[1]:
@@ -52,7 +52,7 @@ with cols[2]:
 st.write("")
 left, right = st.columns([3, 2])
 with left:
-    st.subheader("Volume by category")
+    st.subheader("Volume by category (per hour received)")
     df = pd.DataFrame(m["volume_by_category"])
     fig = px.bar(
         df, x="date", y="count", color="category", color_discrete_sequence=CATEGORY_COLOURS

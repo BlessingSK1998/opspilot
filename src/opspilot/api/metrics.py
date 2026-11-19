@@ -66,7 +66,7 @@ def compute_metrics(s: Session, now: datetime | None = None) -> Metrics:
     for received, cat in s.execute(
         select(Message.received_at, Task.category).join(Task, Task.message_id == Message.id)
     ):
-        key = (received.date().isoformat(), cat.value)
+        key = (received.strftime("%Y-%m-%d %H:00"), cat.value)
         by_cat[key] = by_cat.get(key, 0) + 1
 
     open_tasks = [t for t in tasks if t.status not in CLOSED]
