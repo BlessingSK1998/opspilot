@@ -36,3 +36,6 @@
 | 32 | `/ingest` accepts JSON or multipart `.eml` in one route, documented via `openapi_extra` | Two routes | Matches the brief's single endpoint. |
 | 33 | `PATCH /tasks/{id}` refuses tasks in `pending_review` (409) and writes an audit event for every manual change | Allow any status change | The human gate cannot be bypassed around the graph; every human action is audited. |
 | 34 | Dashboard-support endpoints added: `/samples`, `/simulate/stream` (SSE), `/graph`, `/eval/latest`, `/reviews/pending` | Dashboard reads DB directly | The brief requires the dashboard to talk to the API only. |
+| 35 | Dashboard is Streamlit `st.navigation` with one file per page under `dashboard/views/`; one `theme.py` (CSS + Plotly template) and one `api.py` client | Single long script | Clear structure; pages are testable headlessly with Streamlit `AppTest` against a stubbed API. |
+| 36 | Source highlighting = exact `source_span` strings wrapped in `<mark>` in the original body | Fuzzy matching | Spans are quoted verbatim by the extractor, so exact matching is both simple and a traceability check. |
+| 37 | Run Inspector renders the Mermaid graph via mermaid.js from a CDN inside `components.html` | Pre-rendered PNG | Always in sync with `graph/build.py::MERMAID`. Needs internet for the diagram only; the trace table works offline. |
