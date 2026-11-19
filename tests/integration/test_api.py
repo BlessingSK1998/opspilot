@@ -235,7 +235,7 @@ def test_samples_simulate_stream_graph_and_eval(
     with client.stream("POST", "/simulate/stream", json=raw, headers=H) as r:
         events = [json.loads(line[6:]) for line in r.iter_lines() if line.startswith("data: ")]
     assert events[0]["event"] == "start" and events[-1]["event"] == "done"
-    assert [e["node"] for e in events if e["event"] == "node"][0] == "ingest"
+    assert next(e["node"] for e in events if e["event"] == "node") == "ingest"
     assert "flowchart" in client.get("/graph", headers=H).json()["mermaid"]
     monkeypatch.setattr("opspilot.api.app.REPORTS_DIR", tmp_path)
     assert client.get("/eval/latest", headers=H).status_code == 404
