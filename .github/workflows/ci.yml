@@ -14,4 +14,4 @@ jobs:
       - run: uv run ruff format --check .
       - run: uv run mypy
       - run: uv run pytest
-      # Offline eval + accuracy threshold gate is added in milestone 8.
+      # Integration tests use embedded Postgres (pgserver). Eval gate arrives in M8.
