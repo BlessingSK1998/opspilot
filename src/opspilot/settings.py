@@ -10,7 +10,9 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     """Every variable is documented in `.env.example`."""
 
-    model_config = SettingsConfigDict(env_file=".env", env_prefix="", extra="ignore")
+    model_config = SettingsConfigDict(
+        env_file=".env", env_prefix="", extra="ignore", populate_by_name=True
+    )
 
     database_url: str = "postgresql+psycopg://opspilot:opspilot@localhost:5432/opspilot"
     api_key: SecretStr = Field(default=SecretStr("dev-key"), alias="OPSPILOT_API_KEY")
