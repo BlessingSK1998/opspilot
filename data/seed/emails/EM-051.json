@@ -1,0 +1,18 @@
+{
+ "id": "EM-051",
+ "message_id": "<em-051@mail.example>",
+ "thread_id": "T-EM-051",
+ "from_name": "HydroParts Europe BV",
+ "from_email": "rechnung@hydroparts.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Invoice RE-2026831",
+ "body": "Hallo,\n\nanbei unser Dokument (invoice).\n\nBeste Grüße\n--\nHydroParts Europe BV\nHydroParts Europe BV\nTel.: +49 40 247 3832",
+ "received_at": "2026-11-18T23:17:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-051_RE-2026831.pdf",
+   "content_type": "application/pdf"
+  }
+ ]
+}

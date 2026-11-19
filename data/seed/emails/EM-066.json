@@ -1,0 +1,13 @@
+{
+ "id": "EM-066",
+ "message_id": "<em-066@mail.example>",
+ "thread_id": "T-EM-066",
+ "from_name": "Ingrid Wagner",
+ "from_email": "ingrid.wagner@eider-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Verbrauchsmaterial",
+ "body": "Hi team,\n\nWe would like to place an order:\n- 5 x NW-1004 (Terminal block M6)\nRequested delivery: 11.12.2026\nPO number: PO-774661\n\nAlso, a second topic:\nregarding an invoice:\nInvoice INV-2026-00112\nAmount: EUR 746.73\nWe never received this invoice.\n\nThanks\n--\nIngrid Wagner\nEider Antriebstechnik GmbH\nTel.: +49 40 907 6643",
+ "received_at": "2026-11-19T00:07:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

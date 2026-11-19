@@ -1,0 +1,13 @@
+{
+ "id": "EM-069",
+ "message_id": "<em-069@mail.example>",
+ "thread_id": "T-EM-069",
+ "from_name": "Markus Meyer",
+ "from_email": "markus.meyer@hansa.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Question",
+ "body": "Dear Sir or Madam,\n\nCan you provide 3.1 material certificates for stainless fasteners?\n\nBest regards\n--\nMarkus Meyer\nHansa Metallbau GmbH\nTel.: +49 40 543 9014",
+ "received_at": "2026-11-18T23:59:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

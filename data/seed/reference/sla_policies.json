@@ -1,0 +1,26 @@
+[
+ {
+  "priority": "P1",
+  "first_response_hours": 1,
+  "resolution_hours": 8,
+  "description": "Critical: production stop, legal, VIP or high value"
+ },
+ {
+  "priority": "P2",
+  "first_response_hours": 4,
+  "resolution_hours": 24,
+  "description": "High: customer waiting on money or goods"
+ },
+ {
+  "priority": "P3",
+  "first_response_hours": 8,
+  "resolution_hours": 72,
+  "description": "Normal business request"
+ },
+ {
+  "priority": "P4",
+  "first_response_hours": 24,
+  "resolution_hours": 120,
+  "description": "Low: general information"
+ }
+]

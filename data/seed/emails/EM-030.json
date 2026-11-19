@@ -1,0 +1,13 @@
+{
+ "id": "EM-030",
+ "message_id": "<em-030@mail.example>",
+ "thread_id": "T-EM-030",
+ "from_name": "Ingrid Klein",
+ "from_email": "ingrid.klein@isar-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Rechnung INV-2026-90147",
+ "body": "Guten Tag,\n\nwegen einer Rechnung:\nRechnung INV-2026-90147\nBetrag: 1.546,76 €\nWir haben diese Rechnung doppelt erhalten.\n\nViele Grüße\n--\nIngrid Klein\nIsar Hydraulik GmbH\nTel.: +49 40 620 7841\nIBAN: DE21742677889598488931",
+ "received_at": "2026-11-16T18:42:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

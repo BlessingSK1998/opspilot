@@ -1,0 +1,13 @@
+{
+ "id": "EM-036",
+ "message_id": "<em-036@mail.example>",
+ "thread_id": "T-EM-036",
+ "from_name": "Elena Wagner",
+ "from_email": "elena.wagner@ems-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Rechnung INV-2026-90119",
+ "body": "Hallo,\n\nregarding an invoice:\nInvoice INV-2026-90119\nAmount: 10.110,67 €\nDie Angaben auf der Rechnung stmimen so nicht.\n\nFreundliche Grüße\n--\nElena Wagner\nEms Maschinenbau GmbH\nTel.: +49 40 504 4030",
+ "received_at": "2026-11-18T12:57:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

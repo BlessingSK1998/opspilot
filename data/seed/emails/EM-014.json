@@ -1,0 +1,13 @@
+{
+ "id": "EM-014",
+ "message_id": "<em-014@mail.example>",
+ "thread_id": "T-EM-014",
+ "from_name": "Mehmet Schwarz",
+ "from_email": "mehmet.schwarz@oder-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Beschwerde",
+ "body": "Sehr geehrte Damen und Herren,\n\nOur production line has been stopped since this morning because the parts did not arrive. This is unacceptable!\nBsetellung: SO-2026-00236\n\nBest regards\n--\nMehmet Schwarz\nOder Stahlbau GmbH\nTel.: +49 40 429 7753",
+ "received_at": "2026-11-17T10:30:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

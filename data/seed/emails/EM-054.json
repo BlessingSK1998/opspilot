@@ -1,0 +1,13 @@
+{
+ "id": "EM-054",
+ "message_id": "<em-054@mail.example>",
+ "thread_id": "T-EM-054",
+ "from_name": "Elena Wolf",
+ "from_email": "elena.wolf@ems-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Retoure",
+ "body": "Dear Sir or Madam,\n\nWe want to return goods.\nOrder SO-2026-00141\nItems: NW-1050\nReason: wrong item delivered\nRefund amount: EUR 759.46\nPlease note we will seek legal advice (Rechtsanwalt) if we get no reply by Friday.\n\nThanks\n--\nElena Wolf\nEms Werkzeug KG\nTel.: +49 40 390 1412",
+ "received_at": "2026-11-17T00:19:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

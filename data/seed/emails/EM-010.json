@@ -1,0 +1,13 @@
+{
+ "id": "EM-010",
+ "message_id": "<em-010@mail.example>",
+ "thread_id": "T-EM-010",
+ "from_name": "Tobias Richter",
+ "from_email": "tobias.richter@nordsee-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Question",
+ "body": "Dear Sir or Madam,\n\nCould you send us your current product catalogue?\n\nKind regards\n--\nTobias Richter\nNordsee Anlagentechnik AG\nTel.: +49 40 763 3978",
+ "received_at": "2026-11-17T14:59:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

@@ -1,0 +1,6542 @@
+[
+ {
+  "order_number": "SO-2026-00001",
+  "customer_id": "C-1001",
+  "order_date": "2026-09-25",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 89, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1087",
+    "qty": 5,
+    "unit_price": 93.53
+   },
+   {
+    "sku": "NW-1072",
+    "qty": 5,
+    "unit_price": 0.6
+   },
+   {
+    "sku": "NW-1105",
+    "qty": 5,
+    "unit_price": 9.63
+   }
+  ],
+  "total_net": 518.8
+ },
+ {
+  "order_number": "SO-2026-00002",
+  "customer_id": "C-1002",
+  "order_date": "2026-09-22",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 12, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1097",
+    "qty": 50,
+    "unit_price": 36.8
+   },
+   {
+    "sku": "NW-1064",
+    "qty": 5,
+    "unit_price": 61.17
+   },
+   {
+    "sku": "NW-1060",
+    "qty": 250,
+    "unit_price": 7.19
+   },
+   {
+    "sku": "NW-1021",
+    "qty": 50,
+    "unit_price": 2.89
+   }
+  ],
+  "total_net": 4087.85
+ },
+ {
+  "order_number": "SO-2026-00003",
+  "customer_id": "C-1003",
+  "order_date": "2026-08-05",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 94, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1009",
+    "qty": 2,
+    "unit_price": 17.76
+   },
+   {
+    "sku": "NW-1019",
+    "qty": 5,
+    "unit_price": 25.63
+   },
+   {
+    "sku": "NW-1041",
+    "qty": 5,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 179.37
+ },
+ {
+  "order_number": "SO-2026-00004",
+  "customer_id": "C-1004",
+  "order_date": "2026-05-07",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 23, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1028",
+    "qty": 20,
+    "unit_price": 21.02
+   },
+   {
+    "sku": "NW-1079",
+    "qty": 100,
+    "unit_price": 36.8
+   },
+   {
+    "sku": "NW-1045",
+    "qty": 5,
+    "unit_price": 28.86
+   },
+   {
+    "sku": "NW-1068",
+    "qty": 10,
+    "unit_price": 35.86
+   }
+  ],
+  "total_net": 4603.3
+ },
+ {
+  "order_number": "SO-2026-00005",
+  "customer_id": "C-1005",
+  "order_date": "2026-08-02",
+  "status": "open",
+  "delivery_address": "Industrieweg 76, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1058",
+    "qty": 2,
+    "unit_price": 25.61
+   },
+   {
+    "sku": "NW-1119",
+    "qty": 20,
+    "unit_price": 9.22
+   },
+   {
+    "sku": "NW-1025",
+    "qty": 50,
+    "unit_price": 21.89
+   },
+   {
+    "sku": "NW-1006",
+    "qty": 100,
+    "unit_price": 1.05
+   }
+  ],
+  "total_net": 1435.12
+ },
+ {
+  "order_number": "SO-2026-00006",
+  "customer_id": "C-1006",
+  "order_date": "2026-10-01",
+  "status": "open",
+  "delivery_address": "Werftstraße 56, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1051",
+    "qty": 5,
+    "unit_price": 14.6
+   },
+   {
+    "sku": "NW-1004",
+    "qty": 50,
+    "unit_price": 30.79
+   }
+  ],
+  "total_net": 1612.5
+ },
+ {
+  "order_number": "SO-2026-00007",
+  "customer_id": "C-1007",
+  "order_date": "2026-06-21",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 94, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1090",
+    "qty": 10,
+    "unit_price": 0.63
+   },
+   {
+    "sku": "NW-1009",
+    "qty": 10,
+    "unit_price": 17.76
+   },
+   {
+    "sku": "NW-1015",
+    "qty": 20,
+    "unit_price": 11.7
+   }
+  ],
+  "total_net": 417.9
+ },
+ {
+  "order_number": "SO-2026-00008",
+  "customer_id": "C-1008",
+  "order_date": "2026-11-04",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1019",
+    "qty": 20,
+    "unit_price": 25.63
+   },
+   {
+    "sku": "NW-1111",
+    "qty": 10,
+    "unit_price": 10.33
+   },
+   {
+    "sku": "NW-1075",
+    "qty": 2,
+    "unit_price": 3.67
+   }
+  ],
+  "total_net": 623.24
+ },
+ {
+  "order_number": "SO-2026-00009",
+  "customer_id": "C-1009",
+  "order_date": "2026-06-28",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 62, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1006",
+    "qty": 50,
+    "unit_price": 1.05
+   }
+  ],
+  "total_net": 52.5
+ },
+ {
+  "order_number": "SO-2026-00010",
+  "customer_id": "C-1010",
+  "order_date": "2026-03-27",
+  "status": "open",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1088",
+    "qty": 100,
+    "unit_price": 13.51
+   }
+  ],
+  "total_net": 1351.0
+ },
+ {
+  "order_number": "SO-2026-00011",
+  "customer_id": "C-1011",
+  "order_date": "2026-04-17",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 6, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1050",
+    "qty": 250,
+    "unit_price": 31.91
+   }
+  ],
+  "total_net": 7977.5
+ },
+ {
+  "order_number": "SO-2026-00012",
+  "customer_id": "C-1012",
+  "order_date": "2026-02-28",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 24, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1035",
+    "qty": 100,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 314.0
+ },
+ {
+  "order_number": "SO-2026-00013",
+  "customer_id": "C-1013",
+  "order_date": "2026-07-05",
+  "status": "shipped",
+  "delivery_address": "Am Kanal 103, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1054",
+    "qty": 5,
+    "unit_price": 28.46
+   }
+  ],
+  "total_net": 142.3
+ },
+ {
+  "order_number": "SO-2026-00014",
+  "customer_id": "C-1014",
+  "order_date": "2026-08-16",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1018",
+    "qty": 50,
+    "unit_price": 0.89
+   },
+   {
+    "sku": "NW-1091",
+    "qty": 250,
+    "unit_price": 22.58
+   }
+  ],
+  "total_net": 5689.5
+ },
+ {
+  "order_number": "SO-2026-00015",
+  "customer_id": "C-1015",
+  "order_date": "2026-08-16",
+  "status": "delivered",
+  "delivery_address": "Lagerstraße 51, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1039",
+    "qty": 10,
+    "unit_price": 3.69
+   }
+  ],
+  "total_net": 36.9
+ },
+ {
+  "order_number": "SO-2026-00016",
+  "customer_id": "C-1016",
+  "order_date": "2026-03-22",
+  "status": "open",
+  "delivery_address": "Industrieweg 120, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1033",
+    "qty": 20,
+    "unit_price": 14.67
+   },
+   {
+    "sku": "NW-1036",
+    "qty": 20,
+    "unit_price": 4.43
+   }
+  ],
+  "total_net": 382.0
+ },
+ {
+  "order_number": "SO-2026-00017",
+  "customer_id": "C-1017",
+  "order_date": "2026-05-09",
+  "status": "open",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1004",
+    "qty": 10,
+    "unit_price": 30.79
+   },
+   {
+    "sku": "NW-1005",
+    "qty": 5,
+    "unit_price": 48.53
+   },
+   {
+    "sku": "NW-1096",
+    "qty": 5,
+    "unit_price": 0.88
+   },
+   {
+    "sku": "NW-1006",
+    "qty": 100,
+    "unit_price": 1.05
+   }
+  ],
+  "total_net": 659.95
+ },
+ {
+  "order_number": "SO-2026-00018",
+  "customer_id": "C-1018",
+  "order_date": "2026-11-07",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 111, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1006",
+    "qty": 2,
+    "unit_price": 1.05
+   },
+   {
+    "sku": "NW-1100",
+    "qty": 100,
+    "unit_price": 12.35
+   }
+  ],
+  "total_net": 1237.1
+ },
+ {
+  "order_number": "SO-2026-00019",
+  "customer_id": "C-1019",
+  "order_date": "2026-10-18",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 5, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1004",
+    "qty": 10,
+    "unit_price": 30.79
+   }
+  ],
+  "total_net": 307.9
+ },
+ {
+  "order_number": "SO-2026-00020",
+  "customer_id": "C-1020",
+  "order_date": "2026-11-08",
+  "status": "delivered",
+  "delivery_address": "Gewerbering 99, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1041",
+    "qty": 10,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 31.4
+ },
+ {
+  "order_number": "SO-2026-00021",
+  "customer_id": "C-1021",
+  "order_date": "2026-05-13",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 32, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1009",
+    "qty": 100,
+    "unit_price": 17.76
+   }
+  ],
+  "total_net": 1776.0
+ },
+ {
+  "order_number": "SO-2026-00022",
+  "customer_id": "C-1022",
+  "order_date": "2026-03-23",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 33, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1028",
+    "qty": 20,
+    "unit_price": 21.02
+   }
+  ],
+  "total_net": 420.4
+ },
+ {
+  "order_number": "SO-2026-00023",
+  "customer_id": "C-1023",
+  "order_date": "2026-11-14",
+  "status": "open",
+  "delivery_address": "Werftstraße 63, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1105",
+    "qty": 100,
+    "unit_price": 9.63
+   },
+   {
+    "sku": "NW-1117",
+    "qty": 10,
+    "unit_price": 39.78
+   },
+   {
+    "sku": "NW-1097",
+    "qty": 20,
+    "unit_price": 36.8
+   },
+   {
+    "sku": "NW-1057",
+    "qty": 100,
+    "unit_price": 0.19
+   }
+  ],
+  "total_net": 2115.8
+ },
+ {
+  "order_number": "SO-2026-00024",
+  "customer_id": "C-1024",
+  "order_date": "2026-09-29",
+  "status": "delivered",
+  "delivery_address": "Lagerstraße 20, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1097",
+    "qty": 5,
+    "unit_price": 36.8
+   },
+   {
+    "sku": "NW-1013",
+    "qty": 20,
+    "unit_price": 14.4
+   },
+   {
+    "sku": "NW-1049",
+    "qty": 5,
+    "unit_price": 46.47
+   },
+   {
+    "sku": "NW-1000",
+    "qty": 100,
+    "unit_price": 1.02
+   }
+  ],
+  "total_net": 806.35
+ },
+ {
+  "order_number": "SO-2026-00025",
+  "customer_id": "C-1025",
+  "order_date": "2026-05-08",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1054",
+    "qty": 250,
+    "unit_price": 28.46
+   },
+   {
+    "sku": "NW-1074",
+    "qty": 50,
+    "unit_price": 64.99
+   },
+   {
+    "sku": "NW-1067",
+    "qty": 2,
+    "unit_price": 2.58
+   }
+  ],
+  "total_net": 10369.66
+ },
+ {
+  "order_number": "SO-2026-00026",
+  "customer_id": "C-1026",
+  "order_date": "2026-05-19",
+  "status": "open",
+  "delivery_address": "Bahnhofstraße 33, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1076",
+    "qty": 100,
+    "unit_price": 38.5
+   }
+  ],
+  "total_net": 3850.0
+ },
+ {
+  "order_number": "SO-2026-00027",
+  "customer_id": "C-1027",
+  "order_date": "2026-09-14",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 38, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1062",
+    "qty": 20,
+    "unit_price": 3.5
+   },
+   {
+    "sku": "NW-1033",
+    "qty": 2,
+    "unit_price": 14.67
+   },
+   {
+    "sku": "NW-1078",
+    "qty": 100,
+    "unit_price": 8.39
+   }
+  ],
+  "total_net": 938.34
+ },
+ {
+  "order_number": "SO-2026-00028",
+  "customer_id": "C-1028",
+  "order_date": "2026-03-08",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 39, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1115",
+    "qty": 10,
+    "unit_price": 9.06
+   },
+   {
+    "sku": "NW-1112",
+    "qty": 20,
+    "unit_price": 14.04
+   },
+   {
+    "sku": "NW-1105",
+    "qty": 20,
+    "unit_price": 9.63
+   },
+   {
+    "sku": "NW-1041",
+    "qty": 2,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 570.28
+ },
+ {
+  "order_number": "SO-2026-00029",
+  "customer_id": "C-1029",
+  "order_date": "2026-04-04",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1012",
+    "qty": 20,
+    "unit_price": 1.82
+   }
+  ],
+  "total_net": 36.4
+ },
+ {
+  "order_number": "SO-2026-00030",
+  "customer_id": "C-1030",
+  "order_date": "2026-08-15",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1020",
+    "qty": 100,
+    "unit_price": 52.02
+   },
+   {
+    "sku": "NW-1023",
+    "qty": 5,
+    "unit_price": 43.28
+   },
+   {
+    "sku": "NW-1013",
+    "qty": 2,
+    "unit_price": 14.4
+   },
+   {
+    "sku": "NW-1098",
+    "qty": 20,
+    "unit_price": 11.75
+   }
+  ],
+  "total_net": 5682.2
+ },
+ {
+  "order_number": "SO-2026-00031",
+  "customer_id": "C-1031",
+  "order_date": "2026-05-01",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1044",
+    "qty": 250,
+    "unit_price": 0.16
+   },
+   {
+    "sku": "NW-1109",
+    "qty": 10,
+    "unit_price": 78.48
+   }
+  ],
+  "total_net": 824.8
+ },
+ {
+  "order_number": "SO-2026-00032",
+  "customer_id": "C-1032",
+  "order_date": "2026-07-02",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1104",
+    "qty": 5,
+    "unit_price": 61.49
+   },
+   {
+    "sku": "NW-1040",
+    "qty": 5,
+    "unit_price": 23.89
+   }
+  ],
+  "total_net": 426.9
+ },
+ {
+  "order_number": "SO-2026-00033",
+  "customer_id": "C-1033",
+  "order_date": "2026-03-01",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 41, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1093",
+    "qty": 10,
+    "unit_price": 7.74
+   },
+   {
+    "sku": "NW-1072",
+    "qty": 20,
+    "unit_price": 0.6
+   }
+  ],
+  "total_net": 89.4
+ },
+ {
+  "order_number": "SO-2026-00034",
+  "customer_id": "C-1034",
+  "order_date": "2026-07-28",
+  "status": "open",
+  "delivery_address": "Bahnhofstraße 31, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1117",
+    "qty": 100,
+    "unit_price": 39.78
+   }
+  ],
+  "total_net": 3978.0
+ },
+ {
+  "order_number": "SO-2026-00035",
+  "customer_id": "C-1035",
+  "order_date": "2026-09-15",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 79, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1109",
+    "qty": 50,
+    "unit_price": 78.48
+   }
+  ],
+  "total_net": 3924.0
+ },
+ {
+  "order_number": "SO-2026-00036",
+  "customer_id": "C-1036",
+  "order_date": "2026-10-10",
+  "status": "open",
+  "delivery_address": "Industrieweg 95, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1119",
+    "qty": 50,
+    "unit_price": 9.22
+   }
+  ],
+  "total_net": 461.0
+ },
+ {
+  "order_number": "SO-2026-00037",
+  "customer_id": "C-1037",
+  "order_date": "2026-11-08",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1032",
+    "qty": 20,
+    "unit_price": 15.85
+   },
+   {
+    "sku": "NW-1014",
+    "qty": 50,
+    "unit_price": 51.41
+   },
+   {
+    "sku": "NW-1084",
+    "qty": 100,
+    "unit_price": 36.8
+   }
+  ],
+  "total_net": 6567.5
+ },
+ {
+  "order_number": "SO-2026-00038",
+  "customer_id": "C-1038",
+  "order_date": "2026-07-12",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 44, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1014",
+    "qty": 250,
+    "unit_price": 51.41
+   },
+   {
+    "sku": "NW-1029",
+    "qty": 20,
+    "unit_price": 0.75
+   }
+  ],
+  "total_net": 12867.5
+ },
+ {
+  "order_number": "SO-2026-00039",
+  "customer_id": "C-1039",
+  "order_date": "2026-07-03",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 73, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1063",
+    "qty": 250,
+    "unit_price": 23.82
+   },
+   {
+    "sku": "NW-1056",
+    "qty": 5,
+    "unit_price": 33.21
+   }
+  ],
+  "total_net": 6121.05
+ },
+ {
+  "order_number": "SO-2026-00040",
+  "customer_id": "C-1040",
+  "order_date": "2026-06-28",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 4, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1039",
+    "qty": 250,
+    "unit_price": 3.69
+   },
+   {
+    "sku": "NW-1003",
+    "qty": 250,
+    "unit_price": 17.17
+   }
+  ],
+  "total_net": 5215.0
+ },
+ {
+  "order_number": "SO-2026-00041",
+  "customer_id": "C-1001",
+  "order_date": "2026-05-06",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 89, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1040",
+    "qty": 50,
+    "unit_price": 23.89
+   }
+  ],
+  "total_net": 1194.5
+ },
+ {
+  "order_number": "SO-2026-00042",
+  "customer_id": "C-1002",
+  "order_date": "2026-05-07",
+  "status": "shipped",
+  "delivery_address": "Bahnhofstraße 12, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1081",
+    "qty": 250,
+    "unit_price": 37.28
+   },
+   {
+    "sku": "NW-1006",
+    "qty": 10,
+    "unit_price": 1.05
+   }
+  ],
+  "total_net": 9330.5
+ },
+ {
+  "order_number": "SO-2026-00043",
+  "customer_id": "C-1003",
+  "order_date": "2026-07-10",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 94, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1052",
+    "qty": 20,
+    "unit_price": 16.06
+   },
+   {
+    "sku": "NW-1050",
+    "qty": 10,
+    "unit_price": 31.91
+   }
+  ],
+  "total_net": 640.3
+ },
+ {
+  "order_number": "SO-2026-00044",
+  "customer_id": "C-1004",
+  "order_date": "2026-09-01",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 23, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1042",
+    "qty": 50,
+    "unit_price": 1.71
+   }
+  ],
+  "total_net": 85.5
+ },
+ {
+  "order_number": "SO-2026-00045",
+  "customer_id": "C-1005",
+  "order_date": "2026-10-07",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 76, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1109",
+    "qty": 50,
+    "unit_price": 78.48
+   },
+   {
+    "sku": "NW-1054",
+    "qty": 10,
+    "unit_price": 28.46
+   },
+   {
+    "sku": "NW-1086",
+    "qty": 250,
+    "unit_price": 9.76
+   },
+   {
+    "sku": "NW-1062",
+    "qty": 10,
+    "unit_price": 3.5
+   }
+  ],
+  "total_net": 6683.6
+ },
+ {
+  "order_number": "SO-2026-00046",
+  "customer_id": "C-1006",
+  "order_date": "2026-10-14",
+  "status": "open",
+  "delivery_address": "Werftstraße 56, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1066",
+    "qty": 2,
+    "unit_price": 17.81
+   },
+   {
+    "sku": "NW-1063",
+    "qty": 100,
+    "unit_price": 23.82
+   }
+  ],
+  "total_net": 2417.62
+ },
+ {
+  "order_number": "SO-2026-00047",
+  "customer_id": "C-1007",
+  "order_date": "2026-02-09",
+  "status": "open",
+  "delivery_address": "Industrieweg 94, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1031",
+    "qty": 100,
+    "unit_price": 74.37
+   },
+   {
+    "sku": "NW-1061",
+    "qty": 2,
+    "unit_price": 86.52
+   },
+   {
+    "sku": "NW-1049",
+    "qty": 250,
+    "unit_price": 46.47
+   },
+   {
+    "sku": "NW-1030",
+    "qty": 50,
+    "unit_price": 10.9
+   }
+  ],
+  "total_net": 19772.54
+ },
+ {
+  "order_number": "SO-2026-00048",
+  "customer_id": "C-1008",
+  "order_date": "2026-11-05",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1025",
+    "qty": 250,
+    "unit_price": 21.89
+   }
+  ],
+  "total_net": 5472.5
+ },
+ {
+  "order_number": "SO-2026-00049",
+  "customer_id": "C-1009",
+  "order_date": "2026-07-21",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 62, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1073",
+    "qty": 250,
+    "unit_price": 21.34
+   },
+   {
+    "sku": "NW-1026",
+    "qty": 100,
+    "unit_price": 35.31
+   },
+   {
+    "sku": "NW-1034",
+    "qty": 10,
+    "unit_price": 71.49
+   },
+   {
+    "sku": "NW-1117",
+    "qty": 100,
+    "unit_price": 39.78
+   }
+  ],
+  "total_net": 13558.9
+ },
+ {
+  "order_number": "SO-2026-00050",
+  "customer_id": "C-1010",
+  "order_date": "2026-02-23",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1007",
+    "qty": 5,
+    "unit_price": 38.27
+   },
+   {
+    "sku": "NW-1070",
+    "qty": 5,
+    "unit_price": 10.88
+   },
+   {
+    "sku": "NW-1004",
+    "qty": 250,
+    "unit_price": 30.79
+   }
+  ],
+  "total_net": 7943.25
+ },
+ {
+  "order_number": "SO-2026-00051",
+  "customer_id": "C-1011",
+  "order_date": "2026-04-12",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 6, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1104",
+    "qty": 5,
+    "unit_price": 61.49
+   },
+   {
+    "sku": "NW-1100",
+    "qty": 10,
+    "unit_price": 12.35
+   },
+   {
+    "sku": "NW-1080",
+    "qty": 250,
+    "unit_price": 0.84
+   },
+   {
+    "sku": "NW-1006",
+    "qty": 50,
+    "unit_price": 1.05
+   }
+  ],
+  "total_net": 693.45
+ },
+ {
+  "order_number": "SO-2026-00052",
+  "customer_id": "C-1012",
+  "order_date": "2026-08-01",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 24, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1013",
+    "qty": 50,
+    "unit_price": 14.4
+   }
+  ],
+  "total_net": 720.0
+ },
+ {
+  "order_number": "SO-2026-00053",
+  "customer_id": "C-1013",
+  "order_date": "2026-04-26",
+  "status": "open",
+  "delivery_address": "Am Kanal 103, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1061",
+    "qty": 100,
+    "unit_price": 86.52
+   },
+   {
+    "sku": "NW-1027",
+    "qty": 5,
+    "unit_price": 15.84
+   },
+   {
+    "sku": "NW-1107",
+    "qty": 50,
+    "unit_price": 41.33
+   }
+  ],
+  "total_net": 10797.7
+ },
+ {
+  "order_number": "SO-2026-00054",
+  "customer_id": "C-1014",
+  "order_date": "2026-10-23",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1017",
+    "qty": 100,
+    "unit_price": 12.95
+   }
+  ],
+  "total_net": 1295.0
+ },
+ {
+  "order_number": "SO-2026-00055",
+  "customer_id": "C-1015",
+  "order_date": "2026-06-25",
+  "status": "delivered",
+  "delivery_address": "Lagerstraße 51, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1062",
+    "qty": 50,
+    "unit_price": 3.5
+   },
+   {
+    "sku": "NW-1085",
+    "qty": 5,
+    "unit_price": 2.51
+   },
+   {
+    "sku": "NW-1080",
+    "qty": 5,
+    "unit_price": 0.84
+   },
+   {
+    "sku": "NW-1117",
+    "qty": 2,
+    "unit_price": 39.78
+   }
+  ],
+  "total_net": 271.31
+ },
+ {
+  "order_number": "SO-2026-00056",
+  "customer_id": "C-1016",
+  "order_date": "2026-07-05",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 120, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1055",
+    "qty": 20,
+    "unit_price": 8.87
+   },
+   {
+    "sku": "NW-1018",
+    "qty": 5,
+    "unit_price": 0.89
+   }
+  ],
+  "total_net": 181.85
+ },
+ {
+  "order_number": "SO-2026-00057",
+  "customer_id": "C-1017",
+  "order_date": "2026-05-30",
+  "status": "open",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1037",
+    "qty": 5,
+    "unit_price": 17.68
+   }
+  ],
+  "total_net": 88.4
+ },
+ {
+  "order_number": "SO-2026-00058",
+  "customer_id": "C-1018",
+  "order_date": "2026-02-21",
+  "status": "open",
+  "delivery_address": "Hafenstraße 111, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1094",
+    "qty": 100,
+    "unit_price": 13.03
+   }
+  ],
+  "total_net": 1303.0
+ },
+ {
+  "order_number": "SO-2026-00059",
+  "customer_id": "C-1019",
+  "order_date": "2026-01-25",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 5, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1018",
+    "qty": 50,
+    "unit_price": 0.89
+   },
+   {
+    "sku": "NW-1074",
+    "qty": 250,
+    "unit_price": 64.99
+   },
+   {
+    "sku": "NW-1107",
+    "qty": 50,
+    "unit_price": 41.33
+   },
+   {
+    "sku": "NW-1063",
+    "qty": 250,
+    "unit_price": 23.82
+   }
+  ],
+  "total_net": 24313.5
+ },
+ {
+  "order_number": "SO-2026-00060",
+  "customer_id": "C-1020",
+  "order_date": "2026-09-27",
+  "status": "open",
+  "delivery_address": "Gewerbering 99, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1102",
+    "qty": 100,
+    "unit_price": 79.78
+   }
+  ],
+  "total_net": 7978.0
+ },
+ {
+  "order_number": "SO-2026-00061",
+  "customer_id": "C-1021",
+  "order_date": "2026-10-24",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 32, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1088",
+    "qty": 50,
+    "unit_price": 13.51
+   },
+   {
+    "sku": "NW-1092",
+    "qty": 2,
+    "unit_price": 107.69
+   }
+  ],
+  "total_net": 890.88
+ },
+ {
+  "order_number": "SO-2026-00062",
+  "customer_id": "C-1022",
+  "order_date": "2026-08-29",
+  "status": "open",
+  "delivery_address": "Werftstraße 33, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1103",
+    "qty": 10,
+    "unit_price": 13.4
+   },
+   {
+    "sku": "NW-1085",
+    "qty": 50,
+    "unit_price": 2.51
+   }
+  ],
+  "total_net": 259.5
+ },
+ {
+  "order_number": "SO-2026-00063",
+  "customer_id": "C-1023",
+  "order_date": "2026-04-20",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 63, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1005",
+    "qty": 10,
+    "unit_price": 48.53
+   },
+   {
+    "sku": "NW-1087",
+    "qty": 50,
+    "unit_price": 93.53
+   }
+  ],
+  "total_net": 5161.8
+ },
+ {
+  "order_number": "SO-2026-00064",
+  "customer_id": "C-1024",
+  "order_date": "2026-07-13",
+  "status": "open",
+  "delivery_address": "Lagerstraße 20, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1048",
+    "qty": 50,
+    "unit_price": 1.6
+   }
+  ],
+  "total_net": 80.0
+ },
+ {
+  "order_number": "SO-2026-00065",
+  "customer_id": "C-1025",
+  "order_date": "2026-03-13",
+  "status": "open",
+  "delivery_address": "Speicherstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1003",
+    "qty": 100,
+    "unit_price": 17.17
+   }
+  ],
+  "total_net": 1717.0
+ },
+ {
+  "order_number": "SO-2026-00066",
+  "customer_id": "C-1026",
+  "order_date": "2026-02-19",
+  "status": "open",
+  "delivery_address": "Bahnhofstraße 33, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1061",
+    "qty": 2,
+    "unit_price": 86.52
+   },
+   {
+    "sku": "NW-1035",
+    "qty": 2,
+    "unit_price": 3.14
+   },
+   {
+    "sku": "NW-1034",
+    "qty": 50,
+    "unit_price": 71.49
+   },
+   {
+    "sku": "NW-1115",
+    "qty": 2,
+    "unit_price": 9.06
+   }
+  ],
+  "total_net": 3771.94
+ },
+ {
+  "order_number": "SO-2026-00067",
+  "customer_id": "C-1027",
+  "order_date": "2026-04-17",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 38, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1110",
+    "qty": 250,
+    "unit_price": 1.11
+   },
+   {
+    "sku": "NW-1070",
+    "qty": 20,
+    "unit_price": 10.88
+   }
+  ],
+  "total_net": 495.1
+ },
+ {
+  "order_number": "SO-2026-00068",
+  "customer_id": "C-1028",
+  "order_date": "2026-05-23",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 39, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1070",
+    "qty": 50,
+    "unit_price": 10.88
+   }
+  ],
+  "total_net": 544.0
+ },
+ {
+  "order_number": "SO-2026-00069",
+  "customer_id": "C-1029",
+  "order_date": "2026-08-23",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1090",
+    "qty": 10,
+    "unit_price": 0.63
+   },
+   {
+    "sku": "NW-1108",
+    "qty": 5,
+    "unit_price": 106.46
+   },
+   {
+    "sku": "NW-1082",
+    "qty": 5,
+    "unit_price": 17.02
+   }
+  ],
+  "total_net": 623.7
+ },
+ {
+  "order_number": "SO-2026-00070",
+  "customer_id": "C-1030",
+  "order_date": "2026-03-06",
+  "status": "open",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1017",
+    "qty": 10,
+    "unit_price": 12.95
+   },
+   {
+    "sku": "NW-1103",
+    "qty": 20,
+    "unit_price": 13.4
+   },
+   {
+    "sku": "NW-1117",
+    "qty": 2,
+    "unit_price": 39.78
+   }
+  ],
+  "total_net": 477.06
+ },
+ {
+  "order_number": "SO-2026-00071",
+  "customer_id": "C-1031",
+  "order_date": "2026-02-16",
+  "status": "shipped",
+  "delivery_address": "Bahnhofstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1038",
+    "qty": 10,
+    "unit_price": 19.74
+   },
+   {
+    "sku": "NW-1076",
+    "qty": 5,
+    "unit_price": 38.5
+   }
+  ],
+  "total_net": 389.9
+ },
+ {
+  "order_number": "SO-2026-00072",
+  "customer_id": "C-1032",
+  "order_date": "2026-04-21",
+  "status": "open",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1081",
+    "qty": 20,
+    "unit_price": 37.28
+   },
+   {
+    "sku": "NW-1044",
+    "qty": 2,
+    "unit_price": 0.16
+   }
+  ],
+  "total_net": 745.92
+ },
+ {
+  "order_number": "SO-2026-00073",
+  "customer_id": "C-1033",
+  "order_date": "2026-05-06",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 41, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1011",
+    "qty": 50,
+    "unit_price": 83.97
+   }
+  ],
+  "total_net": 4198.5
+ },
+ {
+  "order_number": "SO-2026-00074",
+  "customer_id": "C-1034",
+  "order_date": "2026-10-21",
+  "status": "shipped",
+  "delivery_address": "Bahnhofstraße 31, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1056",
+    "qty": 20,
+    "unit_price": 33.21
+   },
+   {
+    "sku": "NW-1086",
+    "qty": 10,
+    "unit_price": 9.76
+   }
+  ],
+  "total_net": 761.8
+ },
+ {
+  "order_number": "SO-2026-00075",
+  "customer_id": "C-1035",
+  "order_date": "2026-06-06",
+  "status": "shipped",
+  "delivery_address": "Am Kanal 79, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1107",
+    "qty": 50,
+    "unit_price": 41.33
+   },
+   {
+    "sku": "NW-1033",
+    "qty": 250,
+    "unit_price": 14.67
+   },
+   {
+    "sku": "NW-1088",
+    "qty": 2,
+    "unit_price": 13.51
+   },
+   {
+    "sku": "NW-1009",
+    "qty": 100,
+    "unit_price": 17.76
+   }
+  ],
+  "total_net": 7537.02
+ },
+ {
+  "order_number": "SO-2026-00076",
+  "customer_id": "C-1036",
+  "order_date": "2026-02-27",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 95, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1101",
+    "qty": 100,
+    "unit_price": 94.47
+   },
+   {
+    "sku": "NW-1118",
+    "qty": 5,
+    "unit_price": 0.83
+   },
+   {
+    "sku": "NW-1070",
+    "qty": 250,
+    "unit_price": 10.88
+   }
+  ],
+  "total_net": 12171.15
+ },
+ {
+  "order_number": "SO-2026-00077",
+  "customer_id": "C-1037",
+  "order_date": "2026-04-27",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1045",
+    "qty": 250,
+    "unit_price": 28.86
+   }
+  ],
+  "total_net": 7215.0
+ },
+ {
+  "order_number": "SO-2026-00078",
+  "customer_id": "C-1038",
+  "order_date": "2026-11-02",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 44, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1046",
+    "qty": 10,
+    "unit_price": 15.07
+   },
+   {
+    "sku": "NW-1012",
+    "qty": 100,
+    "unit_price": 1.82
+   },
+   {
+    "sku": "NW-1113",
+    "qty": 100,
+    "unit_price": 0.17
+   }
+  ],
+  "total_net": 349.7
+ },
+ {
+  "order_number": "SO-2026-00079",
+  "customer_id": "C-1039",
+  "order_date": "2026-02-21",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 73, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1021",
+    "qty": 100,
+    "unit_price": 2.89
+   },
+   {
+    "sku": "NW-1075",
+    "qty": 50,
+    "unit_price": 3.67
+   },
+   {
+    "sku": "NW-1066",
+    "qty": 100,
+    "unit_price": 17.81
+   }
+  ],
+  "total_net": 2253.5
+ },
+ {
+  "order_number": "SO-2026-00080",
+  "customer_id": "C-1040",
+  "order_date": "2026-11-10",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 4, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1022",
+    "qty": 20,
+    "unit_price": 30.36
+   },
+   {
+    "sku": "NW-1048",
+    "qty": 250,
+    "unit_price": 1.6
+   },
+   {
+    "sku": "NW-1045",
+    "qty": 5,
+    "unit_price": 28.86
+   }
+  ],
+  "total_net": 1151.5
+ },
+ {
+  "order_number": "SO-2026-00081",
+  "customer_id": "C-1001",
+  "order_date": "2026-10-21",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 89, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1022",
+    "qty": 100,
+    "unit_price": 30.36
+   }
+  ],
+  "total_net": 3036.0
+ },
+ {
+  "order_number": "SO-2026-00082",
+  "customer_id": "C-1002",
+  "order_date": "2026-10-23",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 12, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1068",
+    "qty": 5,
+    "unit_price": 35.86
+   },
+   {
+    "sku": "NW-1109",
+    "qty": 250,
+    "unit_price": 78.48
+   },
+   {
+    "sku": "NW-1108",
+    "qty": 2,
+    "unit_price": 106.46
+   },
+   {
+    "sku": "NW-1090",
+    "qty": 20,
+    "unit_price": 0.63
+   }
+  ],
+  "total_net": 20024.82
+ },
+ {
+  "order_number": "SO-2026-00083",
+  "customer_id": "C-1003",
+  "order_date": "2026-04-23",
+  "status": "open",
+  "delivery_address": "Hafenstraße 94, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1111",
+    "qty": 2,
+    "unit_price": 10.33
+   }
+  ],
+  "total_net": 20.66
+ },
+ {
+  "order_number": "SO-2026-00084",
+  "customer_id": "C-1004",
+  "order_date": "2026-05-15",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 23, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1075",
+    "qty": 50,
+    "unit_price": 3.67
+   },
+   {
+    "sku": "NW-1056",
+    "qty": 20,
+    "unit_price": 33.21
+   },
+   {
+    "sku": "NW-1104",
+    "qty": 100,
+    "unit_price": 61.49
+   },
+   {
+    "sku": "NW-1109",
+    "qty": 2,
+    "unit_price": 78.48
+   }
+  ],
+  "total_net": 7153.66
+ },
+ {
+  "order_number": "SO-2026-00085",
+  "customer_id": "C-1005",
+  "order_date": "2026-03-16",
+  "status": "open",
+  "delivery_address": "Industrieweg 76, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1011",
+    "qty": 100,
+    "unit_price": 83.97
+   }
+  ],
+  "total_net": 8397.0
+ },
+ {
+  "order_number": "SO-2026-00086",
+  "customer_id": "C-1006",
+  "order_date": "2026-05-25",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 56, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1052",
+    "qty": 250,
+    "unit_price": 16.06
+   }
+  ],
+  "total_net": 4015.0
+ },
+ {
+  "order_number": "SO-2026-00087",
+  "customer_id": "C-1007",
+  "order_date": "2026-10-19",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 94, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1001",
+    "qty": 10,
+    "unit_price": 43.83
+   }
+  ],
+  "total_net": 438.3
+ },
+ {
+  "order_number": "SO-2026-00088",
+  "customer_id": "C-1008",
+  "order_date": "2026-03-06",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1063",
+    "qty": 2,
+    "unit_price": 23.82
+   },
+   {
+    "sku": "NW-1045",
+    "qty": 50,
+    "unit_price": 28.86
+   },
+   {
+    "sku": "NW-1109",
+    "qty": 20,
+    "unit_price": 78.48
+   }
+  ],
+  "total_net": 3060.24
+ },
+ {
+  "order_number": "SO-2026-00089",
+  "customer_id": "C-1009",
+  "order_date": "2026-11-02",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 62, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1033",
+    "qty": 2,
+    "unit_price": 14.67
+   },
+   {
+    "sku": "NW-1058",
+    "qty": 10,
+    "unit_price": 25.61
+   }
+  ],
+  "total_net": 285.44
+ },
+ {
+  "order_number": "SO-2026-00090",
+  "customer_id": "C-1010",
+  "order_date": "2026-05-28",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1016",
+    "qty": 5,
+    "unit_price": 2.01
+   },
+   {
+    "sku": "NW-1041",
+    "qty": 20,
+    "unit_price": 3.14
+   },
+   {
+    "sku": "NW-1019",
+    "qty": 5,
+    "unit_price": 25.63
+   },
+   {
+    "sku": "NW-1117",
+    "qty": 50,
+    "unit_price": 39.78
+   }
+  ],
+  "total_net": 2190.0
+ },
+ {
+  "order_number": "SO-2026-00091",
+  "customer_id": "C-1011",
+  "order_date": "2026-07-18",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 6, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1048",
+    "qty": 100,
+    "unit_price": 1.6
+   }
+  ],
+  "total_net": 160.0
+ },
+ {
+  "order_number": "SO-2026-00092",
+  "customer_id": "C-1012",
+  "order_date": "2026-08-12",
+  "status": "open",
+  "delivery_address": "Hafenstraße 24, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1033",
+    "qty": 20,
+    "unit_price": 14.67
+   },
+   {
+    "sku": "NW-1097",
+    "qty": 100,
+    "unit_price": 36.8
+   }
+  ],
+  "total_net": 3973.4
+ },
+ {
+  "order_number": "SO-2026-00093",
+  "customer_id": "C-1013",
+  "order_date": "2026-06-29",
+  "status": "open",
+  "delivery_address": "Am Kanal 103, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1017",
+    "qty": 10,
+    "unit_price": 12.95
+   },
+   {
+    "sku": "NW-1104",
+    "qty": 20,
+    "unit_price": 61.49
+   },
+   {
+    "sku": "NW-1057",
+    "qty": 20,
+    "unit_price": 0.19
+   }
+  ],
+  "total_net": 1363.1
+ },
+ {
+  "order_number": "SO-2026-00094",
+  "customer_id": "C-1014",
+  "order_date": "2026-02-21",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1017",
+    "qty": 50,
+    "unit_price": 12.95
+   },
+   {
+    "sku": "NW-1005",
+    "qty": 5,
+    "unit_price": 48.53
+   },
+   {
+    "sku": "NW-1057",
+    "qty": 50,
+    "unit_price": 0.19
+   },
+   {
+    "sku": "NW-1018",
+    "qty": 100,
+    "unit_price": 0.89
+   }
+  ],
+  "total_net": 988.65
+ },
+ {
+  "order_number": "SO-2026-00095",
+  "customer_id": "C-1015",
+  "order_date": "2026-10-02",
+  "status": "open",
+  "delivery_address": "Lagerstraße 51, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1014",
+    "qty": 250,
+    "unit_price": 51.41
+   },
+   {
+    "sku": "NW-1051",
+    "qty": 10,
+    "unit_price": 14.6
+   },
+   {
+    "sku": "NW-1059",
+    "qty": 50,
+    "unit_price": 4.94
+   },
+   {
+    "sku": "NW-1002",
+    "qty": 250,
+    "unit_price": 68.01
+   }
+  ],
+  "total_net": 30248.0
+ },
+ {
+  "order_number": "SO-2026-00096",
+  "customer_id": "C-1016",
+  "order_date": "2026-09-01",
+  "status": "open",
+  "delivery_address": "Industrieweg 120, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1114",
+    "qty": 250,
+    "unit_price": 32.93
+   },
+   {
+    "sku": "NW-1082",
+    "qty": 50,
+    "unit_price": 17.02
+   },
+   {
+    "sku": "NW-1100",
+    "qty": 10,
+    "unit_price": 12.35
+   },
+   {
+    "sku": "NW-1092",
+    "qty": 10,
+    "unit_price": 107.69
+   }
+  ],
+  "total_net": 10283.9
+ },
+ {
+  "order_number": "SO-2026-00097",
+  "customer_id": "C-1017",
+  "order_date": "2026-02-07",
+  "status": "delivered",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1010",
+    "qty": 250,
+    "unit_price": 4.31
+   }
+  ],
+  "total_net": 1077.5
+ },
+ {
+  "order_number": "SO-2026-00098",
+  "customer_id": "C-1018",
+  "order_date": "2026-03-10",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 111, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1035",
+    "qty": 100,
+    "unit_price": 3.14
+   },
+   {
+    "sku": "NW-1065",
+    "qty": 5,
+    "unit_price": 11.87
+   }
+  ],
+  "total_net": 373.35
+ },
+ {
+  "order_number": "SO-2026-00099",
+  "customer_id": "C-1019",
+  "order_date": "2026-10-16",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 5, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1102",
+    "qty": 50,
+    "unit_price": 79.78
+   },
+   {
+    "sku": "NW-1037",
+    "qty": 100,
+    "unit_price": 17.68
+   }
+  ],
+  "total_net": 5757.0
+ },
+ {
+  "order_number": "SO-2026-00100",
+  "customer_id": "C-1020",
+  "order_date": "2026-10-18",
+  "status": "open",
+  "delivery_address": "Gewerbering 99, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1038",
+    "qty": 20,
+    "unit_price": 19.74
+   }
+  ],
+  "total_net": 394.8
+ },
+ {
+  "order_number": "SO-2026-00101",
+  "customer_id": "C-1021",
+  "order_date": "2026-03-18",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 32, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1118",
+    "qty": 250,
+    "unit_price": 0.83
+   },
+   {
+    "sku": "NW-1053",
+    "qty": 100,
+    "unit_price": 2.01
+   },
+   {
+    "sku": "NW-1069",
+    "qty": 50,
+    "unit_price": 14.16
+   },
+   {
+    "sku": "NW-1014",
+    "qty": 10,
+    "unit_price": 51.41
+   }
+  ],
+  "total_net": 1630.6
+ },
+ {
+  "order_number": "SO-2026-00102",
+  "customer_id": "C-1022",
+  "order_date": "2026-10-21",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 33, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1094",
+    "qty": 250,
+    "unit_price": 13.03
+   }
+  ],
+  "total_net": 3257.5
+ },
+ {
+  "order_number": "SO-2026-00103",
+  "customer_id": "C-1023",
+  "order_date": "2026-06-22",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 63, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1089",
+    "qty": 10,
+    "unit_price": 22.65
+   },
+   {
+    "sku": "NW-1034",
+    "qty": 20,
+    "unit_price": 71.49
+   },
+   {
+    "sku": "NW-1051",
+    "qty": 250,
+    "unit_price": 14.6
+   },
+   {
+    "sku": "NW-1070",
+    "qty": 50,
+    "unit_price": 10.88
+   }
+  ],
+  "total_net": 5850.3
+ },
+ {
+  "order_number": "SO-2026-00104",
+  "customer_id": "C-1024",
+  "order_date": "2026-11-04",
+  "status": "open",
+  "delivery_address": "Lagerstraße 20, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1028",
+    "qty": 20,
+    "unit_price": 21.02
+   },
+   {
+    "sku": "NW-1017",
+    "qty": 10,
+    "unit_price": 12.95
+   },
+   {
+    "sku": "NW-1086",
+    "qty": 20,
+    "unit_price": 9.76
+   }
+  ],
+  "total_net": 745.1
+ },
+ {
+  "order_number": "SO-2026-00105",
+  "customer_id": "C-1025",
+  "order_date": "2026-06-26",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1063",
+    "qty": 20,
+    "unit_price": 23.82
+   },
+   {
+    "sku": "NW-1015",
+    "qty": 10,
+    "unit_price": 11.7
+   },
+   {
+    "sku": "NW-1002",
+    "qty": 10,
+    "unit_price": 68.01
+   }
+  ],
+  "total_net": 1273.5
+ },
+ {
+  "order_number": "SO-2026-00106",
+  "customer_id": "C-1026",
+  "order_date": "2026-07-11",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 33, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1014",
+    "qty": 50,
+    "unit_price": 51.41
+   }
+  ],
+  "total_net": 2570.5
+ },
+ {
+  "order_number": "SO-2026-00107",
+  "customer_id": "C-1027",
+  "order_date": "2026-07-10",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 38, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1063",
+    "qty": 2,
+    "unit_price": 23.82
+   }
+  ],
+  "total_net": 47.64
+ },
+ {
+  "order_number": "SO-2026-00108",
+  "customer_id": "C-1028",
+  "order_date": "2026-02-20",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 39, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1076",
+    "qty": 100,
+    "unit_price": 38.5
+   }
+  ],
+  "total_net": 3850.0
+ },
+ {
+  "order_number": "SO-2026-00109",
+  "customer_id": "C-1029",
+  "order_date": "2026-10-07",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1000",
+    "qty": 2,
+    "unit_price": 1.02
+   },
+   {
+    "sku": "NW-1006",
+    "qty": 100,
+    "unit_price": 1.05
+   },
+   {
+    "sku": "NW-1045",
+    "qty": 100,
+    "unit_price": 28.86
+   },
+   {
+    "sku": "NW-1117",
+    "qty": 20,
+    "unit_price": 39.78
+   }
+  ],
+  "total_net": 3788.64
+ },
+ {
+  "order_number": "SO-2026-00110",
+  "customer_id": "C-1030",
+  "order_date": "2026-09-08",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1074",
+    "qty": 20,
+    "unit_price": 64.99
+   }
+  ],
+  "total_net": 1299.8
+ },
+ {
+  "order_number": "SO-2026-00111",
+  "customer_id": "C-1031",
+  "order_date": "2026-07-15",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1031",
+    "qty": 20,
+    "unit_price": 74.37
+   }
+  ],
+  "total_net": 1487.4
+ },
+ {
+  "order_number": "SO-2026-00112",
+  "customer_id": "C-1032",
+  "order_date": "2026-05-01",
+  "status": "shipped",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1085",
+    "qty": 250,
+    "unit_price": 2.51
+   }
+  ],
+  "total_net": 627.5
+ },
+ {
+  "order_number": "SO-2026-00113",
+  "customer_id": "C-1033",
+  "order_date": "2026-05-10",
+  "status": "open",
+  "delivery_address": "Industrieweg 41, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1063",
+    "qty": 10,
+    "unit_price": 23.82
+   },
+   {
+    "sku": "NW-1102",
+    "qty": 20,
+    "unit_price": 79.78
+   }
+  ],
+  "total_net": 1833.8
+ },
+ {
+  "order_number": "SO-2026-00114",
+  "customer_id": "C-1034",
+  "order_date": "2026-02-01",
+  "status": "open",
+  "delivery_address": "Bahnhofstraße 31, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1050",
+    "qty": 2,
+    "unit_price": 31.91
+   }
+  ],
+  "total_net": 63.82
+ },
+ {
+  "order_number": "SO-2026-00115",
+  "customer_id": "C-1035",
+  "order_date": "2026-03-06",
+  "status": "shipped",
+  "delivery_address": "Am Kanal 79, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1106",
+    "qty": 250,
+    "unit_price": 0.31
+   },
+   {
+    "sku": "NW-1072",
+    "qty": 100,
+    "unit_price": 0.6
+   },
+   {
+    "sku": "NW-1019",
+    "qty": 50,
+    "unit_price": 25.63
+   },
+   {
+    "sku": "NW-1077",
+    "qty": 50,
+    "unit_price": 57.25
+   }
+  ],
+  "total_net": 4281.5
+ },
+ {
+  "order_number": "SO-2026-00116",
+  "customer_id": "C-1036",
+  "order_date": "2026-08-08",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 95, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1094",
+    "qty": 250,
+    "unit_price": 13.03
+   },
+   {
+    "sku": "NW-1115",
+    "qty": 20,
+    "unit_price": 9.06
+   },
+   {
+    "sku": "NW-1046",
+    "qty": 100,
+    "unit_price": 15.07
+   },
+   {
+    "sku": "NW-1005",
+    "qty": 10,
+    "unit_price": 48.53
+   }
+  ],
+  "total_net": 5431.0
+ },
+ {
+  "order_number": "SO-2026-00117",
+  "customer_id": "C-1037",
+  "order_date": "2026-10-29",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1073",
+    "qty": 10,
+    "unit_price": 21.34
+   }
+  ],
+  "total_net": 213.4
+ },
+ {
+  "order_number": "SO-2026-00118",
+  "customer_id": "C-1038",
+  "order_date": "2026-07-13",
+  "status": "open",
+  "delivery_address": "Speicherstraße 44, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1012",
+    "qty": 5,
+    "unit_price": 1.82
+   }
+  ],
+  "total_net": 9.1
+ },
+ {
+  "order_number": "SO-2026-00119",
+  "customer_id": "C-1039",
+  "order_date": "2026-09-19",
+  "status": "open",
+  "delivery_address": "Werftstraße 73, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1000",
+    "qty": 5,
+    "unit_price": 1.02
+   },
+   {
+    "sku": "NW-1066",
+    "qty": 2,
+    "unit_price": 17.81
+   },
+   {
+    "sku": "NW-1001",
+    "qty": 250,
+    "unit_price": 43.83
+   }
+  ],
+  "total_net": 10998.22
+ },
+ {
+  "order_number": "SO-2026-00120",
+  "customer_id": "C-1040",
+  "order_date": "2026-02-13",
+  "status": "shipped",
+  "delivery_address": "Am Kanal 4, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1083",
+    "qty": 20,
+    "unit_price": 2.68
+   },
+   {
+    "sku": "NW-1034",
+    "qty": 2,
+    "unit_price": 71.49
+   }
+  ],
+  "total_net": 196.58
+ },
+ {
+  "order_number": "SO-2026-00121",
+  "customer_id": "C-1001",
+  "order_date": "2026-06-13",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 89, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1026",
+    "qty": 2,
+    "unit_price": 35.31
+   },
+   {
+    "sku": "NW-1081",
+    "qty": 10,
+    "unit_price": 37.28
+   },
+   {
+    "sku": "NW-1064",
+    "qty": 10,
+    "unit_price": 61.17
+   }
+  ],
+  "total_net": 1055.12
+ },
+ {
+  "order_number": "SO-2026-00122",
+  "customer_id": "C-1002",
+  "order_date": "2026-09-30",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 12, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1010",
+    "qty": 10,
+    "unit_price": 4.31
+   },
+   {
+    "sku": "NW-1015",
+    "qty": 50,
+    "unit_price": 11.7
+   },
+   {
+    "sku": "NW-1034",
+    "qty": 2,
+    "unit_price": 71.49
+   },
+   {
+    "sku": "NW-1092",
+    "qty": 2,
+    "unit_price": 107.69
+   }
+  ],
+  "total_net": 986.46
+ },
+ {
+  "order_number": "SO-2026-00123",
+  "customer_id": "C-1003",
+  "order_date": "2026-08-27",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 94, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1094",
+    "qty": 100,
+    "unit_price": 13.03
+   },
+   {
+    "sku": "NW-1007",
+    "qty": 250,
+    "unit_price": 38.27
+   },
+   {
+    "sku": "NW-1073",
+    "qty": 5,
+    "unit_price": 21.34
+   }
+  ],
+  "total_net": 10977.2
+ },
+ {
+  "order_number": "SO-2026-00124",
+  "customer_id": "C-1004",
+  "order_date": "2026-03-06",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 23, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1086",
+    "qty": 50,
+    "unit_price": 9.76
+   },
+   {
+    "sku": "NW-1111",
+    "qty": 100,
+    "unit_price": 10.33
+   },
+   {
+    "sku": "NW-1052",
+    "qty": 2,
+    "unit_price": 16.06
+   },
+   {
+    "sku": "NW-1006",
+    "qty": 20,
+    "unit_price": 1.05
+   }
+  ],
+  "total_net": 1574.12
+ },
+ {
+  "order_number": "SO-2026-00125",
+  "customer_id": "C-1005",
+  "order_date": "2026-07-19",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 76, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1010",
+    "qty": 2,
+    "unit_price": 4.31
+   },
+   {
+    "sku": "NW-1113",
+    "qty": 2,
+    "unit_price": 0.17
+   },
+   {
+    "sku": "NW-1009",
+    "qty": 100,
+    "unit_price": 17.76
+   },
+   {
+    "sku": "NW-1101",
+    "qty": 250,
+    "unit_price": 94.47
+   }
+  ],
+  "total_net": 25402.46
+ },
+ {
+  "order_number": "SO-2026-00126",
+  "customer_id": "C-1006",
+  "order_date": "2026-02-04",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 56, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1091",
+    "qty": 250,
+    "unit_price": 22.58
+   },
+   {
+    "sku": "NW-1115",
+    "qty": 50,
+    "unit_price": 9.06
+   },
+   {
+    "sku": "NW-1023",
+    "qty": 20,
+    "unit_price": 43.28
+   }
+  ],
+  "total_net": 6963.6
+ },
+ {
+  "order_number": "SO-2026-00127",
+  "customer_id": "C-1007",
+  "order_date": "2026-05-30",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 94, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1017",
+    "qty": 5,
+    "unit_price": 12.95
+   },
+   {
+    "sku": "NW-1056",
+    "qty": 20,
+    "unit_price": 33.21
+   }
+  ],
+  "total_net": 728.95
+ },
+ {
+  "order_number": "SO-2026-00128",
+  "customer_id": "C-1008",
+  "order_date": "2026-07-10",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1071",
+    "qty": 10,
+    "unit_price": 88.35
+   },
+   {
+    "sku": "NW-1003",
+    "qty": 20,
+    "unit_price": 17.17
+   },
+   {
+    "sku": "NW-1113",
+    "qty": 100,
+    "unit_price": 0.17
+   }
+  ],
+  "total_net": 1243.9
+ },
+ {
+  "order_number": "SO-2026-00129",
+  "customer_id": "C-1009",
+  "order_date": "2026-02-27",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 62, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1083",
+    "qty": 5,
+    "unit_price": 2.68
+   },
+   {
+    "sku": "NW-1102",
+    "qty": 2,
+    "unit_price": 79.78
+   },
+   {
+    "sku": "NW-1056",
+    "qty": 20,
+    "unit_price": 33.21
+   },
+   {
+    "sku": "NW-1028",
+    "qty": 100,
+    "unit_price": 21.02
+   }
+  ],
+  "total_net": 2939.16
+ },
+ {
+  "order_number": "SO-2026-00130",
+  "customer_id": "C-1010",
+  "order_date": "2026-07-30",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1026",
+    "qty": 50,
+    "unit_price": 35.31
+   },
+   {
+    "sku": "NW-1027",
+    "qty": 250,
+    "unit_price": 15.84
+   },
+   {
+    "sku": "NW-1011",
+    "qty": 2,
+    "unit_price": 83.97
+   }
+  ],
+  "total_net": 5893.44
+ },
+ {
+  "order_number": "SO-2026-00131",
+  "customer_id": "C-1011",
+  "order_date": "2026-10-07",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 6, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1045",
+    "qty": 250,
+    "unit_price": 28.86
+   },
+   {
+    "sku": "NW-1117",
+    "qty": 5,
+    "unit_price": 39.78
+   }
+  ],
+  "total_net": 7413.9
+ },
+ {
+  "order_number": "SO-2026-00132",
+  "customer_id": "C-1012",
+  "order_date": "2026-06-09",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 24, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1068",
+    "qty": 20,
+    "unit_price": 35.86
+   },
+   {
+    "sku": "NW-1090",
+    "qty": 250,
+    "unit_price": 0.63
+   }
+  ],
+  "total_net": 874.7
+ },
+ {
+  "order_number": "SO-2026-00133",
+  "customer_id": "C-1013",
+  "order_date": "2026-06-05",
+  "status": "shipped",
+  "delivery_address": "Am Kanal 103, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1115",
+    "qty": 20,
+    "unit_price": 9.06
+   },
+   {
+    "sku": "NW-1114",
+    "qty": 10,
+    "unit_price": 32.93
+   },
+   {
+    "sku": "NW-1051",
+    "qty": 250,
+    "unit_price": 14.6
+   }
+  ],
+  "total_net": 4160.5
+ },
+ {
+  "order_number": "SO-2026-00134",
+  "customer_id": "C-1014",
+  "order_date": "2026-02-09",
+  "status": "open",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1060",
+    "qty": 10,
+    "unit_price": 7.19
+   },
+   {
+    "sku": "NW-1112",
+    "qty": 250,
+    "unit_price": 14.04
+   },
+   {
+    "sku": "NW-1030",
+    "qty": 100,
+    "unit_price": 10.9
+   },
+   {
+    "sku": "NW-1024",
+    "qty": 20,
+    "unit_price": 2.53
+   }
+  ],
+  "total_net": 4722.5
+ },
+ {
+  "order_number": "SO-2026-00135",
+  "customer_id": "C-1015",
+  "order_date": "2026-04-09",
+  "status": "delivered",
+  "delivery_address": "Lagerstraße 51, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1050",
+    "qty": 50,
+    "unit_price": 31.91
+   },
+   {
+    "sku": "NW-1031",
+    "qty": 2,
+    "unit_price": 74.37
+   },
+   {
+    "sku": "NW-1071",
+    "qty": 5,
+    "unit_price": 88.35
+   }
+  ],
+  "total_net": 2185.99
+ },
+ {
+  "order_number": "SO-2026-00136",
+  "customer_id": "C-1016",
+  "order_date": "2026-10-17",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 120, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1077",
+    "qty": 10,
+    "unit_price": 57.25
+   },
+   {
+    "sku": "NW-1101",
+    "qty": 50,
+    "unit_price": 94.47
+   },
+   {
+    "sku": "NW-1007",
+    "qty": 10,
+    "unit_price": 38.27
+   }
+  ],
+  "total_net": 5678.7
+ },
+ {
+  "order_number": "SO-2026-00137",
+  "customer_id": "C-1017",
+  "order_date": "2026-03-06",
+  "status": "open",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1078",
+    "qty": 5,
+    "unit_price": 8.39
+   },
+   {
+    "sku": "NW-1039",
+    "qty": 2,
+    "unit_price": 3.69
+   },
+   {
+    "sku": "NW-1049",
+    "qty": 10,
+    "unit_price": 46.47
+   },
+   {
+    "sku": "NW-1115",
+    "qty": 50,
+    "unit_price": 9.06
+   }
+  ],
+  "total_net": 967.03
+ },
+ {
+  "order_number": "SO-2026-00138",
+  "customer_id": "C-1018",
+  "order_date": "2026-09-28",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 111, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1068",
+    "qty": 250,
+    "unit_price": 35.86
+   },
+   {
+    "sku": "NW-1112",
+    "qty": 100,
+    "unit_price": 14.04
+   },
+   {
+    "sku": "NW-1099",
+    "qty": 100,
+    "unit_price": 0.99
+   },
+   {
+    "sku": "NW-1041",
+    "qty": 250,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 11253.0
+ },
+ {
+  "order_number": "SO-2026-00139",
+  "customer_id": "C-1019",
+  "order_date": "2026-10-19",
+  "status": "open",
+  "delivery_address": "Bahnhofstraße 5, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1065",
+    "qty": 10,
+    "unit_price": 11.87
+   },
+   {
+    "sku": "NW-1060",
+    "qty": 10,
+    "unit_price": 7.19
+   },
+   {
+    "sku": "NW-1063",
+    "qty": 2,
+    "unit_price": 23.82
+   }
+  ],
+  "total_net": 238.24
+ },
+ {
+  "order_number": "SO-2026-00140",
+  "customer_id": "C-1020",
+  "order_date": "2026-07-23",
+  "status": "delivered",
+  "delivery_address": "Gewerbering 99, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1052",
+    "qty": 2,
+    "unit_price": 16.06
+   },
+   {
+    "sku": "NW-1006",
+    "qty": 250,
+    "unit_price": 1.05
+   },
+   {
+    "sku": "NW-1014",
+    "qty": 100,
+    "unit_price": 51.41
+   },
+   {
+    "sku": "NW-1026",
+    "qty": 100,
+    "unit_price": 35.31
+   }
+  ],
+  "total_net": 8966.62
+ },
+ {
+  "order_number": "SO-2026-00141",
+  "customer_id": "C-1021",
+  "order_date": "2026-09-10",
+  "status": "open",
+  "delivery_address": "Werftstraße 32, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1050",
+    "qty": 20,
+    "unit_price": 31.91
+   }
+  ],
+  "total_net": 638.2
+ },
+ {
+  "order_number": "SO-2026-00142",
+  "customer_id": "C-1022",
+  "order_date": "2026-09-20",
+  "status": "open",
+  "delivery_address": "Werftstraße 33, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1034",
+    "qty": 10,
+    "unit_price": 71.49
+   },
+   {
+    "sku": "NW-1118",
+    "qty": 10,
+    "unit_price": 0.83
+   },
+   {
+    "sku": "NW-1040",
+    "qty": 5,
+    "unit_price": 23.89
+   }
+  ],
+  "total_net": 842.65
+ },
+ {
+  "order_number": "SO-2026-00143",
+  "customer_id": "C-1023",
+  "order_date": "2026-06-29",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 63, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1106",
+    "qty": 10,
+    "unit_price": 0.31
+   },
+   {
+    "sku": "NW-1040",
+    "qty": 10,
+    "unit_price": 23.89
+   },
+   {
+    "sku": "NW-1017",
+    "qty": 250,
+    "unit_price": 12.95
+   },
+   {
+    "sku": "NW-1009",
+    "qty": 250,
+    "unit_price": 17.76
+   }
+  ],
+  "total_net": 7919.5
+ },
+ {
+  "order_number": "SO-2026-00144",
+  "customer_id": "C-1024",
+  "order_date": "2026-09-23",
+  "status": "delivered",
+  "delivery_address": "Lagerstraße 20, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1022",
+    "qty": 10,
+    "unit_price": 30.36
+   },
+   {
+    "sku": "NW-1101",
+    "qty": 100,
+    "unit_price": 94.47
+   },
+   {
+    "sku": "NW-1082",
+    "qty": 20,
+    "unit_price": 17.02
+   },
+   {
+    "sku": "NW-1088",
+    "qty": 250,
+    "unit_price": 13.51
+   }
+  ],
+  "total_net": 13468.5
+ },
+ {
+  "order_number": "SO-2026-00145",
+  "customer_id": "C-1025",
+  "order_date": "2026-02-28",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1095",
+    "qty": 50,
+    "unit_price": 84.29
+   },
+   {
+    "sku": "NW-1010",
+    "qty": 2,
+    "unit_price": 4.31
+   },
+   {
+    "sku": "NW-1020",
+    "qty": 50,
+    "unit_price": 52.02
+   }
+  ],
+  "total_net": 6824.12
+ },
+ {
+  "order_number": "SO-2026-00146",
+  "customer_id": "C-1026",
+  "order_date": "2026-05-23",
+  "status": "open",
+  "delivery_address": "Bahnhofstraße 33, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1059",
+    "qty": 5,
+    "unit_price": 4.94
+   },
+   {
+    "sku": "NW-1116",
+    "qty": 2,
+    "unit_price": 6.29
+   },
+   {
+    "sku": "NW-1100",
+    "qty": 10,
+    "unit_price": 12.35
+   },
+   {
+    "sku": "NW-1058",
+    "qty": 20,
+    "unit_price": 25.61
+   }
+  ],
+  "total_net": 672.98
+ },
+ {
+  "order_number": "SO-2026-00147",
+  "customer_id": "C-1027",
+  "order_date": "2026-09-27",
+  "status": "open",
+  "delivery_address": "Hafenstraße 38, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1050",
+    "qty": 250,
+    "unit_price": 31.91
+   },
+   {
+    "sku": "NW-1012",
+    "qty": 100,
+    "unit_price": 1.82
+   },
+   {
+    "sku": "NW-1015",
+    "qty": 10,
+    "unit_price": 11.7
+   },
+   {
+    "sku": "NW-1063",
+    "qty": 10,
+    "unit_price": 23.82
+   }
+  ],
+  "total_net": 8514.7
+ },
+ {
+  "order_number": "SO-2026-00148",
+  "customer_id": "C-1028",
+  "order_date": "2026-03-01",
+  "status": "open",
+  "delivery_address": "Speicherstraße 39, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1079",
+    "qty": 50,
+    "unit_price": 36.8
+   },
+   {
+    "sku": "NW-1092",
+    "qty": 2,
+    "unit_price": 107.69
+   },
+   {
+    "sku": "NW-1039",
+    "qty": 5,
+    "unit_price": 3.69
+   }
+  ],
+  "total_net": 2073.83
+ },
+ {
+  "order_number": "SO-2026-00149",
+  "customer_id": "C-1029",
+  "order_date": "2026-06-25",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1044",
+    "qty": 5,
+    "unit_price": 0.16
+   },
+   {
+    "sku": "NW-1069",
+    "qty": 20,
+    "unit_price": 14.16
+   }
+  ],
+  "total_net": 284.0
+ },
+ {
+  "order_number": "SO-2026-00150",
+  "customer_id": "C-1030",
+  "order_date": "2026-07-17",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1043",
+    "qty": 20,
+    "unit_price": 79.67
+   },
+   {
+    "sku": "NW-1018",
+    "qty": 2,
+    "unit_price": 0.89
+   },
+   {
+    "sku": "NW-1035",
+    "qty": 10,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 1626.58
+ },
+ {
+  "order_number": "SO-2026-00151",
+  "customer_id": "C-1031",
+  "order_date": "2026-11-09",
+  "status": "shipped",
+  "delivery_address": "Bahnhofstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1026",
+    "qty": 100,
+    "unit_price": 35.31
+   }
+  ],
+  "total_net": 3531.0
+ },
+ {
+  "order_number": "SO-2026-00152",
+  "customer_id": "C-1032",
+  "order_date": "2026-11-03",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1086",
+    "qty": 10,
+    "unit_price": 9.76
+   }
+  ],
+  "total_net": 97.6
+ },
+ {
+  "order_number": "SO-2026-00153",
+  "customer_id": "C-1033",
+  "order_date": "2026-10-31",
+  "status": "open",
+  "delivery_address": "Industrieweg 41, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1059",
+    "qty": 20,
+    "unit_price": 4.94
+   },
+   {
+    "sku": "NW-1020",
+    "qty": 10,
+    "unit_price": 52.02
+   }
+  ],
+  "total_net": 619.0
+ },
+ {
+  "order_number": "SO-2026-00154",
+  "customer_id": "C-1034",
+  "order_date": "2026-11-03",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 31, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1001",
+    "qty": 250,
+    "unit_price": 43.83
+   },
+   {
+    "sku": "NW-1047",
+    "qty": 5,
+    "unit_price": 2.22
+   }
+  ],
+  "total_net": 10968.6
+ },
+ {
+  "order_number": "SO-2026-00155",
+  "customer_id": "C-1035",
+  "order_date": "2026-01-23",
+  "status": "open",
+  "delivery_address": "Am Kanal 79, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1093",
+    "qty": 5,
+    "unit_price": 7.74
+   },
+   {
+    "sku": "NW-1075",
+    "qty": 2,
+    "unit_price": 3.67
+   },
+   {
+    "sku": "NW-1032",
+    "qty": 250,
+    "unit_price": 15.85
+   }
+  ],
+  "total_net": 4008.54
+ },
+ {
+  "order_number": "SO-2026-00156",
+  "customer_id": "C-1036",
+  "order_date": "2026-09-09",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 95, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1038",
+    "qty": 2,
+    "unit_price": 19.74
+   }
+  ],
+  "total_net": 39.48
+ },
+ {
+  "order_number": "SO-2026-00157",
+  "customer_id": "C-1037",
+  "order_date": "2026-08-23",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1117",
+    "qty": 2,
+    "unit_price": 39.78
+   },
+   {
+    "sku": "NW-1089",
+    "qty": 20,
+    "unit_price": 22.65
+   },
+   {
+    "sku": "NW-1044",
+    "qty": 250,
+    "unit_price": 0.16
+   },
+   {
+    "sku": "NW-1119",
+    "qty": 2,
+    "unit_price": 9.22
+   }
+  ],
+  "total_net": 591.0
+ },
+ {
+  "order_number": "SO-2026-00158",
+  "customer_id": "C-1038",
+  "order_date": "2026-07-03",
+  "status": "open",
+  "delivery_address": "Speicherstraße 44, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1049",
+    "qty": 20,
+    "unit_price": 46.47
+   },
+   {
+    "sku": "NW-1047",
+    "qty": 250,
+    "unit_price": 2.22
+   },
+   {
+    "sku": "NW-1006",
+    "qty": 5,
+    "unit_price": 1.05
+   }
+  ],
+  "total_net": 1489.65
+ },
+ {
+  "order_number": "SO-2026-00159",
+  "customer_id": "C-1039",
+  "order_date": "2026-05-30",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 73, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1009",
+    "qty": 5,
+    "unit_price": 17.76
+   }
+  ],
+  "total_net": 88.8
+ },
+ {
+  "order_number": "SO-2026-00160",
+  "customer_id": "C-1040",
+  "order_date": "2026-11-06",
+  "status": "shipped",
+  "delivery_address": "Am Kanal 4, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1114",
+    "qty": 50,
+    "unit_price": 32.93
+   },
+   {
+    "sku": "NW-1043",
+    "qty": 100,
+    "unit_price": 79.67
+   },
+   {
+    "sku": "NW-1038",
+    "qty": 100,
+    "unit_price": 19.74
+   },
+   {
+    "sku": "NW-1012",
+    "qty": 250,
+    "unit_price": 1.82
+   }
+  ],
+  "total_net": 12042.5
+ },
+ {
+  "order_number": "SO-2026-00161",
+  "customer_id": "C-1001",
+  "order_date": "2026-08-25",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 89, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1068",
+    "qty": 100,
+    "unit_price": 35.86
+   },
+   {
+    "sku": "NW-1048",
+    "qty": 10,
+    "unit_price": 1.6
+   },
+   {
+    "sku": "NW-1041",
+    "qty": 100,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 3916.0
+ },
+ {
+  "order_number": "SO-2026-00162",
+  "customer_id": "C-1002",
+  "order_date": "2026-10-30",
+  "status": "open",
+  "delivery_address": "Bahnhofstraße 12, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1051",
+    "qty": 5,
+    "unit_price": 14.6
+   }
+  ],
+  "total_net": 73.0
+ },
+ {
+  "order_number": "SO-2026-00163",
+  "customer_id": "C-1003",
+  "order_date": "2026-11-10",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 94, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1050",
+    "qty": 5,
+    "unit_price": 31.91
+   },
+   {
+    "sku": "NW-1072",
+    "qty": 5,
+    "unit_price": 0.6
+   }
+  ],
+  "total_net": 162.55
+ },
+ {
+  "order_number": "SO-2026-00164",
+  "customer_id": "C-1004",
+  "order_date": "2026-09-24",
+  "status": "open",
+  "delivery_address": "Speicherstraße 23, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1011",
+    "qty": 10,
+    "unit_price": 83.97
+   },
+   {
+    "sku": "NW-1060",
+    "qty": 100,
+    "unit_price": 7.19
+   }
+  ],
+  "total_net": 1558.7
+ },
+ {
+  "order_number": "SO-2026-00165",
+  "customer_id": "C-1005",
+  "order_date": "2026-02-01",
+  "status": "open",
+  "delivery_address": "Industrieweg 76, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1051",
+    "qty": 50,
+    "unit_price": 14.6
+   },
+   {
+    "sku": "NW-1010",
+    "qty": 100,
+    "unit_price": 4.31
+   }
+  ],
+  "total_net": 1161.0
+ },
+ {
+  "order_number": "SO-2026-00166",
+  "customer_id": "C-1006",
+  "order_date": "2026-03-04",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 56, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1098",
+    "qty": 10,
+    "unit_price": 11.75
+   },
+   {
+    "sku": "NW-1086",
+    "qty": 100,
+    "unit_price": 9.76
+   },
+   {
+    "sku": "NW-1043",
+    "qty": 5,
+    "unit_price": 79.67
+   }
+  ],
+  "total_net": 1491.85
+ },
+ {
+  "order_number": "SO-2026-00167",
+  "customer_id": "C-1007",
+  "order_date": "2026-09-28",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 94, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1043",
+    "qty": 50,
+    "unit_price": 79.67
+   },
+   {
+    "sku": "NW-1117",
+    "qty": 250,
+    "unit_price": 39.78
+   }
+  ],
+  "total_net": 13928.5
+ },
+ {
+  "order_number": "SO-2026-00168",
+  "customer_id": "C-1008",
+  "order_date": "2026-02-03",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1108",
+    "qty": 2,
+    "unit_price": 106.46
+   },
+   {
+    "sku": "NW-1016",
+    "qty": 100,
+    "unit_price": 2.01
+   }
+  ],
+  "total_net": 413.92
+ },
+ {
+  "order_number": "SO-2026-00169",
+  "customer_id": "C-1009",
+  "order_date": "2026-04-02",
+  "status": "open",
+  "delivery_address": "Speicherstraße 62, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1060",
+    "qty": 100,
+    "unit_price": 7.19
+   }
+  ],
+  "total_net": 719.0
+ },
+ {
+  "order_number": "SO-2026-00170",
+  "customer_id": "C-1010",
+  "order_date": "2026-05-11",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1022",
+    "qty": 20,
+    "unit_price": 30.36
+   },
+   {
+    "sku": "NW-1012",
+    "qty": 5,
+    "unit_price": 1.82
+   }
+  ],
+  "total_net": 616.3
+ },
+ {
+  "order_number": "SO-2026-00171",
+  "customer_id": "C-1011",
+  "order_date": "2026-08-24",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 6, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1105",
+    "qty": 250,
+    "unit_price": 9.63
+   },
+   {
+    "sku": "NW-1009",
+    "qty": 250,
+    "unit_price": 17.76
+   },
+   {
+    "sku": "NW-1058",
+    "qty": 100,
+    "unit_price": 25.61
+   },
+   {
+    "sku": "NW-1068",
+    "qty": 5,
+    "unit_price": 35.86
+   }
+  ],
+  "total_net": 9587.8
+ },
+ {
+  "order_number": "SO-2026-00172",
+  "customer_id": "C-1012",
+  "order_date": "2026-06-27",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 24, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1097",
+    "qty": 250,
+    "unit_price": 36.8
+   }
+  ],
+  "total_net": 9200.0
+ },
+ {
+  "order_number": "SO-2026-00173",
+  "customer_id": "C-1013",
+  "order_date": "2026-04-02",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 103, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1076",
+    "qty": 5,
+    "unit_price": 38.5
+   },
+   {
+    "sku": "NW-1007",
+    "qty": 20,
+    "unit_price": 38.27
+   },
+   {
+    "sku": "NW-1025",
+    "qty": 100,
+    "unit_price": 21.89
+   }
+  ],
+  "total_net": 3146.9
+ },
+ {
+  "order_number": "SO-2026-00174",
+  "customer_id": "C-1014",
+  "order_date": "2026-05-07",
+  "status": "open",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1006",
+    "qty": 2,
+    "unit_price": 1.05
+   },
+   {
+    "sku": "NW-1110",
+    "qty": 5,
+    "unit_price": 1.11
+   },
+   {
+    "sku": "NW-1020",
+    "qty": 250,
+    "unit_price": 52.02
+   },
+   {
+    "sku": "NW-1101",
+    "qty": 20,
+    "unit_price": 94.47
+   }
+  ],
+  "total_net": 14902.05
+ },
+ {
+  "order_number": "SO-2026-00175",
+  "customer_id": "C-1015",
+  "order_date": "2026-04-27",
+  "status": "delivered",
+  "delivery_address": "Lagerstraße 51, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1105",
+    "qty": 250,
+    "unit_price": 9.63
+   }
+  ],
+  "total_net": 2407.5
+ },
+ {
+  "order_number": "SO-2026-00176",
+  "customer_id": "C-1016",
+  "order_date": "2026-03-11",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 120, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1024",
+    "qty": 250,
+    "unit_price": 2.53
+   },
+   {
+    "sku": "NW-1000",
+    "qty": 10,
+    "unit_price": 1.02
+   },
+   {
+    "sku": "NW-1041",
+    "qty": 5,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 658.4
+ },
+ {
+  "order_number": "SO-2026-00177",
+  "customer_id": "C-1017",
+  "order_date": "2026-04-24",
+  "status": "delivered",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1098",
+    "qty": 250,
+    "unit_price": 11.75
+   },
+   {
+    "sku": "NW-1087",
+    "qty": 50,
+    "unit_price": 93.53
+   }
+  ],
+  "total_net": 7614.0
+ },
+ {
+  "order_number": "SO-2026-00178",
+  "customer_id": "C-1018",
+  "order_date": "2026-03-01",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 111, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1038",
+    "qty": 20,
+    "unit_price": 19.74
+   },
+   {
+    "sku": "NW-1113",
+    "qty": 50,
+    "unit_price": 0.17
+   },
+   {
+    "sku": "NW-1006",
+    "qty": 250,
+    "unit_price": 1.05
+   },
+   {
+    "sku": "NW-1035",
+    "qty": 50,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 822.8
+ },
+ {
+  "order_number": "SO-2026-00179",
+  "customer_id": "C-1019",
+  "order_date": "2026-08-05",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 5, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1106",
+    "qty": 5,
+    "unit_price": 0.31
+   }
+  ],
+  "total_net": 1.55
+ },
+ {
+  "order_number": "SO-2026-00180",
+  "customer_id": "C-1020",
+  "order_date": "2026-08-01",
+  "status": "open",
+  "delivery_address": "Gewerbering 99, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1023",
+    "qty": 100,
+    "unit_price": 43.28
+   },
+   {
+    "sku": "NW-1062",
+    "qty": 5,
+    "unit_price": 3.5
+   },
+   {
+    "sku": "NW-1015",
+    "qty": 5,
+    "unit_price": 11.7
+   },
+   {
+    "sku": "NW-1027",
+    "qty": 20,
+    "unit_price": 15.84
+   }
+  ],
+  "total_net": 4720.8
+ },
+ {
+  "order_number": "SO-2026-00181",
+  "customer_id": "C-1021",
+  "order_date": "2026-04-03",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 32, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1089",
+    "qty": 100,
+    "unit_price": 22.65
+   }
+  ],
+  "total_net": 2265.0
+ },
+ {
+  "order_number": "SO-2026-00182",
+  "customer_id": "C-1022",
+  "order_date": "2026-11-11",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 33, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1083",
+    "qty": 2,
+    "unit_price": 2.68
+   },
+   {
+    "sku": "NW-1046",
+    "qty": 250,
+    "unit_price": 15.07
+   },
+   {
+    "sku": "NW-1101",
+    "qty": 50,
+    "unit_price": 94.47
+   }
+  ],
+  "total_net": 8496.36
+ },
+ {
+  "order_number": "SO-2026-00183",
+  "customer_id": "C-1023",
+  "order_date": "2026-10-14",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 63, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1014",
+    "qty": 250,
+    "unit_price": 51.41
+   },
+   {
+    "sku": "NW-1003",
+    "qty": 20,
+    "unit_price": 17.17
+   },
+   {
+    "sku": "NW-1059",
+    "qty": 10,
+    "unit_price": 4.94
+   }
+  ],
+  "total_net": 13245.3
+ },
+ {
+  "order_number": "SO-2026-00184",
+  "customer_id": "C-1024",
+  "order_date": "2026-04-16",
+  "status": "shipped",
+  "delivery_address": "Lagerstraße 20, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1080",
+    "qty": 10,
+    "unit_price": 0.84
+   },
+   {
+    "sku": "NW-1095",
+    "qty": 2,
+    "unit_price": 84.29
+   }
+  ],
+  "total_net": 176.98
+ },
+ {
+  "order_number": "SO-2026-00185",
+  "customer_id": "C-1025",
+  "order_date": "2026-05-26",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1093",
+    "qty": 100,
+    "unit_price": 7.74
+   },
+   {
+    "sku": "NW-1003",
+    "qty": 250,
+    "unit_price": 17.17
+   },
+   {
+    "sku": "NW-1035",
+    "qty": 20,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 5129.3
+ },
+ {
+  "order_number": "SO-2026-00186",
+  "customer_id": "C-1026",
+  "order_date": "2026-04-15",
+  "status": "open",
+  "delivery_address": "Bahnhofstraße 33, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1006",
+    "qty": 2,
+    "unit_price": 1.05
+   },
+   {
+    "sku": "NW-1090",
+    "qty": 250,
+    "unit_price": 0.63
+   }
+  ],
+  "total_net": 159.6
+ },
+ {
+  "order_number": "SO-2026-00187",
+  "customer_id": "C-1027",
+  "order_date": "2026-04-09",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 38, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1104",
+    "qty": 250,
+    "unit_price": 61.49
+   },
+   {
+    "sku": "NW-1105",
+    "qty": 100,
+    "unit_price": 9.63
+   },
+   {
+    "sku": "NW-1094",
+    "qty": 20,
+    "unit_price": 13.03
+   }
+  ],
+  "total_net": 16596.1
+ },
+ {
+  "order_number": "SO-2026-00188",
+  "customer_id": "C-1028",
+  "order_date": "2026-06-04",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 39, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1044",
+    "qty": 10,
+    "unit_price": 0.16
+   },
+   {
+    "sku": "NW-1061",
+    "qty": 2,
+    "unit_price": 86.52
+   },
+   {
+    "sku": "NW-1076",
+    "qty": 2,
+    "unit_price": 38.5
+   },
+   {
+    "sku": "NW-1090",
+    "qty": 250,
+    "unit_price": 0.63
+   }
+  ],
+  "total_net": 409.14
+ },
+ {
+  "order_number": "SO-2026-00189",
+  "customer_id": "C-1029",
+  "order_date": "2026-06-27",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1082",
+    "qty": 100,
+    "unit_price": 17.02
+   },
+   {
+    "sku": "NW-1010",
+    "qty": 50,
+    "unit_price": 4.31
+   }
+  ],
+  "total_net": 1917.5
+ },
+ {
+  "order_number": "SO-2026-00190",
+  "customer_id": "C-1030",
+  "order_date": "2026-09-04",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1018",
+    "qty": 100,
+    "unit_price": 0.89
+   }
+  ],
+  "total_net": 89.0
+ },
+ {
+  "order_number": "SO-2026-00191",
+  "customer_id": "C-1031",
+  "order_date": "2026-08-28",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1104",
+    "qty": 100,
+    "unit_price": 61.49
+   },
+   {
+    "sku": "NW-1033",
+    "qty": 20,
+    "unit_price": 14.67
+   },
+   {
+    "sku": "NW-1017",
+    "qty": 5,
+    "unit_price": 12.95
+   }
+  ],
+  "total_net": 6507.15
+ },
+ {
+  "order_number": "SO-2026-00192",
+  "customer_id": "C-1032",
+  "order_date": "2026-05-14",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1108",
+    "qty": 100,
+    "unit_price": 106.46
+   }
+  ],
+  "total_net": 10646.0
+ },
+ {
+  "order_number": "SO-2026-00193",
+  "customer_id": "C-1033",
+  "order_date": "2026-08-21",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 41, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1082",
+    "qty": 2,
+    "unit_price": 17.02
+   }
+  ],
+  "total_net": 34.04
+ },
+ {
+  "order_number": "SO-2026-00194",
+  "customer_id": "C-1034",
+  "order_date": "2026-05-30",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 31, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1097",
+    "qty": 2,
+    "unit_price": 36.8
+   },
+   {
+    "sku": "NW-1068",
+    "qty": 100,
+    "unit_price": 35.86
+   },
+   {
+    "sku": "NW-1067",
+    "qty": 100,
+    "unit_price": 2.58
+   },
+   {
+    "sku": "NW-1041",
+    "qty": 5,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 3933.3
+ },
+ {
+  "order_number": "SO-2026-00195",
+  "customer_id": "C-1035",
+  "order_date": "2026-05-25",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 79, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1008",
+    "qty": 5,
+    "unit_price": 95.23
+   }
+  ],
+  "total_net": 476.15
+ },
+ {
+  "order_number": "SO-2026-00196",
+  "customer_id": "C-1036",
+  "order_date": "2026-05-11",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 95, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1030",
+    "qty": 250,
+    "unit_price": 10.9
+   },
+   {
+    "sku": "NW-1105",
+    "qty": 20,
+    "unit_price": 9.63
+   },
+   {
+    "sku": "NW-1115",
+    "qty": 20,
+    "unit_price": 9.06
+   }
+  ],
+  "total_net": 3098.8
+ },
+ {
+  "order_number": "SO-2026-00197",
+  "customer_id": "C-1037",
+  "order_date": "2026-05-21",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1043",
+    "qty": 10,
+    "unit_price": 79.67
+   },
+   {
+    "sku": "NW-1061",
+    "qty": 5,
+    "unit_price": 86.52
+   },
+   {
+    "sku": "NW-1023",
+    "qty": 50,
+    "unit_price": 43.28
+   },
+   {
+    "sku": "NW-1035",
+    "qty": 20,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 3456.1
+ },
+ {
+  "order_number": "SO-2026-00198",
+  "customer_id": "C-1038",
+  "order_date": "2026-03-19",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 44, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1009",
+    "qty": 250,
+    "unit_price": 17.76
+   },
+   {
+    "sku": "NW-1050",
+    "qty": 100,
+    "unit_price": 31.91
+   },
+   {
+    "sku": "NW-1056",
+    "qty": 100,
+    "unit_price": 33.21
+   }
+  ],
+  "total_net": 10952.0
+ },
+ {
+  "order_number": "SO-2026-00199",
+  "customer_id": "C-1039",
+  "order_date": "2026-11-05",
+  "status": "open",
+  "delivery_address": "Werftstraße 73, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1042",
+    "qty": 5,
+    "unit_price": 1.71
+   }
+  ],
+  "total_net": 8.55
+ },
+ {
+  "order_number": "SO-2026-00200",
+  "customer_id": "C-1040",
+  "order_date": "2026-04-26",
+  "status": "shipped",
+  "delivery_address": "Am Kanal 4, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1015",
+    "qty": 2,
+    "unit_price": 11.7
+   },
+   {
+    "sku": "NW-1064",
+    "qty": 250,
+    "unit_price": 61.17
+   },
+   {
+    "sku": "NW-1052",
+    "qty": 20,
+    "unit_price": 16.06
+   }
+  ],
+  "total_net": 15637.1
+ },
+ {
+  "order_number": "SO-2026-00201",
+  "customer_id": "C-1017",
+  "order_date": "2026-06-12",
+  "status": "open",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1012",
+    "qty": 50,
+    "unit_price": 1.82
+   }
+  ],
+  "total_net": 91.0
+ },
+ {
+  "order_number": "SO-2026-00202",
+  "customer_id": "C-1030",
+  "order_date": "2026-10-25",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1079",
+    "qty": 20,
+    "unit_price": 36.8
+   }
+  ],
+  "total_net": 736.0
+ },
+ {
+  "order_number": "SO-2026-00203",
+  "customer_id": "C-1013",
+  "order_date": "2026-05-01",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 103, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1021",
+    "qty": 250,
+    "unit_price": 2.89
+   },
+   {
+    "sku": "NW-1092",
+    "qty": 50,
+    "unit_price": 107.69
+   }
+  ],
+  "total_net": 6107.0
+ },
+ {
+  "order_number": "SO-2026-00204",
+  "customer_id": "C-1027",
+  "order_date": "2026-08-13",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 38, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1069",
+    "qty": 50,
+    "unit_price": 14.16
+   },
+   {
+    "sku": "NW-1110",
+    "qty": 100,
+    "unit_price": 1.11
+   }
+  ],
+  "total_net": 819.0
+ },
+ {
+  "order_number": "SO-2026-00205",
+  "customer_id": "C-1025",
+  "order_date": "2026-06-30",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1100",
+    "qty": 250,
+    "unit_price": 12.35
+   }
+  ],
+  "total_net": 3087.5
+ },
+ {
+  "order_number": "SO-2026-00206",
+  "customer_id": "C-1001",
+  "order_date": "2026-07-21",
+  "status": "open",
+  "delivery_address": "Hafenstraße 89, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1018",
+    "qty": 50,
+    "unit_price": 0.89
+   }
+  ],
+  "total_net": 44.5
+ },
+ {
+  "order_number": "SO-2026-00207",
+  "customer_id": "C-1037",
+  "order_date": "2026-03-13",
+  "status": "open",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1095",
+    "qty": 250,
+    "unit_price": 84.29
+   },
+   {
+    "sku": "NW-1104",
+    "qty": 50,
+    "unit_price": 61.49
+   },
+   {
+    "sku": "NW-1078",
+    "qty": 50,
+    "unit_price": 8.39
+   }
+  ],
+  "total_net": 24566.5
+ },
+ {
+  "order_number": "SO-2026-00208",
+  "customer_id": "C-1004",
+  "order_date": "2026-02-22",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 23, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1062",
+    "qty": 250,
+    "unit_price": 3.5
+   },
+   {
+    "sku": "NW-1023",
+    "qty": 250,
+    "unit_price": 43.28
+   },
+   {
+    "sku": "NW-1117",
+    "qty": 100,
+    "unit_price": 39.78
+   }
+  ],
+  "total_net": 15673.0
+ },
+ {
+  "order_number": "SO-2026-00209",
+  "customer_id": "C-1032",
+  "order_date": "2026-07-08",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1080",
+    "qty": 10,
+    "unit_price": 0.84
+   }
+  ],
+  "total_net": 8.4
+ },
+ {
+  "order_number": "SO-2026-00210",
+  "customer_id": "C-1010",
+  "order_date": "2026-07-13",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1098",
+    "qty": 100,
+    "unit_price": 11.75
+   },
+   {
+    "sku": "NW-1104",
+    "qty": 20,
+    "unit_price": 61.49
+   },
+   {
+    "sku": "NW-1070",
+    "qty": 2,
+    "unit_price": 10.88
+   },
+   {
+    "sku": "NW-1004",
+    "qty": 2,
+    "unit_price": 30.79
+   }
+  ],
+  "total_net": 2488.14
+ },
+ {
+  "order_number": "SO-2026-00211",
+  "customer_id": "C-1019",
+  "order_date": "2026-05-20",
+  "status": "shipped",
+  "delivery_address": "Bahnhofstraße 5, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1111",
+    "qty": 5,
+    "unit_price": 10.33
+   },
+   {
+    "sku": "NW-1097",
+    "qty": 2,
+    "unit_price": 36.8
+   },
+   {
+    "sku": "NW-1065",
+    "qty": 2,
+    "unit_price": 11.87
+   }
+  ],
+  "total_net": 148.99
+ },
+ {
+  "order_number": "SO-2026-00212",
+  "customer_id": "C-1038",
+  "order_date": "2026-10-13",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 44, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1089",
+    "qty": 20,
+    "unit_price": 22.65
+   },
+   {
+    "sku": "NW-1072",
+    "qty": 100,
+    "unit_price": 0.6
+   }
+  ],
+  "total_net": 513.0
+ },
+ {
+  "order_number": "SO-2026-00213",
+  "customer_id": "C-1030",
+  "order_date": "2026-06-20",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1002",
+    "qty": 2,
+    "unit_price": 68.01
+   },
+   {
+    "sku": "NW-1054",
+    "qty": 50,
+    "unit_price": 28.46
+   },
+   {
+    "sku": "NW-1092",
+    "qty": 100,
+    "unit_price": 107.69
+   }
+  ],
+  "total_net": 12328.02
+ },
+ {
+  "order_number": "SO-2026-00214",
+  "customer_id": "C-1006",
+  "order_date": "2026-07-19",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 56, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1119",
+    "qty": 20,
+    "unit_price": 9.22
+   },
+   {
+    "sku": "NW-1043",
+    "qty": 5,
+    "unit_price": 79.67
+   },
+   {
+    "sku": "NW-1049",
+    "qty": 20,
+    "unit_price": 46.47
+   },
+   {
+    "sku": "NW-1004",
+    "qty": 2,
+    "unit_price": 30.79
+   }
+  ],
+  "total_net": 1573.73
+ },
+ {
+  "order_number": "SO-2026-00215",
+  "customer_id": "C-1037",
+  "order_date": "2026-05-01",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1089",
+    "qty": 10,
+    "unit_price": 22.65
+   },
+   {
+    "sku": "NW-1047",
+    "qty": 100,
+    "unit_price": 2.22
+   }
+  ],
+  "total_net": 448.5
+ },
+ {
+  "order_number": "SO-2026-00216",
+  "customer_id": "C-1031",
+  "order_date": "2026-07-16",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 17, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1078",
+    "qty": 10,
+    "unit_price": 8.39
+   },
+   {
+    "sku": "NW-1108",
+    "qty": 5,
+    "unit_price": 106.46
+   },
+   {
+    "sku": "NW-1057",
+    "qty": 250,
+    "unit_price": 0.19
+   }
+  ],
+  "total_net": 663.7
+ },
+ {
+  "order_number": "SO-2026-00217",
+  "customer_id": "C-1003",
+  "order_date": "2026-03-12",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 94, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1117",
+    "qty": 10,
+    "unit_price": 39.78
+   },
+   {
+    "sku": "NW-1114",
+    "qty": 20,
+    "unit_price": 32.93
+   },
+   {
+    "sku": "NW-1043",
+    "qty": 250,
+    "unit_price": 79.67
+   }
+  ],
+  "total_net": 20973.9
+ },
+ {
+  "order_number": "SO-2026-00218",
+  "customer_id": "C-1002",
+  "order_date": "2026-03-30",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 12, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1000",
+    "qty": 20,
+    "unit_price": 1.02
+   }
+  ],
+  "total_net": 20.4
+ },
+ {
+  "order_number": "SO-2026-00219",
+  "customer_id": "C-1022",
+  "order_date": "2026-09-23",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 33, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1086",
+    "qty": 2,
+    "unit_price": 9.76
+   },
+   {
+    "sku": "NW-1019",
+    "qty": 2,
+    "unit_price": 25.63
+   }
+  ],
+  "total_net": 70.78
+ },
+ {
+  "order_number": "SO-2026-00220",
+  "customer_id": "C-1032",
+  "order_date": "2026-07-01",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1016",
+    "qty": 100,
+    "unit_price": 2.01
+   },
+   {
+    "sku": "NW-1084",
+    "qty": 250,
+    "unit_price": 36.8
+   }
+  ],
+  "total_net": 9401.0
+ },
+ {
+  "order_number": "SO-2026-00221",
+  "customer_id": "C-1005",
+  "order_date": "2026-05-16",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 76, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1112",
+    "qty": 10,
+    "unit_price": 14.04
+   },
+   {
+    "sku": "NW-1113",
+    "qty": 50,
+    "unit_price": 0.17
+   }
+  ],
+  "total_net": 148.9
+ },
+ {
+  "order_number": "SO-2026-00222",
+  "customer_id": "C-1020",
+  "order_date": "2026-05-25",
+  "status": "delivered",
+  "delivery_address": "Gewerbering 99, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1112",
+    "qty": 50,
+    "unit_price": 14.04
+   },
+   {
+    "sku": "NW-1093",
+    "qty": 10,
+    "unit_price": 7.74
+   },
+   {
+    "sku": "NW-1082",
+    "qty": 10,
+    "unit_price": 17.02
+   },
+   {
+    "sku": "NW-1038",
+    "qty": 50,
+    "unit_price": 19.74
+   }
+  ],
+  "total_net": 1936.6
+ },
+ {
+  "order_number": "SO-2026-00223",
+  "customer_id": "C-1001",
+  "order_date": "2026-10-09",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 89, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1081",
+    "qty": 5,
+    "unit_price": 37.28
+   },
+   {
+    "sku": "NW-1052",
+    "qty": 5,
+    "unit_price": 16.06
+   }
+  ],
+  "total_net": 266.7
+ },
+ {
+  "order_number": "SO-2026-00224",
+  "customer_id": "C-1034",
+  "order_date": "2026-07-18",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 31, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1010",
+    "qty": 5,
+    "unit_price": 4.31
+   }
+  ],
+  "total_net": 21.55
+ },
+ {
+  "order_number": "SO-2026-00225",
+  "customer_id": "C-1037",
+  "order_date": "2026-10-28",
+  "status": "open",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1027",
+    "qty": 20,
+    "unit_price": 15.84
+   }
+  ],
+  "total_net": 316.8
+ },
+ {
+  "order_number": "SO-2026-00226",
+  "customer_id": "C-1008",
+  "order_date": "2026-03-02",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1056",
+    "qty": 10,
+    "unit_price": 33.21
+   },
+   {
+    "sku": "NW-1085",
+    "qty": 100,
+    "unit_price": 2.51
+   },
+   {
+    "sku": "NW-1013",
+    "qty": 10,
+    "unit_price": 14.4
+   },
+   {
+    "sku": "NW-1012",
+    "qty": 250,
+    "unit_price": 1.82
+   }
+  ],
+  "total_net": 1182.1
+ },
+ {
+  "order_number": "SO-2026-00227",
+  "customer_id": "C-1006",
+  "order_date": "2026-04-09",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 56, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1060",
+    "qty": 20,
+    "unit_price": 7.19
+   }
+  ],
+  "total_net": 143.8
+ },
+ {
+  "order_number": "SO-2026-00228",
+  "customer_id": "C-1039",
+  "order_date": "2026-06-14",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 73, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1070",
+    "qty": 250,
+    "unit_price": 10.88
+   },
+   {
+    "sku": "NW-1092",
+    "qty": 100,
+    "unit_price": 107.69
+   },
+   {
+    "sku": "NW-1069",
+    "qty": 10,
+    "unit_price": 14.16
+   },
+   {
+    "sku": "NW-1024",
+    "qty": 100,
+    "unit_price": 2.53
+   }
+  ],
+  "total_net": 13883.6
+ },
+ {
+  "order_number": "SO-2026-00229",
+  "customer_id": "C-1030",
+  "order_date": "2026-10-09",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1061",
+    "qty": 20,
+    "unit_price": 86.52
+   }
+  ],
+  "total_net": 1730.4
+ },
+ {
+  "order_number": "SO-2026-00230",
+  "customer_id": "C-1009",
+  "order_date": "2026-02-10",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 62, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1004",
+    "qty": 250,
+    "unit_price": 30.79
+   },
+   {
+    "sku": "NW-1051",
+    "qty": 50,
+    "unit_price": 14.6
+   }
+  ],
+  "total_net": 8427.5
+ },
+ {
+  "order_number": "SO-2026-00231",
+  "customer_id": "C-1014",
+  "order_date": "2026-02-16",
+  "status": "open",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1119",
+    "qty": 2,
+    "unit_price": 9.22
+   }
+  ],
+  "total_net": 18.44
+ },
+ {
+  "order_number": "SO-2026-00232",
+  "customer_id": "C-1029",
+  "order_date": "2026-04-26",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1062",
+    "qty": 2,
+    "unit_price": 3.5
+   },
+   {
+    "sku": "NW-1094",
+    "qty": 5,
+    "unit_price": 13.03
+   },
+   {
+    "sku": "NW-1070",
+    "qty": 100,
+    "unit_price": 10.88
+   },
+   {
+    "sku": "NW-1086",
+    "qty": 50,
+    "unit_price": 9.76
+   }
+  ],
+  "total_net": 1648.15
+ },
+ {
+  "order_number": "SO-2026-00233",
+  "customer_id": "C-1037",
+  "order_date": "2026-09-06",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1103",
+    "qty": 2,
+    "unit_price": 13.4
+   }
+  ],
+  "total_net": 26.8
+ },
+ {
+  "order_number": "SO-2026-00234",
+  "customer_id": "C-1035",
+  "order_date": "2026-04-05",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 79, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1111",
+    "qty": 50,
+    "unit_price": 10.33
+   },
+   {
+    "sku": "NW-1114",
+    "qty": 2,
+    "unit_price": 32.93
+   }
+  ],
+  "total_net": 582.36
+ },
+ {
+  "order_number": "SO-2026-00235",
+  "customer_id": "C-1021",
+  "order_date": "2026-04-11",
+  "status": "open",
+  "delivery_address": "Werftstraße 32, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1035",
+    "qty": 250,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 785.0
+ },
+ {
+  "order_number": "SO-2026-00236",
+  "customer_id": "C-1007",
+  "order_date": "2026-04-15",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 94, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1107",
+    "qty": 100,
+    "unit_price": 41.33
+   }
+  ],
+  "total_net": 4133.0
+ },
+ {
+  "order_number": "SO-2026-00237",
+  "customer_id": "C-1017",
+  "order_date": "2026-08-26",
+  "status": "shipped",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1055",
+    "qty": 250,
+    "unit_price": 8.87
+   },
+   {
+    "sku": "NW-1014",
+    "qty": 50,
+    "unit_price": 51.41
+   },
+   {
+    "sku": "NW-1097",
+    "qty": 20,
+    "unit_price": 36.8
+   }
+  ],
+  "total_net": 5524.0
+ },
+ {
+  "order_number": "SO-2026-00238",
+  "customer_id": "C-1004",
+  "order_date": "2026-09-14",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 23, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1119",
+    "qty": 20,
+    "unit_price": 9.22
+   },
+   {
+    "sku": "NW-1047",
+    "qty": 250,
+    "unit_price": 2.22
+   },
+   {
+    "sku": "NW-1103",
+    "qty": 2,
+    "unit_price": 13.4
+   },
+   {
+    "sku": "NW-1102",
+    "qty": 5,
+    "unit_price": 79.78
+   }
+  ],
+  "total_net": 1165.1
+ },
+ {
+  "order_number": "SO-2026-00239",
+  "customer_id": "C-1017",
+  "order_date": "2026-07-13",
+  "status": "delivered",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1017",
+    "qty": 2,
+    "unit_price": 12.95
+   },
+   {
+    "sku": "NW-1005",
+    "qty": 20,
+    "unit_price": 48.53
+   },
+   {
+    "sku": "NW-1056",
+    "qty": 250,
+    "unit_price": 33.21
+   },
+   {
+    "sku": "NW-1076",
+    "qty": 100,
+    "unit_price": 38.5
+   }
+  ],
+  "total_net": 13149.0
+ },
+ {
+  "order_number": "SO-2026-00240",
+  "customer_id": "C-1016",
+  "order_date": "2026-05-14",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 120, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1064",
+    "qty": 5,
+    "unit_price": 61.17
+   },
+   {
+    "sku": "NW-1039",
+    "qty": 10,
+    "unit_price": 3.69
+   },
+   {
+    "sku": "NW-1004",
+    "qty": 50,
+    "unit_price": 30.79
+   },
+   {
+    "sku": "NW-1014",
+    "qty": 5,
+    "unit_price": 51.41
+   }
+  ],
+  "total_net": 2139.3
+ },
+ {
+  "order_number": "SO-2026-00241",
+  "customer_id": "C-1032",
+  "order_date": "2026-06-01",
+  "status": "shipped",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1107",
+    "qty": 50,
+    "unit_price": 41.33
+   },
+   {
+    "sku": "NW-1093",
+    "qty": 50,
+    "unit_price": 7.74
+   },
+   {
+    "sku": "NW-1055",
+    "qty": 50,
+    "unit_price": 8.87
+   }
+  ],
+  "total_net": 2897.0
+ },
+ {
+  "order_number": "SO-2026-00242",
+  "customer_id": "C-1005",
+  "order_date": "2026-08-03",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 76, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1093",
+    "qty": 50,
+    "unit_price": 7.74
+   }
+  ],
+  "total_net": 387.0
+ },
+ {
+  "order_number": "SO-2026-00243",
+  "customer_id": "C-1024",
+  "order_date": "2026-06-01",
+  "status": "shipped",
+  "delivery_address": "Lagerstraße 20, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1018",
+    "qty": 20,
+    "unit_price": 0.89
+   },
+   {
+    "sku": "NW-1089",
+    "qty": 2,
+    "unit_price": 22.65
+   },
+   {
+    "sku": "NW-1055",
+    "qty": 10,
+    "unit_price": 8.87
+   },
+   {
+    "sku": "NW-1086",
+    "qty": 100,
+    "unit_price": 9.76
+   }
+  ],
+  "total_net": 1127.8
+ },
+ {
+  "order_number": "SO-2026-00244",
+  "customer_id": "C-1009",
+  "order_date": "2026-05-05",
+  "status": "shipped",
+  "delivery_address": "Speicherstraße 62, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1074",
+    "qty": 100,
+    "unit_price": 64.99
+   },
+   {
+    "sku": "NW-1103",
+    "qty": 5,
+    "unit_price": 13.4
+   },
+   {
+    "sku": "NW-1041",
+    "qty": 10,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 6597.4
+ },
+ {
+  "order_number": "SO-2026-00245",
+  "customer_id": "C-1011",
+  "order_date": "2026-03-16",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 6, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1040",
+    "qty": 50,
+    "unit_price": 23.89
+   },
+   {
+    "sku": "NW-1090",
+    "qty": 2,
+    "unit_price": 0.63
+   },
+   {
+    "sku": "NW-1119",
+    "qty": 5,
+    "unit_price": 9.22
+   },
+   {
+    "sku": "NW-1036",
+    "qty": 5,
+    "unit_price": 4.43
+   }
+  ],
+  "total_net": 1264.01
+ },
+ {
+  "order_number": "SO-2026-00246",
+  "customer_id": "C-1030",
+  "order_date": "2026-10-27",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1100",
+    "qty": 250,
+    "unit_price": 12.35
+   },
+   {
+    "sku": "NW-1048",
+    "qty": 100,
+    "unit_price": 1.6
+   },
+   {
+    "sku": "NW-1112",
+    "qty": 5,
+    "unit_price": 14.04
+   },
+   {
+    "sku": "NW-1116",
+    "qty": 10,
+    "unit_price": 6.29
+   }
+  ],
+  "total_net": 3380.6
+ },
+ {
+  "order_number": "SO-2026-00247",
+  "customer_id": "C-1008",
+  "order_date": "2026-03-16",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1077",
+    "qty": 50,
+    "unit_price": 57.25
+   },
+   {
+    "sku": "NW-1070",
+    "qty": 10,
+    "unit_price": 10.88
+   },
+   {
+    "sku": "NW-1072",
+    "qty": 20,
+    "unit_price": 0.6
+   },
+   {
+    "sku": "NW-1039",
+    "qty": 2,
+    "unit_price": 3.69
+   }
+  ],
+  "total_net": 2990.68
+ },
+ {
+  "order_number": "SO-2026-00248",
+  "customer_id": "C-1012",
+  "order_date": "2026-09-04",
+  "status": "open",
+  "delivery_address": "Hafenstraße 24, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1074",
+    "qty": 2,
+    "unit_price": 64.99
+   }
+  ],
+  "total_net": 129.98
+ },
+ {
+  "order_number": "SO-2026-00249",
+  "customer_id": "C-1022",
+  "order_date": "2026-08-27",
+  "status": "open",
+  "delivery_address": "Werftstraße 33, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1074",
+    "qty": 20,
+    "unit_price": 64.99
+   },
+   {
+    "sku": "NW-1064",
+    "qty": 50,
+    "unit_price": 61.17
+   }
+  ],
+  "total_net": 4358.3
+ },
+ {
+  "order_number": "SO-2026-00250",
+  "customer_id": "C-1038",
+  "order_date": "2026-06-07",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 44, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1006",
+    "qty": 20,
+    "unit_price": 1.05
+   },
+   {
+    "sku": "NW-1026",
+    "qty": 10,
+    "unit_price": 35.31
+   },
+   {
+    "sku": "NW-1021",
+    "qty": 5,
+    "unit_price": 2.89
+   }
+  ],
+  "total_net": 388.55
+ },
+ {
+  "order_number": "SO-2026-00251",
+  "customer_id": "C-1019",
+  "order_date": "2026-05-02",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 5, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1102",
+    "qty": 250,
+    "unit_price": 79.78
+   }
+  ],
+  "total_net": 19945.0
+ },
+ {
+  "order_number": "SO-2026-00252",
+  "customer_id": "C-1016",
+  "order_date": "2026-03-21",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 120, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1049",
+    "qty": 5,
+    "unit_price": 46.47
+   },
+   {
+    "sku": "NW-1113",
+    "qty": 100,
+    "unit_price": 0.17
+   }
+  ],
+  "total_net": 249.35
+ },
+ {
+  "order_number": "SO-2026-00253",
+  "customer_id": "C-1023",
+  "order_date": "2026-01-30",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 63, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1032",
+    "qty": 100,
+    "unit_price": 15.85
+   },
+   {
+    "sku": "NW-1012",
+    "qty": 20,
+    "unit_price": 1.82
+   },
+   {
+    "sku": "NW-1091",
+    "qty": 10,
+    "unit_price": 22.58
+   }
+  ],
+  "total_net": 1847.2
+ },
+ {
+  "order_number": "SO-2026-00254",
+  "customer_id": "C-1020",
+  "order_date": "2026-03-29",
+  "status": "delivered",
+  "delivery_address": "Gewerbering 99, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1010",
+    "qty": 250,
+    "unit_price": 4.31
+   },
+   {
+    "sku": "NW-1029",
+    "qty": 2,
+    "unit_price": 0.75
+   }
+  ],
+  "total_net": 1079.0
+ },
+ {
+  "order_number": "SO-2026-00255",
+  "customer_id": "C-1008",
+  "order_date": "2026-02-04",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1037",
+    "qty": 10,
+    "unit_price": 17.68
+   },
+   {
+    "sku": "NW-1054",
+    "qty": 250,
+    "unit_price": 28.46
+   }
+  ],
+  "total_net": 7291.8
+ },
+ {
+  "order_number": "SO-2026-00256",
+  "customer_id": "C-1022",
+  "order_date": "2026-09-03",
+  "status": "open",
+  "delivery_address": "Werftstraße 33, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1051",
+    "qty": 100,
+    "unit_price": 14.6
+   },
+   {
+    "sku": "NW-1096",
+    "qty": 5,
+    "unit_price": 0.88
+   }
+  ],
+  "total_net": 1464.4
+ },
+ {
+  "order_number": "SO-2026-00257",
+  "customer_id": "C-1014",
+  "order_date": "2026-03-02",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1038",
+    "qty": 2,
+    "unit_price": 19.74
+   },
+   {
+    "sku": "NW-1036",
+    "qty": 20,
+    "unit_price": 4.43
+   },
+   {
+    "sku": "NW-1015",
+    "qty": 5,
+    "unit_price": 11.7
+   }
+  ],
+  "total_net": 186.58
+ },
+ {
+  "order_number": "SO-2026-00258",
+  "customer_id": "C-1021",
+  "order_date": "2026-05-03",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 32, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1010",
+    "qty": 50,
+    "unit_price": 4.31
+   }
+  ],
+  "total_net": 215.5
+ },
+ {
+  "order_number": "SO-2026-00259",
+  "customer_id": "C-1033",
+  "order_date": "2026-02-12",
+  "status": "open",
+  "delivery_address": "Industrieweg 41, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1028",
+    "qty": 10,
+    "unit_price": 21.02
+   }
+  ],
+  "total_net": 210.2
+ },
+ {
+  "order_number": "SO-2026-00260",
+  "customer_id": "C-1003",
+  "order_date": "2026-04-12",
+  "status": "open",
+  "delivery_address": "Hafenstraße 94, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1094",
+    "qty": 250,
+    "unit_price": 13.03
+   },
+   {
+    "sku": "NW-1040",
+    "qty": 20,
+    "unit_price": 23.89
+   }
+  ],
+  "total_net": 3735.3
+ },
+ {
+  "order_number": "SO-2026-00261",
+  "customer_id": "C-1008",
+  "order_date": "2026-03-07",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1117",
+    "qty": 2,
+    "unit_price": 39.78
+   }
+  ],
+  "total_net": 79.56
+ },
+ {
+  "order_number": "SO-2026-00262",
+  "customer_id": "C-1007",
+  "order_date": "2026-07-26",
+  "status": "open",
+  "delivery_address": "Industrieweg 94, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1090",
+    "qty": 100,
+    "unit_price": 0.63
+   },
+   {
+    "sku": "NW-1082",
+    "qty": 50,
+    "unit_price": 17.02
+   }
+  ],
+  "total_net": 914.0
+ },
+ {
+  "order_number": "SO-2026-00263",
+  "customer_id": "C-1032",
+  "order_date": "2026-10-21",
+  "status": "open",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1077",
+    "qty": 50,
+    "unit_price": 57.25
+   },
+   {
+    "sku": "NW-1066",
+    "qty": 5,
+    "unit_price": 17.81
+   }
+  ],
+  "total_net": 2951.55
+ },
+ {
+  "order_number": "SO-2026-00264",
+  "customer_id": "C-1010",
+  "order_date": "2026-10-06",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1054",
+    "qty": 50,
+    "unit_price": 28.46
+   },
+   {
+    "sku": "NW-1028",
+    "qty": 20,
+    "unit_price": 21.02
+   },
+   {
+    "sku": "NW-1034",
+    "qty": 2,
+    "unit_price": 71.49
+   },
+   {
+    "sku": "NW-1104",
+    "qty": 10,
+    "unit_price": 61.49
+   }
+  ],
+  "total_net": 2601.28
+ },
+ {
+  "order_number": "SO-2026-00265",
+  "customer_id": "C-1008",
+  "order_date": "2026-05-01",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1010",
+    "qty": 50,
+    "unit_price": 4.31
+   },
+   {
+    "sku": "NW-1115",
+    "qty": 5,
+    "unit_price": 9.06
+   },
+   {
+    "sku": "NW-1060",
+    "qty": 20,
+    "unit_price": 7.19
+   }
+  ],
+  "total_net": 404.6
+ },
+ {
+  "order_number": "SO-2026-00266",
+  "customer_id": "C-1030",
+  "order_date": "2026-04-21",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1051",
+    "qty": 50,
+    "unit_price": 14.6
+   }
+  ],
+  "total_net": 730.0
+ },
+ {
+  "order_number": "SO-2026-00267",
+  "customer_id": "C-1022",
+  "order_date": "2026-02-12",
+  "status": "open",
+  "delivery_address": "Werftstraße 33, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1007",
+    "qty": 5,
+    "unit_price": 38.27
+   }
+  ],
+  "total_net": 191.35
+ },
+ {
+  "order_number": "SO-2026-00268",
+  "customer_id": "C-1008",
+  "order_date": "2026-02-19",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1044",
+    "qty": 20,
+    "unit_price": 0.16
+   }
+  ],
+  "total_net": 3.2
+ },
+ {
+  "order_number": "SO-2026-00269",
+  "customer_id": "C-1014",
+  "order_date": "2026-10-22",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1078",
+    "qty": 10,
+    "unit_price": 8.39
+   },
+   {
+    "sku": "NW-1040",
+    "qty": 250,
+    "unit_price": 23.89
+   }
+  ],
+  "total_net": 6056.4
+ },
+ {
+  "order_number": "SO-2026-00270",
+  "customer_id": "C-1019",
+  "order_date": "2026-06-29",
+  "status": "shipped",
+  "delivery_address": "Bahnhofstraße 5, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1111",
+    "qty": 2,
+    "unit_price": 10.33
+   }
+  ],
+  "total_net": 20.66
+ },
+ {
+  "order_number": "SO-2026-00271",
+  "customer_id": "C-1014",
+  "order_date": "2026-03-01",
+  "status": "open",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1061",
+    "qty": 2,
+    "unit_price": 86.52
+   },
+   {
+    "sku": "NW-1073",
+    "qty": 10,
+    "unit_price": 21.34
+   },
+   {
+    "sku": "NW-1006",
+    "qty": 10,
+    "unit_price": 1.05
+   }
+  ],
+  "total_net": 396.94
+ },
+ {
+  "order_number": "SO-2026-00272",
+  "customer_id": "C-1010",
+  "order_date": "2026-05-14",
+  "status": "open",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1006",
+    "qty": 5,
+    "unit_price": 1.05
+   },
+   {
+    "sku": "NW-1111",
+    "qty": 100,
+    "unit_price": 10.33
+   },
+   {
+    "sku": "NW-1000",
+    "qty": 100,
+    "unit_price": 1.02
+   }
+  ],
+  "total_net": 1140.25
+ },
+ {
+  "order_number": "SO-2026-00273",
+  "customer_id": "C-1033",
+  "order_date": "2026-08-20",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 41, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1097",
+    "qty": 50,
+    "unit_price": 36.8
+   },
+   {
+    "sku": "NW-1098",
+    "qty": 10,
+    "unit_price": 11.75
+   },
+   {
+    "sku": "NW-1109",
+    "qty": 20,
+    "unit_price": 78.48
+   },
+   {
+    "sku": "NW-1042",
+    "qty": 250,
+    "unit_price": 1.71
+   }
+  ],
+  "total_net": 3954.6
+ },
+ {
+  "order_number": "SO-2026-00274",
+  "customer_id": "C-1005",
+  "order_date": "2026-04-01",
+  "status": "open",
+  "delivery_address": "Industrieweg 76, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1048",
+    "qty": 100,
+    "unit_price": 1.6
+   }
+  ],
+  "total_net": 160.0
+ },
+ {
+  "order_number": "SO-2026-00275",
+  "customer_id": "C-1017",
+  "order_date": "2026-02-16",
+  "status": "open",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1095",
+    "qty": 20,
+    "unit_price": 84.29
+   }
+  ],
+  "total_net": 1685.8
+ },
+ {
+  "order_number": "SO-2026-00276",
+  "customer_id": "C-1038",
+  "order_date": "2026-03-19",
+  "status": "open",
+  "delivery_address": "Speicherstraße 44, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1116",
+    "qty": 5,
+    "unit_price": 6.29
+   }
+  ],
+  "total_net": 31.45
+ },
+ {
+  "order_number": "SO-2026-00277",
+  "customer_id": "C-1038",
+  "order_date": "2026-02-20",
+  "status": "open",
+  "delivery_address": "Speicherstraße 44, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1113",
+    "qty": 250,
+    "unit_price": 0.17
+   }
+  ],
+  "total_net": 42.5
+ },
+ {
+  "order_number": "SO-2026-00278",
+  "customer_id": "C-1036",
+  "order_date": "2026-04-12",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 95, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1046",
+    "qty": 250,
+    "unit_price": 15.07
+   },
+   {
+    "sku": "NW-1106",
+    "qty": 250,
+    "unit_price": 0.31
+   },
+   {
+    "sku": "NW-1074",
+    "qty": 50,
+    "unit_price": 64.99
+   },
+   {
+    "sku": "NW-1018",
+    "qty": 250,
+    "unit_price": 0.89
+   }
+  ],
+  "total_net": 7317.0
+ },
+ {
+  "order_number": "SO-2026-00279",
+  "customer_id": "C-1010",
+  "order_date": "2026-07-24",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1027",
+    "qty": 100,
+    "unit_price": 15.84
+   },
+   {
+    "sku": "NW-1081",
+    "qty": 5,
+    "unit_price": 37.28
+   },
+   {
+    "sku": "NW-1014",
+    "qty": 20,
+    "unit_price": 51.41
+   }
+  ],
+  "total_net": 2798.6
+ },
+ {
+  "order_number": "SO-2026-00280",
+  "customer_id": "C-1039",
+  "order_date": "2026-06-19",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 73, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1017",
+    "qty": 250,
+    "unit_price": 12.95
+   },
+   {
+    "sku": "NW-1036",
+    "qty": 5,
+    "unit_price": 4.43
+   }
+  ],
+  "total_net": 3259.65
+ },
+ {
+  "order_number": "SO-2026-00281",
+  "customer_id": "C-1040",
+  "order_date": "2026-04-03",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 4, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1020",
+    "qty": 2,
+    "unit_price": 52.02
+   }
+  ],
+  "total_net": 104.04
+ },
+ {
+  "order_number": "SO-2026-00282",
+  "customer_id": "C-1021",
+  "order_date": "2026-10-24",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 32, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1022",
+    "qty": 100,
+    "unit_price": 30.36
+   },
+   {
+    "sku": "NW-1096",
+    "qty": 5,
+    "unit_price": 0.88
+   },
+   {
+    "sku": "NW-1077",
+    "qty": 100,
+    "unit_price": 57.25
+   }
+  ],
+  "total_net": 8765.4
+ },
+ {
+  "order_number": "SO-2026-00283",
+  "customer_id": "C-1016",
+  "order_date": "2026-10-13",
+  "status": "shipped",
+  "delivery_address": "Industrieweg 120, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1065",
+    "qty": 250,
+    "unit_price": 11.87
+   }
+  ],
+  "total_net": 2967.5
+ },
+ {
+  "order_number": "SO-2026-00284",
+  "customer_id": "C-1014",
+  "order_date": "2026-03-14",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "lines": [
+   {
+    "sku": "NW-1102",
+    "qty": 20,
+    "unit_price": 79.78
+   },
+   {
+    "sku": "NW-1054",
+    "qty": 100,
+    "unit_price": 28.46
+   },
+   {
+    "sku": "NW-1031",
+    "qty": 250,
+    "unit_price": 74.37
+   },
+   {
+    "sku": "NW-1109",
+    "qty": 100,
+    "unit_price": 78.48
+   }
+  ],
+  "total_net": 30882.1
+ },
+ {
+  "order_number": "SO-2026-00285",
+  "customer_id": "C-1020",
+  "order_date": "2026-02-28",
+  "status": "shipped",
+  "delivery_address": "Gewerbering 99, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1032",
+    "qty": 100,
+    "unit_price": 15.85
+   },
+   {
+    "sku": "NW-1111",
+    "qty": 10,
+    "unit_price": 10.33
+   }
+  ],
+  "total_net": 1688.3
+ },
+ {
+  "order_number": "SO-2026-00286",
+  "customer_id": "C-1037",
+  "order_date": "2026-03-09",
+  "status": "delivered",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1036",
+    "qty": 100,
+    "unit_price": 4.43
+   },
+   {
+    "sku": "NW-1106",
+    "qty": 5,
+    "unit_price": 0.31
+   },
+   {
+    "sku": "NW-1063",
+    "qty": 250,
+    "unit_price": 23.82
+   },
+   {
+    "sku": "NW-1008",
+    "qty": 10,
+    "unit_price": 95.23
+   }
+  ],
+  "total_net": 7351.85
+ },
+ {
+  "order_number": "SO-2026-00287",
+  "customer_id": "C-1019",
+  "order_date": "2026-04-01",
+  "status": "delivered",
+  "delivery_address": "Bahnhofstraße 5, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1065",
+    "qty": 20,
+    "unit_price": 11.87
+   }
+  ],
+  "total_net": 237.4
+ },
+ {
+  "order_number": "SO-2026-00288",
+  "customer_id": "C-1029",
+  "order_date": "2026-07-22",
+  "status": "open",
+  "delivery_address": "Speicherstraße 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1026",
+    "qty": 100,
+    "unit_price": 35.31
+   },
+   {
+    "sku": "NW-1021",
+    "qty": 2,
+    "unit_price": 2.89
+   }
+  ],
+  "total_net": 3536.78
+ },
+ {
+  "order_number": "SO-2026-00289",
+  "customer_id": "C-1032",
+  "order_date": "2026-06-26",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1103",
+    "qty": 2,
+    "unit_price": 13.4
+   },
+   {
+    "sku": "NW-1085",
+    "qty": 20,
+    "unit_price": 2.51
+   }
+  ],
+  "total_net": 77.0
+ },
+ {
+  "order_number": "SO-2026-00290",
+  "customer_id": "C-1011",
+  "order_date": "2026-07-23",
+  "status": "shipped",
+  "delivery_address": "Hafenstraße 6, 39104 Magdeburg",
+  "lines": [
+   {
+    "sku": "NW-1051",
+    "qty": 50,
+    "unit_price": 14.6
+   },
+   {
+    "sku": "NW-1109",
+    "qty": 20,
+    "unit_price": 78.48
+   },
+   {
+    "sku": "NW-1035",
+    "qty": 250,
+    "unit_price": 3.14
+   }
+  ],
+  "total_net": 3084.6
+ },
+ {
+  "order_number": "SO-2026-00291",
+  "customer_id": "C-1020",
+  "order_date": "2026-03-23",
+  "status": "open",
+  "delivery_address": "Gewerbering 99, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1023",
+    "qty": 50,
+    "unit_price": 43.28
+   },
+   {
+    "sku": "NW-1034",
+    "qty": 5,
+    "unit_price": 71.49
+   }
+  ],
+  "total_net": 2521.45
+ },
+ {
+  "order_number": "SO-2026-00292",
+  "customer_id": "C-1040",
+  "order_date": "2026-08-22",
+  "status": "shipped",
+  "delivery_address": "Am Kanal 4, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1091",
+    "qty": 100,
+    "unit_price": 22.58
+   },
+   {
+    "sku": "NW-1071",
+    "qty": 100,
+    "unit_price": 88.35
+   }
+  ],
+  "total_net": 11093.0
+ },
+ {
+  "order_number": "SO-2026-00293",
+  "customer_id": "C-1008",
+  "order_date": "2026-05-03",
+  "status": "delivered",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "lines": [
+   {
+    "sku": "NW-1059",
+    "qty": 250,
+    "unit_price": 4.94
+   },
+   {
+    "sku": "NW-1038",
+    "qty": 50,
+    "unit_price": 19.74
+   },
+   {
+    "sku": "NW-1019",
+    "qty": 250,
+    "unit_price": 25.63
+   },
+   {
+    "sku": "NW-1108",
+    "qty": 2,
+    "unit_price": 106.46
+   }
+  ],
+  "total_net": 8842.42
+ },
+ {
+  "order_number": "SO-2026-00294",
+  "customer_id": "C-1029",
+  "order_date": "2026-04-27",
+  "status": "delivered",
+  "delivery_address": "Speicherstraße 116, 30159 Hannover",
+  "lines": [
+   {
+    "sku": "NW-1053",
+    "qty": 250,
+    "unit_price": 2.01
+   },
+   {
+    "sku": "NW-1035",
+    "qty": 2,
+    "unit_price": 3.14
+   },
+   {
+    "sku": "NW-1073",
+    "qty": 20,
+    "unit_price": 21.34
+   },
+   {
+    "sku": "NW-1052",
+    "qty": 100,
+    "unit_price": 16.06
+   }
+  ],
+  "total_net": 2541.58
+ },
+ {
+  "order_number": "SO-2026-00295",
+  "customer_id": "C-1013",
+  "order_date": "2026-08-30",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 103, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1029",
+    "qty": 10,
+    "unit_price": 0.75
+   },
+   {
+    "sku": "NW-1099",
+    "qty": 5,
+    "unit_price": 0.99
+   }
+  ],
+  "total_net": 12.45
+ },
+ {
+  "order_number": "SO-2026-00296",
+  "customer_id": "C-1010",
+  "order_date": "2026-10-23",
+  "status": "shipped",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "lines": [
+   {
+    "sku": "NW-1119",
+    "qty": 250,
+    "unit_price": 9.22
+   },
+   {
+    "sku": "NW-1094",
+    "qty": 2,
+    "unit_price": 13.03
+   },
+   {
+    "sku": "NW-1038",
+    "qty": 20,
+    "unit_price": 19.74
+   }
+  ],
+  "total_net": 2725.86
+ },
+ {
+  "order_number": "SO-2026-00297",
+  "customer_id": "C-1036",
+  "order_date": "2026-04-21",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 95, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1061",
+    "qty": 50,
+    "unit_price": 86.52
+   }
+  ],
+  "total_net": 4326.0
+ },
+ {
+  "order_number": "SO-2026-00298",
+  "customer_id": "C-1036",
+  "order_date": "2026-03-31",
+  "status": "delivered",
+  "delivery_address": "Industrieweg 95, 28195 Bremen",
+  "lines": [
+   {
+    "sku": "NW-1109",
+    "qty": 100,
+    "unit_price": 78.48
+   },
+   {
+    "sku": "NW-1016",
+    "qty": 50,
+    "unit_price": 2.01
+   }
+  ],
+  "total_net": 7948.5
+ },
+ {
+  "order_number": "SO-2026-00299",
+  "customer_id": "C-1013",
+  "order_date": "2026-11-03",
+  "status": "delivered",
+  "delivery_address": "Am Kanal 103, 20457 Hamburg",
+  "lines": [
+   {
+    "sku": "NW-1097",
+    "qty": 5,
+    "unit_price": 36.8
+   }
+  ],
+  "total_net": 184.0
+ },
+ {
+  "order_number": "SO-2026-00300",
+  "customer_id": "C-1017",
+  "order_date": "2026-01-23",
+  "status": "delivered",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "lines": [
+   {
+    "sku": "NW-1098",
+    "qty": 5,
+    "unit_price": 11.75
+   },
+   {
+    "sku": "NW-1012",
+    "qty": 5,
+    "unit_price": 1.82
+   },
+   {
+    "sku": "NW-1089",
+    "qty": 10,
+    "unit_price": 22.65
+   }
+  ],
+  "total_net": 294.35
+ }
+]

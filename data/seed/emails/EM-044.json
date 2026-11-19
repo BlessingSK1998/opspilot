@@ -1,0 +1,18 @@
+{
+ "id": "EM-044",
+ "message_id": "<em-044@mail.example>",
+ "thread_id": "T-EM-044",
+ "from_name": "Pneumatik Rhein-Main GmbH",
+ "from_email": "rechnung@pneumatik.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Delivery Note LS-30880",
+ "body": "Sehr geehrte Damen und Herren,\n\nPlease find our dleivery note attached.\n\nFreundliche Grüße\n--\nPneumatik Rhein-Main GmbH\nPneumatik Rhein-Main GmbH\nTel.: +49 40 386 8193",
+ "received_at": "2026-11-16T17:33:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-044_LS-30880.pdf",
+   "content_type": "application/pdf"
+  }
+ ]
+}

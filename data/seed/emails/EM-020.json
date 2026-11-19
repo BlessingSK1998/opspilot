@@ -1,0 +1,18 @@
+{
+ "id": "EM-020",
+ "message_id": "<em-020@mail.example>",
+ "thread_id": "T-EM-020",
+ "from_name": "Kugellager Brandt GmbH",
+ "from_email": "rechnung@kugellager.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Delivery Note LS-37033",
+ "body": "Guten Tag,\n\nanbei unser Dokument (delivery note).\n\nBeste Grüße\n--\nKugellager Brandt GmbH\nKugellager Brandt GmbH\nTel.: +49 40 159 9343",
+ "received_at": "2026-11-19T03:57:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-020_LS-37033.pdf",
+   "content_type": "application/pdf"
+  }
+ ]
+}

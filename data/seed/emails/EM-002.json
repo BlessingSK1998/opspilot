@@ -1,0 +1,13 @@
+{
+ "id": "EM-002",
+ "message_id": "<em-002@mail.example>",
+ "thread_id": "T-EM-002-chain",
+ "from_name": "Vertrieb Nord",
+ "from_email": "vertrieb@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Fwd: Re: Retoure",
+ "body": "FYI, bitte bearbeiten.\n\n---------- Forwarded message ----------\nFrom: Nadine Klein <nadine.klein@ruhr-tech.de>\nSubject: Fwd: Re: Retoure\n\nHallo zusammen,\n\nWir möchten Ware zurückgeben.\nBestellung SO-2026-00094\nArtikel: NW-1018\nGrund: entspricht nicht der Spezifikation\nErstattungsbetrag: 105,91 €\n\nViele Grüße\n--\nNadine Klein\nRuhr Werkzeug KG\nTel.: +49 40 999 1985\nIBAN: DE32799131159143363654\n\nOn 12.11.2026 Nadine Klein wrote:\n> Wir möchten Ware zurückgeben.\n> Bestellung SO-2026-00094\n> Artikel: NW-1018\n> (no reply from Northwind yet)\n\nOn 11.11.2026 Nadine Klein wrote:\n> Wir möchten Ware zurückgeben.\n> Bestellung SO-2026-00094\n> Artikel: NW-1018\n> (no reply from Northwind yet)",
+ "received_at": "2026-11-16T23:13:00+01:00",
+ "thread_message_count": 3,
+ "attachments": []
+}

@@ -1,0 +1,13 @@
+{
+ "id": "EM-075",
+ "message_id": "<em-075@mail.example>",
+ "thread_id": "T-EM-075",
+ "from_name": "Lukas Meyer",
+ "from_email": "lukas.meyer@eider-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Frage",
+ "body": "Hallo zusammen,\n\nHow do we open a customer account with you?\n\nThanks\n--\nLukas Meyer\nEider Werkzeug KG\nTel.: +49 40 806 1229",
+ "received_at": "2026-11-16T11:02:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

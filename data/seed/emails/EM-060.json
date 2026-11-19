@@ -1,0 +1,13 @@
+{
+ "id": "EM-060",
+ "message_id": "<em-060@mail.example>",
+ "thread_id": "T-EM-060",
+ "from_name": "Elena Schulz",
+ "from_email": "elena.schulz@baltic-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Rechnung INV-2026-90136",
+ "body": "Hallo zusammen,\n\nwegen einer Rechnung:\nRechnung INV-2026-90136\nBetrag: EUR 10.17\nDie Angaben auf der Rechnung stimmen so nicht.\n\nMit freundlichen Grüßen\n--\nElena Schulz\nBaltic Antriebstechnik GmbH\nTel.: +49 40 491 6664",
+ "received_at": "2026-11-17T00:09:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

@@ -1,0 +1,13 @@
+{
+ "id": "EM-019",
+ "message_id": "<em-019@mail.example>",
+ "thread_id": "T-EM-019",
+ "from_name": "Elena Koch",
+ "from_email": "elena.koch@rhein.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Beschwerde",
+ "body": "Hallo zusammen,\n\nThe packaging was dented, parts are fine.\n\nFreundliche Grüße\n--\nElena Koch\nRhein Fördertechnik GmbH\nTel.: +49 40 405 3004",
+ "received_at": "2026-11-17T11:57:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

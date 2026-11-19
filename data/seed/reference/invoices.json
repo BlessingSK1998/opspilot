@@ -1,0 +1,1802 @@
+[
+ {
+  "invoice_number": "INV-2026-00001",
+  "customer_id": "C-1001",
+  "order_number": "SO-2026-00001",
+  "amount": 617.37,
+  "issued_date": "2026-09-28",
+  "due_date": "2026-10-12",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00002",
+  "customer_id": "C-1002",
+  "order_number": "SO-2026-00002",
+  "amount": 4864.54,
+  "issued_date": "2026-09-26",
+  "due_date": "2026-11-10",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00003",
+  "customer_id": "C-1003",
+  "order_number": "SO-2026-00003",
+  "amount": 213.45,
+  "issued_date": "2026-08-07",
+  "due_date": "2026-09-06",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00004",
+  "customer_id": "C-1004",
+  "order_number": "SO-2026-00004",
+  "amount": 5477.93,
+  "issued_date": "2026-05-12",
+  "due_date": "2026-06-26",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00005",
+  "customer_id": "C-1005",
+  "order_number": "SO-2026-00005",
+  "amount": 1707.79,
+  "issued_date": "2026-08-04",
+  "due_date": "2026-09-03",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00006",
+  "customer_id": "C-1006",
+  "order_number": "SO-2026-00006",
+  "amount": 1918.88,
+  "issued_date": "2026-10-06",
+  "due_date": "2026-11-20",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00007",
+  "customer_id": "C-1007",
+  "order_number": "SO-2026-00007",
+  "amount": 497.3,
+  "issued_date": "2026-06-22",
+  "due_date": "2026-08-06",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00008",
+  "customer_id": "C-1008",
+  "order_number": "SO-2026-00008",
+  "amount": 741.66,
+  "issued_date": "2026-11-09",
+  "due_date": "2026-12-24",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00009",
+  "customer_id": "C-1009",
+  "order_number": "SO-2026-00009",
+  "amount": 62.47,
+  "issued_date": "2026-07-01",
+  "due_date": "2026-08-15",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00010",
+  "customer_id": "C-1010",
+  "order_number": "SO-2026-00010",
+  "amount": 1607.69,
+  "issued_date": "2026-03-30",
+  "due_date": "2026-04-29",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00011",
+  "customer_id": "C-1011",
+  "order_number": "SO-2026-00011",
+  "amount": 9493.23,
+  "issued_date": "2026-04-18",
+  "due_date": "2026-06-02",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00012",
+  "customer_id": "C-1012",
+  "order_number": "SO-2026-00012",
+  "amount": 373.66,
+  "issued_date": "2026-03-05",
+  "due_date": "2026-04-19",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00013",
+  "customer_id": "C-1013",
+  "order_number": "SO-2026-00013",
+  "amount": 169.34,
+  "issued_date": "2026-07-10",
+  "due_date": "2026-08-24",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00014",
+  "customer_id": "C-1014",
+  "order_number": "SO-2026-00014",
+  "amount": 6770.51,
+  "issued_date": "2026-08-19",
+  "due_date": "2026-10-03",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00015",
+  "customer_id": "C-1015",
+  "order_number": "SO-2026-00015",
+  "amount": 43.91,
+  "issued_date": "2026-08-22",
+  "due_date": "2026-09-21",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00016",
+  "customer_id": "C-1016",
+  "order_number": "SO-2026-00016",
+  "amount": 454.58,
+  "issued_date": "2026-03-27",
+  "due_date": "2026-04-26",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00017",
+  "customer_id": "C-1017",
+  "order_number": "SO-2026-00017",
+  "amount": 785.34,
+  "issued_date": "2026-05-11",
+  "due_date": "2026-05-25",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00018",
+  "customer_id": "C-1018",
+  "order_number": "SO-2026-00018",
+  "amount": 1472.15,
+  "issued_date": "2026-11-09",
+  "due_date": "2026-12-24",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00019",
+  "customer_id": "C-1019",
+  "order_number": "SO-2026-00019",
+  "amount": 366.4,
+  "issued_date": "2026-10-22",
+  "due_date": "2026-11-05",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00020",
+  "customer_id": "C-1020",
+  "order_number": "SO-2026-00020",
+  "amount": 37.37,
+  "issued_date": "2026-11-14",
+  "due_date": "2026-12-14",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00021",
+  "customer_id": "C-1021",
+  "order_number": "SO-2026-00021",
+  "amount": 2113.44,
+  "issued_date": "2026-05-14",
+  "due_date": "2026-06-28",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00022",
+  "customer_id": "C-1022",
+  "order_number": "SO-2026-00022",
+  "amount": 500.28,
+  "issued_date": "2026-03-27",
+  "due_date": "2026-04-26",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00023",
+  "customer_id": "C-1023",
+  "order_number": "SO-2026-00023",
+  "amount": 2517.8,
+  "issued_date": "2026-11-15",
+  "due_date": "2026-12-15",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00024",
+  "customer_id": "C-1024",
+  "order_number": "SO-2026-00024",
+  "amount": 959.56,
+  "issued_date": "2026-10-04",
+  "due_date": "2026-10-18",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00025",
+  "customer_id": "C-1025",
+  "order_number": "SO-2026-00025",
+  "amount": 12339.9,
+  "issued_date": "2026-05-12",
+  "due_date": "2026-06-11",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00026",
+  "customer_id": "C-1026",
+  "order_number": "SO-2026-00026",
+  "amount": 4581.5,
+  "issued_date": "2026-05-23",
+  "due_date": "2026-06-06",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00027",
+  "customer_id": "C-1027",
+  "order_number": "SO-2026-00027",
+  "amount": 1116.62,
+  "issued_date": "2026-09-19",
+  "due_date": "2026-11-03",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00028",
+  "customer_id": "C-1028",
+  "order_number": "SO-2026-00028",
+  "amount": 678.63,
+  "issued_date": "2026-03-14",
+  "due_date": "2026-04-13",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00029",
+  "customer_id": "C-1029",
+  "order_number": "SO-2026-00029",
+  "amount": 43.32,
+  "issued_date": "2026-04-10",
+  "due_date": "2026-05-10",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00030",
+  "customer_id": "C-1030",
+  "order_number": "SO-2026-00030",
+  "amount": 6761.82,
+  "issued_date": "2026-08-21",
+  "due_date": "2026-09-20",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00031",
+  "customer_id": "C-1031",
+  "order_number": "SO-2026-00031",
+  "amount": 981.51,
+  "issued_date": "2026-05-02",
+  "due_date": "2026-06-16",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00032",
+  "customer_id": "C-1032",
+  "order_number": "SO-2026-00032",
+  "amount": 508.01,
+  "issued_date": "2026-07-03",
+  "due_date": "2026-08-02",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00033",
+  "customer_id": "C-1033",
+  "order_number": "SO-2026-00033",
+  "amount": 106.39,
+  "issued_date": "2026-03-06",
+  "due_date": "2026-04-05",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00034",
+  "customer_id": "C-1034",
+  "order_number": "SO-2026-00034",
+  "amount": 4733.82,
+  "issued_date": "2026-07-30",
+  "due_date": "2026-08-29",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00035",
+  "customer_id": "C-1035",
+  "order_number": "SO-2026-00035",
+  "amount": 4669.56,
+  "issued_date": "2026-09-19",
+  "due_date": "2026-10-03",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00036",
+  "customer_id": "C-1036",
+  "order_number": "SO-2026-00036",
+  "amount": 548.59,
+  "issued_date": "2026-10-16",
+  "due_date": "2026-11-15",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00037",
+  "customer_id": "C-1037",
+  "order_number": "SO-2026-00037",
+  "amount": 7815.32,
+  "issued_date": "2026-11-10",
+  "due_date": "2026-12-10",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00038",
+  "customer_id": "C-1038",
+  "order_number": "SO-2026-00038",
+  "amount": 15312.32,
+  "issued_date": "2026-07-15",
+  "due_date": "2026-07-29",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00039",
+  "customer_id": "C-1039",
+  "order_number": "SO-2026-00039",
+  "amount": 7284.05,
+  "issued_date": "2026-07-05",
+  "due_date": "2026-08-04",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00040",
+  "customer_id": "C-1040",
+  "order_number": "SO-2026-00040",
+  "amount": 6205.85,
+  "issued_date": "2026-07-04",
+  "due_date": "2026-08-03",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00041",
+  "customer_id": "C-1001",
+  "order_number": "SO-2026-00041",
+  "amount": 1421.45,
+  "issued_date": "2026-05-12",
+  "due_date": "2026-05-26",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00042",
+  "customer_id": "C-1002",
+  "order_number": "SO-2026-00042",
+  "amount": 11103.3,
+  "issued_date": "2026-05-13",
+  "due_date": "2026-06-27",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00043",
+  "customer_id": "C-1003",
+  "order_number": "SO-2026-00043",
+  "amount": 761.96,
+  "issued_date": "2026-07-12",
+  "due_date": "2026-08-11",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00044",
+  "customer_id": "C-1004",
+  "order_number": "SO-2026-00044",
+  "amount": 101.74,
+  "issued_date": "2026-09-02",
+  "due_date": "2026-10-17",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00045",
+  "customer_id": "C-1005",
+  "order_number": "SO-2026-00045",
+  "amount": 7953.48,
+  "issued_date": "2026-10-13",
+  "due_date": "2026-11-12",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00046",
+  "customer_id": "C-1006",
+  "order_number": "SO-2026-00046",
+  "amount": 2876.97,
+  "issued_date": "2026-10-17",
+  "due_date": "2026-12-01",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00047",
+  "customer_id": "C-1007",
+  "order_number": "SO-2026-00047",
+  "amount": 23529.32,
+  "issued_date": "2026-02-13",
+  "due_date": "2026-03-30",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00048",
+  "customer_id": "C-1008",
+  "order_number": "SO-2026-00048",
+  "amount": 6512.27,
+  "issued_date": "2026-11-10",
+  "due_date": "2026-12-25",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00049",
+  "customer_id": "C-1009",
+  "order_number": "SO-2026-00049",
+  "amount": 16135.09,
+  "issued_date": "2026-07-27",
+  "due_date": "2026-09-10",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00050",
+  "customer_id": "C-1010",
+  "order_number": "SO-2026-00050",
+  "amount": 9452.47,
+  "issued_date": "2026-02-27",
+  "due_date": "2026-03-29",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00051",
+  "customer_id": "C-1011",
+  "order_number": "SO-2026-00051",
+  "amount": 825.21,
+  "issued_date": "2026-04-15",
+  "due_date": "2026-05-30",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00052",
+  "customer_id": "C-1012",
+  "order_number": "SO-2026-00052",
+  "amount": 856.8,
+  "issued_date": "2026-08-05",
+  "due_date": "2026-09-19",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00053",
+  "customer_id": "C-1013",
+  "order_number": "SO-2026-00053",
+  "amount": 12849.26,
+  "issued_date": "2026-05-02",
+  "due_date": "2026-06-16",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00054",
+  "customer_id": "C-1014",
+  "order_number": "SO-2026-00054",
+  "amount": 1541.05,
+  "issued_date": "2026-10-26",
+  "due_date": "2026-12-10",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00055",
+  "customer_id": "C-1015",
+  "order_number": "SO-2026-00055",
+  "amount": 322.86,
+  "issued_date": "2026-06-26",
+  "due_date": "2026-07-26",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00056",
+  "customer_id": "C-1016",
+  "order_number": "SO-2026-00056",
+  "amount": 216.4,
+  "issued_date": "2026-07-08",
+  "due_date": "2026-08-07",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00057",
+  "customer_id": "C-1017",
+  "order_number": "SO-2026-00057",
+  "amount": 105.2,
+  "issued_date": "2026-06-03",
+  "due_date": "2026-06-17",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00058",
+  "customer_id": "C-1018",
+  "order_number": "SO-2026-00058",
+  "amount": 1550.57,
+  "issued_date": "2026-02-24",
+  "due_date": "2026-04-10",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00059",
+  "customer_id": "C-1019",
+  "order_number": "SO-2026-00059",
+  "amount": 28933.06,
+  "issued_date": "2026-01-27",
+  "due_date": "2026-02-10",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00060",
+  "customer_id": "C-1020",
+  "order_number": "SO-2026-00060",
+  "amount": 9493.82,
+  "issued_date": "2026-09-30",
+  "due_date": "2026-10-30",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00061",
+  "customer_id": "C-1021",
+  "order_number": "SO-2026-00061",
+  "amount": 1060.15,
+  "issued_date": "2026-10-28",
+  "due_date": "2026-12-12",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00062",
+  "customer_id": "C-1022",
+  "order_number": "SO-2026-00062",
+  "amount": 308.81,
+  "issued_date": "2026-08-31",
+  "due_date": "2026-09-30",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00063",
+  "customer_id": "C-1023",
+  "order_number": "SO-2026-00063",
+  "amount": 6142.54,
+  "issued_date": "2026-04-23",
+  "due_date": "2026-05-23",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00064",
+  "customer_id": "C-1024",
+  "order_number": "SO-2026-00064",
+  "amount": 95.2,
+  "issued_date": "2026-07-16",
+  "due_date": "2026-07-30",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00065",
+  "customer_id": "C-1025",
+  "order_number": "SO-2026-00065",
+  "amount": 2043.23,
+  "issued_date": "2026-03-15",
+  "due_date": "2026-04-14",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00066",
+  "customer_id": "C-1026",
+  "order_number": "SO-2026-00066",
+  "amount": 4488.61,
+  "issued_date": "2026-02-21",
+  "due_date": "2026-03-07",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00067",
+  "customer_id": "C-1027",
+  "order_number": "SO-2026-00067",
+  "amount": 589.17,
+  "issued_date": "2026-04-23",
+  "due_date": "2026-06-07",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00068",
+  "customer_id": "C-1028",
+  "order_number": "SO-2026-00068",
+  "amount": 647.36,
+  "issued_date": "2026-05-25",
+  "due_date": "2026-06-24",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00069",
+  "customer_id": "C-1029",
+  "order_number": "SO-2026-00069",
+  "amount": 742.2,
+  "issued_date": "2026-08-28",
+  "due_date": "2026-09-27",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00070",
+  "customer_id": "C-1030",
+  "order_number": "SO-2026-00070",
+  "amount": 567.7,
+  "issued_date": "2026-03-11",
+  "due_date": "2026-04-10",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00071",
+  "customer_id": "C-1031",
+  "order_number": "SO-2026-00071",
+  "amount": 463.98,
+  "issued_date": "2026-02-17",
+  "due_date": "2026-04-03",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00072",
+  "customer_id": "C-1032",
+  "order_number": "SO-2026-00072",
+  "amount": 887.64,
+  "issued_date": "2026-04-22",
+  "due_date": "2026-05-22",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00073",
+  "customer_id": "C-1033",
+  "order_number": "SO-2026-00073",
+  "amount": 4996.22,
+  "issued_date": "2026-05-12",
+  "due_date": "2026-06-11",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00074",
+  "customer_id": "C-1034",
+  "order_number": "SO-2026-00074",
+  "amount": 906.54,
+  "issued_date": "2026-10-26",
+  "due_date": "2026-11-25",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00075",
+  "customer_id": "C-1035",
+  "order_number": "SO-2026-00075",
+  "amount": 8969.05,
+  "issued_date": "2026-06-07",
+  "due_date": "2026-06-21",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00076",
+  "customer_id": "C-1036",
+  "order_number": "SO-2026-00076",
+  "amount": 14483.67,
+  "issued_date": "2026-03-01",
+  "due_date": "2026-03-31",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00077",
+  "customer_id": "C-1037",
+  "order_number": "SO-2026-00077",
+  "amount": 8585.85,
+  "issued_date": "2026-04-28",
+  "due_date": "2026-05-28",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00078",
+  "customer_id": "C-1038",
+  "order_number": "SO-2026-00078",
+  "amount": 416.14,
+  "issued_date": "2026-11-08",
+  "due_date": "2026-11-22",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00079",
+  "customer_id": "C-1039",
+  "order_number": "SO-2026-00079",
+  "amount": 2681.66,
+  "issued_date": "2026-02-22",
+  "due_date": "2026-03-24",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00080",
+  "customer_id": "C-1040",
+  "order_number": "SO-2026-00080",
+  "amount": 1370.28,
+  "issued_date": "2026-11-16",
+  "due_date": "2026-12-16",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00081",
+  "customer_id": "C-1001",
+  "order_number": "SO-2026-00081",
+  "amount": 3612.84,
+  "issued_date": "2026-10-23",
+  "due_date": "2026-11-06",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00082",
+  "customer_id": "C-1002",
+  "order_number": "SO-2026-00082",
+  "amount": 23829.54,
+  "issued_date": "2026-10-26",
+  "due_date": "2026-12-10",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00083",
+  "customer_id": "C-1003",
+  "order_number": "SO-2026-00083",
+  "amount": 24.59,
+  "issued_date": "2026-04-29",
+  "due_date": "2026-05-29",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00084",
+  "customer_id": "C-1004",
+  "order_number": "SO-2026-00084",
+  "amount": 8512.86,
+  "issued_date": "2026-05-18",
+  "due_date": "2026-07-02",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00085",
+  "customer_id": "C-1005",
+  "order_number": "SO-2026-00085",
+  "amount": 9992.43,
+  "issued_date": "2026-03-22",
+  "due_date": "2026-04-21",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00086",
+  "customer_id": "C-1006",
+  "order_number": "SO-2026-00086",
+  "amount": 4777.85,
+  "issued_date": "2026-05-26",
+  "due_date": "2026-07-10",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00087",
+  "customer_id": "C-1007",
+  "order_number": "SO-2026-00087",
+  "amount": 521.58,
+  "issued_date": "2026-10-24",
+  "due_date": "2026-12-08",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00088",
+  "customer_id": "C-1008",
+  "order_number": "SO-2026-00088",
+  "amount": 3641.69,
+  "issued_date": "2026-03-10",
+  "due_date": "2026-04-24",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00089",
+  "customer_id": "C-1009",
+  "order_number": "SO-2026-00089",
+  "amount": 339.67,
+  "issued_date": "2026-11-04",
+  "due_date": "2026-12-19",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00090",
+  "customer_id": "C-1010",
+  "order_number": "SO-2026-00090",
+  "amount": 2606.1,
+  "issued_date": "2026-05-30",
+  "due_date": "2026-06-29",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00091",
+  "customer_id": "C-1011",
+  "order_number": "SO-2026-00091",
+  "amount": 190.4,
+  "issued_date": "2026-07-24",
+  "due_date": "2026-09-07",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00092",
+  "customer_id": "C-1012",
+  "order_number": "SO-2026-00092",
+  "amount": 4728.35,
+  "issued_date": "2026-08-14",
+  "due_date": "2026-09-28",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00093",
+  "customer_id": "C-1013",
+  "order_number": "SO-2026-00093",
+  "amount": 1622.09,
+  "issued_date": "2026-07-04",
+  "due_date": "2026-08-18",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00094",
+  "customer_id": "C-1014",
+  "order_number": "SO-2026-00094",
+  "amount": 1176.49,
+  "issued_date": "2026-02-22",
+  "due_date": "2026-04-08",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00095",
+  "customer_id": "C-1015",
+  "order_number": "SO-2026-00095",
+  "amount": 35995.12,
+  "issued_date": "2026-10-06",
+  "due_date": "2026-11-05",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00096",
+  "customer_id": "C-1016",
+  "order_number": "SO-2026-00096",
+  "amount": 12237.84,
+  "issued_date": "2026-09-02",
+  "due_date": "2026-10-02",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00097",
+  "customer_id": "C-1017",
+  "order_number": "SO-2026-00097",
+  "amount": 1282.22,
+  "issued_date": "2026-02-13",
+  "due_date": "2026-02-27",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00098",
+  "customer_id": "C-1018",
+  "order_number": "SO-2026-00098",
+  "amount": 444.29,
+  "issued_date": "2026-03-14",
+  "due_date": "2026-04-28",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00099",
+  "customer_id": "C-1019",
+  "order_number": "SO-2026-00099",
+  "amount": 6850.83,
+  "issued_date": "2026-10-20",
+  "due_date": "2026-11-03",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00100",
+  "customer_id": "C-1020",
+  "order_number": "SO-2026-00100",
+  "amount": 469.81,
+  "issued_date": "2026-10-21",
+  "due_date": "2026-11-20",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00101",
+  "customer_id": "C-1021",
+  "order_number": "SO-2026-00101",
+  "amount": 1940.41,
+  "issued_date": "2026-03-20",
+  "due_date": "2026-05-04",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00102",
+  "customer_id": "C-1022",
+  "order_number": "SO-2026-00102",
+  "amount": 3876.42,
+  "issued_date": "2026-10-25",
+  "due_date": "2026-11-24",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00103",
+  "customer_id": "C-1023",
+  "order_number": "SO-2026-00103",
+  "amount": 6961.86,
+  "issued_date": "2026-06-24",
+  "due_date": "2026-07-24",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00104",
+  "customer_id": "C-1024",
+  "order_number": "SO-2026-00104",
+  "amount": 886.67,
+  "issued_date": "2026-11-05",
+  "due_date": "2026-11-19",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00105",
+  "customer_id": "C-1025",
+  "order_number": "SO-2026-00105",
+  "amount": 1515.46,
+  "issued_date": "2026-06-30",
+  "due_date": "2026-07-30",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00106",
+  "customer_id": "C-1026",
+  "order_number": "SO-2026-00106",
+  "amount": 3058.89,
+  "issued_date": "2026-07-15",
+  "due_date": "2026-07-29",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00107",
+  "customer_id": "C-1027",
+  "order_number": "SO-2026-00107",
+  "amount": 56.69,
+  "issued_date": "2026-07-16",
+  "due_date": "2026-08-30",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00108",
+  "customer_id": "C-1028",
+  "order_number": "SO-2026-00108",
+  "amount": 4581.5,
+  "issued_date": "2026-02-26",
+  "due_date": "2026-03-28",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00109",
+  "customer_id": "C-1029",
+  "order_number": "SO-2026-00109",
+  "amount": 4508.48,
+  "issued_date": "2026-10-10",
+  "due_date": "2026-11-09",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00110",
+  "customer_id": "C-1030",
+  "order_number": "SO-2026-00110",
+  "amount": 1546.76,
+  "issued_date": "2026-09-12",
+  "due_date": "2026-10-12",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00111",
+  "customer_id": "C-1031",
+  "order_number": "SO-2026-00111",
+  "amount": 1770.01,
+  "issued_date": "2026-07-17",
+  "due_date": "2026-08-31",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00112",
+  "customer_id": "C-1032",
+  "order_number": "SO-2026-00112",
+  "amount": 746.73,
+  "issued_date": "2026-05-07",
+  "due_date": "2026-06-06",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00113",
+  "customer_id": "C-1033",
+  "order_number": "SO-2026-00113",
+  "amount": 2182.22,
+  "issued_date": "2026-05-16",
+  "due_date": "2026-06-15",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00114",
+  "customer_id": "C-1034",
+  "order_number": "SO-2026-00114",
+  "amount": 75.95,
+  "issued_date": "2026-02-06",
+  "due_date": "2026-03-08",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00115",
+  "customer_id": "C-1035",
+  "order_number": "SO-2026-00115",
+  "amount": 5094.98,
+  "issued_date": "2026-03-11",
+  "due_date": "2026-03-25",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00116",
+  "customer_id": "C-1036",
+  "order_number": "SO-2026-00116",
+  "amount": 6462.89,
+  "issued_date": "2026-08-11",
+  "due_date": "2026-09-10",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00117",
+  "customer_id": "C-1037",
+  "order_number": "SO-2026-00117",
+  "amount": 253.95,
+  "issued_date": "2026-11-03",
+  "due_date": "2026-12-03",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00118",
+  "customer_id": "C-1038",
+  "order_number": "SO-2026-00118",
+  "amount": 10.83,
+  "issued_date": "2026-07-17",
+  "due_date": "2026-07-31",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00119",
+  "customer_id": "C-1039",
+  "order_number": "SO-2026-00119",
+  "amount": 13087.88,
+  "issued_date": "2026-09-23",
+  "due_date": "2026-10-23",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00120",
+  "customer_id": "C-1040",
+  "order_number": "SO-2026-00120",
+  "amount": 233.93,
+  "issued_date": "2026-02-17",
+  "due_date": "2026-03-19",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00121",
+  "customer_id": "C-1001",
+  "order_number": "SO-2026-00121",
+  "amount": 1255.59,
+  "issued_date": "2026-06-18",
+  "due_date": "2026-07-02",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00122",
+  "customer_id": "C-1002",
+  "order_number": "SO-2026-00122",
+  "amount": 1173.89,
+  "issued_date": "2026-10-01",
+  "due_date": "2026-11-15",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00123",
+  "customer_id": "C-1003",
+  "order_number": "SO-2026-00123",
+  "amount": 13062.87,
+  "issued_date": "2026-09-01",
+  "due_date": "2026-10-01",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00124",
+  "customer_id": "C-1004",
+  "order_number": "SO-2026-00124",
+  "amount": 1873.2,
+  "issued_date": "2026-03-08",
+  "due_date": "2026-04-22",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00125",
+  "customer_id": "C-1005",
+  "order_number": "SO-2026-00125",
+  "amount": 30228.93,
+  "issued_date": "2026-07-25",
+  "due_date": "2026-08-24",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00126",
+  "customer_id": "C-1006",
+  "order_number": "SO-2026-00126",
+  "amount": 8286.68,
+  "issued_date": "2026-02-09",
+  "due_date": "2026-03-26",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00127",
+  "customer_id": "C-1007",
+  "order_number": "SO-2026-00127",
+  "amount": 867.45,
+  "issued_date": "2026-06-01",
+  "due_date": "2026-07-16",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00128",
+  "customer_id": "C-1008",
+  "order_number": "SO-2026-00128",
+  "amount": 1480.24,
+  "issued_date": "2026-07-13",
+  "due_date": "2026-08-27",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00129",
+  "customer_id": "C-1009",
+  "order_number": "SO-2026-00129",
+  "amount": 3497.6,
+  "issued_date": "2026-03-04",
+  "due_date": "2026-04-18",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00130",
+  "customer_id": "C-1010",
+  "order_number": "SO-2026-00130",
+  "amount": 7013.19,
+  "issued_date": "2026-08-01",
+  "due_date": "2026-08-31",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00131",
+  "customer_id": "C-1011",
+  "order_number": "SO-2026-00131",
+  "amount": 8822.54,
+  "issued_date": "2026-10-10",
+  "due_date": "2026-11-24",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00132",
+  "customer_id": "C-1012",
+  "order_number": "SO-2026-00132",
+  "amount": 1040.89,
+  "issued_date": "2026-06-10",
+  "due_date": "2026-07-25",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00133",
+  "customer_id": "C-1013",
+  "order_number": "SO-2026-00133",
+  "amount": 4950.99,
+  "issued_date": "2026-06-11",
+  "due_date": "2026-07-26",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00134",
+  "customer_id": "C-1014",
+  "order_number": "SO-2026-00134",
+  "amount": 5619.77,
+  "issued_date": "2026-02-15",
+  "due_date": "2026-04-01",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00135",
+  "customer_id": "C-1015",
+  "order_number": "SO-2026-00135",
+  "amount": 2601.33,
+  "issued_date": "2026-04-11",
+  "due_date": "2026-05-11",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00136",
+  "customer_id": "C-1016",
+  "order_number": "SO-2026-00136",
+  "amount": 6757.65,
+  "issued_date": "2026-10-19",
+  "due_date": "2026-11-18",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00137",
+  "customer_id": "C-1017",
+  "order_number": "SO-2026-00137",
+  "amount": 1150.77,
+  "issued_date": "2026-03-09",
+  "due_date": "2026-03-23",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00138",
+  "customer_id": "C-1018",
+  "order_number": "SO-2026-00138",
+  "amount": 13391.07,
+  "issued_date": "2026-10-04",
+  "due_date": "2026-11-18",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00139",
+  "customer_id": "C-1019",
+  "order_number": "SO-2026-00139",
+  "amount": 283.51,
+  "issued_date": "2026-10-23",
+  "due_date": "2026-11-06",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00140",
+  "customer_id": "C-1020",
+  "order_number": "SO-2026-00140",
+  "amount": 10670.28,
+  "issued_date": "2026-07-24",
+  "due_date": "2026-08-23",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00141",
+  "customer_id": "C-1021",
+  "order_number": "SO-2026-00141",
+  "amount": 759.46,
+  "issued_date": "2026-09-11",
+  "due_date": "2026-10-26",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00142",
+  "customer_id": "C-1022",
+  "order_number": "SO-2026-00142",
+  "amount": 1002.75,
+  "issued_date": "2026-09-22",
+  "due_date": "2026-10-22",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00143",
+  "customer_id": "C-1023",
+  "order_number": "SO-2026-00143",
+  "amount": 9424.2,
+  "issued_date": "2026-07-03",
+  "due_date": "2026-08-02",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00144",
+  "customer_id": "C-1024",
+  "order_number": "SO-2026-00144",
+  "amount": 16027.51,
+  "issued_date": "2026-09-24",
+  "due_date": "2026-10-08",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00145",
+  "customer_id": "C-1025",
+  "order_number": "SO-2026-00145",
+  "amount": 8120.7,
+  "issued_date": "2026-03-02",
+  "due_date": "2026-04-01",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00146",
+  "customer_id": "C-1026",
+  "order_number": "SO-2026-00146",
+  "amount": 800.85,
+  "issued_date": "2026-05-24",
+  "due_date": "2026-06-07",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00147",
+  "customer_id": "C-1027",
+  "order_number": "SO-2026-00147",
+  "amount": 10132.49,
+  "issued_date": "2026-09-28",
+  "due_date": "2026-11-12",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00148",
+  "customer_id": "C-1028",
+  "order_number": "SO-2026-00148",
+  "amount": 2467.86,
+  "issued_date": "2026-03-02",
+  "due_date": "2026-04-01",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00149",
+  "customer_id": "C-1029",
+  "order_number": "SO-2026-00149",
+  "amount": 337.96,
+  "issued_date": "2026-06-30",
+  "due_date": "2026-07-30",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00150",
+  "customer_id": "C-1030",
+  "order_number": "SO-2026-00150",
+  "amount": 1935.63,
+  "issued_date": "2026-07-23",
+  "due_date": "2026-08-22",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00151",
+  "customer_id": "C-1031",
+  "order_number": "SO-2026-00151",
+  "amount": 4201.89,
+  "issued_date": "2026-11-14",
+  "due_date": "2026-12-29",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00152",
+  "customer_id": "C-1032",
+  "order_number": "SO-2026-00152",
+  "amount": 116.14,
+  "issued_date": "2026-11-09",
+  "due_date": "2026-12-09",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00153",
+  "customer_id": "C-1033",
+  "order_number": "SO-2026-00153",
+  "amount": 736.61,
+  "issued_date": "2026-11-01",
+  "due_date": "2026-12-01",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00154",
+  "customer_id": "C-1034",
+  "order_number": "SO-2026-00154",
+  "amount": 13052.63,
+  "issued_date": "2026-11-04",
+  "due_date": "2026-12-04",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00155",
+  "customer_id": "C-1035",
+  "order_number": "SO-2026-00155",
+  "amount": 4770.16,
+  "issued_date": "2026-01-26",
+  "due_date": "2026-02-09",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00156",
+  "customer_id": "C-1036",
+  "order_number": "SO-2026-00156",
+  "amount": 46.98,
+  "issued_date": "2026-09-12",
+  "due_date": "2026-10-12",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00157",
+  "customer_id": "C-1037",
+  "order_number": "SO-2026-00157",
+  "amount": 703.29,
+  "issued_date": "2026-08-26",
+  "due_date": "2026-09-25",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00158",
+  "customer_id": "C-1038",
+  "order_number": "SO-2026-00158",
+  "amount": 1772.68,
+  "issued_date": "2026-07-09",
+  "due_date": "2026-07-23",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00159",
+  "customer_id": "C-1039",
+  "order_number": "SO-2026-00159",
+  "amount": 105.67,
+  "issued_date": "2026-06-03",
+  "due_date": "2026-07-03",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00160",
+  "customer_id": "C-1040",
+  "order_number": "SO-2026-00160",
+  "amount": 14330.57,
+  "issued_date": "2026-11-11",
+  "due_date": "2026-12-11",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00161",
+  "customer_id": "C-1001",
+  "order_number": "SO-2026-00161",
+  "amount": 4660.04,
+  "issued_date": "2026-08-31",
+  "due_date": "2026-09-14",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00162",
+  "customer_id": "C-1002",
+  "order_number": "SO-2026-00162",
+  "amount": 86.87,
+  "issued_date": "2026-11-05",
+  "due_date": "2026-12-20",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00163",
+  "customer_id": "C-1003",
+  "order_number": "SO-2026-00163",
+  "amount": 193.43,
+  "issued_date": "2026-11-12",
+  "due_date": "2026-12-12",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00164",
+  "customer_id": "C-1004",
+  "order_number": "SO-2026-00164",
+  "amount": 1854.85,
+  "issued_date": "2026-09-26",
+  "due_date": "2026-11-10",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00165",
+  "customer_id": "C-1005",
+  "order_number": "SO-2026-00165",
+  "amount": 1381.59,
+  "issued_date": "2026-02-03",
+  "due_date": "2026-03-05",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00166",
+  "customer_id": "C-1006",
+  "order_number": "SO-2026-00166",
+  "amount": 1775.3,
+  "issued_date": "2026-03-09",
+  "due_date": "2026-04-23",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00167",
+  "customer_id": "C-1007",
+  "order_number": "SO-2026-00167",
+  "amount": 16574.92,
+  "issued_date": "2026-10-03",
+  "due_date": "2026-11-17",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00168",
+  "customer_id": "C-1008",
+  "order_number": "SO-2026-00168",
+  "amount": 492.56,
+  "issued_date": "2026-02-08",
+  "due_date": "2026-03-25",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00169",
+  "customer_id": "C-1009",
+  "order_number": "SO-2026-00169",
+  "amount": 855.61,
+  "issued_date": "2026-04-06",
+  "due_date": "2026-05-21",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00170",
+  "customer_id": "C-1010",
+  "order_number": "SO-2026-00170",
+  "amount": 733.4,
+  "issued_date": "2026-05-16",
+  "due_date": "2026-06-15",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00171",
+  "customer_id": "C-1011",
+  "order_number": "SO-2026-00171",
+  "amount": 11409.48,
+  "issued_date": "2026-08-25",
+  "due_date": "2026-10-09",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00172",
+  "customer_id": "C-1012",
+  "order_number": "SO-2026-00172",
+  "amount": 10948.0,
+  "issued_date": "2026-07-03",
+  "due_date": "2026-08-17",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00173",
+  "customer_id": "C-1013",
+  "order_number": "SO-2026-00173",
+  "amount": 3744.81,
+  "issued_date": "2026-04-06",
+  "due_date": "2026-05-21",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00174",
+  "customer_id": "C-1014",
+  "order_number": "SO-2026-00174",
+  "amount": 17733.44,
+  "issued_date": "2026-05-10",
+  "due_date": "2026-06-24",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00175",
+  "customer_id": "C-1015",
+  "order_number": "SO-2026-00175",
+  "amount": 2864.92,
+  "issued_date": "2026-05-01",
+  "due_date": "2026-05-31",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00176",
+  "customer_id": "C-1016",
+  "order_number": "SO-2026-00176",
+  "amount": 783.5,
+  "issued_date": "2026-03-15",
+  "due_date": "2026-04-14",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00177",
+  "customer_id": "C-1017",
+  "order_number": "SO-2026-00177",
+  "amount": 9060.66,
+  "issued_date": "2026-04-30",
+  "due_date": "2026-05-14",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00178",
+  "customer_id": "C-1018",
+  "order_number": "SO-2026-00178",
+  "amount": 979.13,
+  "issued_date": "2026-03-02",
+  "due_date": "2026-04-16",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00179",
+  "customer_id": "C-1019",
+  "order_number": "SO-2026-00179",
+  "amount": 1.84,
+  "issued_date": "2026-08-08",
+  "due_date": "2026-08-22",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00180",
+  "customer_id": "C-1020",
+  "order_number": "SO-2026-00180",
+  "amount": 5617.75,
+  "issued_date": "2026-08-03",
+  "due_date": "2026-09-02",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00181",
+  "customer_id": "C-1021",
+  "order_number": "SO-2026-00181",
+  "amount": 2695.35,
+  "issued_date": "2026-04-07",
+  "due_date": "2026-05-22",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00182",
+  "customer_id": "C-1022",
+  "order_number": "SO-2026-00182",
+  "amount": 10110.67,
+  "issued_date": "2026-11-17",
+  "due_date": "2026-12-17",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00183",
+  "customer_id": "C-1023",
+  "order_number": "SO-2026-00183",
+  "amount": 15761.91,
+  "issued_date": "2026-10-15",
+  "due_date": "2026-11-14",
+  "status": "overdue"
+ },
+ {
+  "invoice_number": "INV-2026-00184",
+  "customer_id": "C-1024",
+  "order_number": "SO-2026-00184",
+  "amount": 210.61,
+  "issued_date": "2026-04-20",
+  "due_date": "2026-05-04",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00185",
+  "customer_id": "C-1025",
+  "order_number": "SO-2026-00185",
+  "amount": 6103.87,
+  "issued_date": "2026-05-27",
+  "due_date": "2026-06-26",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00186",
+  "customer_id": "C-1026",
+  "order_number": "SO-2026-00186",
+  "amount": 189.92,
+  "issued_date": "2026-04-20",
+  "due_date": "2026-05-04",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00187",
+  "customer_id": "C-1027",
+  "order_number": "SO-2026-00187",
+  "amount": 19749.36,
+  "issued_date": "2026-04-10",
+  "due_date": "2026-05-25",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00188",
+  "customer_id": "C-1028",
+  "order_number": "SO-2026-00188",
+  "amount": 486.88,
+  "issued_date": "2026-06-06",
+  "due_date": "2026-07-06",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00189",
+  "customer_id": "C-1029",
+  "order_number": "SO-2026-00189",
+  "amount": 2281.82,
+  "issued_date": "2026-06-29",
+  "due_date": "2026-07-29",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00190",
+  "customer_id": "C-1030",
+  "order_number": "SO-2026-00190",
+  "amount": 105.91,
+  "issued_date": "2026-09-08",
+  "due_date": "2026-10-08",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00191",
+  "customer_id": "C-1031",
+  "order_number": "SO-2026-00191",
+  "amount": 7743.51,
+  "issued_date": "2026-08-30",
+  "due_date": "2026-10-14",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00192",
+  "customer_id": "C-1032",
+  "order_number": "SO-2026-00192",
+  "amount": 12668.74,
+  "issued_date": "2026-05-17",
+  "due_date": "2026-06-16",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00193",
+  "customer_id": "C-1033",
+  "order_number": "SO-2026-00193",
+  "amount": 40.51,
+  "issued_date": "2026-08-22",
+  "due_date": "2026-09-21",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00194",
+  "customer_id": "C-1034",
+  "order_number": "SO-2026-00194",
+  "amount": 4680.63,
+  "issued_date": "2026-05-31",
+  "due_date": "2026-06-30",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00195",
+  "customer_id": "C-1035",
+  "order_number": "SO-2026-00195",
+  "amount": 566.62,
+  "issued_date": "2026-05-29",
+  "due_date": "2026-06-12",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00196",
+  "customer_id": "C-1036",
+  "order_number": "SO-2026-00196",
+  "amount": 3687.57,
+  "issued_date": "2026-05-15",
+  "due_date": "2026-06-14",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00197",
+  "customer_id": "C-1037",
+  "order_number": "SO-2026-00197",
+  "amount": 4112.76,
+  "issued_date": "2026-05-22",
+  "due_date": "2026-06-21",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00198",
+  "customer_id": "C-1038",
+  "order_number": "SO-2026-00198",
+  "amount": 13032.88,
+  "issued_date": "2026-03-21",
+  "due_date": "2026-04-04",
+  "status": "paid"
+ },
+ {
+  "invoice_number": "INV-2026-00199",
+  "customer_id": "C-1039",
+  "order_number": "SO-2026-00199",
+  "amount": 10.17,
+  "issued_date": "2026-11-11",
+  "due_date": "2026-12-11",
+  "status": "open"
+ },
+ {
+  "invoice_number": "INV-2026-00200",
+  "customer_id": "C-1040",
+  "order_number": "SO-2026-00200",
+  "amount": 18608.15,
+  "issued_date": "2026-04-30",
+  "due_date": "2026-05-30",
+  "status": "paid"
+ }
+]

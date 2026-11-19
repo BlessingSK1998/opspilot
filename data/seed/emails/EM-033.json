@@ -1,0 +1,13 @@
+{
+ "id": "EM-033",
+ "message_id": "<em-033@mail.example>",
+ "thread_id": "T-EM-033",
+ "from_name": "Tanja Brandt",
+ "from_email": "tanja.brandt@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Access request: Power BI workspace 'Ops'",
+ "body": "Hello Northwind team,\n\nPlease grant Tanja Brandt access to Power BI workspace 'Ops'.\nAccess level: write\nApproved by her/his line manager.\n\nThanks\n--\nTanja Brandt\nNorthwind Supply GmbH\nTel.: +49 40 130 3040",
+ "received_at": "2026-11-18T13:01:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

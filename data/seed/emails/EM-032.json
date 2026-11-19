@@ -1,0 +1,13 @@
+{
+ "id": "EM-032",
+ "message_id": "<em-032@mail.example>",
+ "thread_id": "T-EM-032-chain",
+ "from_name": "Thomas Schmidt",
+ "from_email": "thomas.schmidt@oder-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Re: Beschwerde",
+ "body": "Hallo zusammen,\n\nSeveral bearings from the last batch show visible rust.\nOrder: SO-2026-00287\n\nRegards\n--\nThomas Schmidt\nOder Fördertechnik GmbH\nTel.: +49 40 673 1327\n\nOn 13.11.2026 Thomas Schmidt wrote:\n> Several bearings from the last batch show visible rust.\n> Order: SO-2026-00287\n> (no reply from Northwind yet)\n\nOn 12.11.2026 Thomas Schmidt wrote:\n> Several bearings from the last batch show visible rust.\n> Order: SO-2026-00287\n> (no reply from Northwind yet)\n\nOn 11.11.2026 Thomas Schmidt wrote:\n> Several bearings from the last batch show visible rust.\n> Order: SO-2026-00287\n> (no reply from Northwind yet)",
+ "received_at": "2026-11-17T05:26:00+01:00",
+ "thread_message_count": 4,
+ "attachments": []
+}

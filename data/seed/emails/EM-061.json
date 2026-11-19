@@ -1,0 +1,18 @@
+{
+ "id": "EM-061",
+ "message_id": "<em-061@mail.example>",
+ "thread_id": "T-EM-061",
+ "from_name": "Ingrid Klein",
+ "from_email": "ingrid.klein@isar-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Ersatzteile",
+ "body": "Hello,\n\nwir möchten gerne bestellen:\nDie Positionen findet ihr in der CSV im Anhang.\nDelivery address: Hafenstraße 82, 40213 Düsseldorf\nWunschtermin: 04.12.2026\nPO number: PO-752529\n\nMit freundlichen Grüßen\n--\nIngrid Klein\nIsar Hydraulik GmbH\nTel.: +49 40 775 1569",
+ "received_at": "2026-11-17T23:13:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-061_bestellung.csv",
+   "content_type": "text/csv"
+  }
+ ]
+}

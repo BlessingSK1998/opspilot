@@ -1,0 +1,13 @@
+{
+ "id": "EM-018",
+ "message_id": "<em-018@mail.example>",
+ "thread_id": "T-EM-018",
+ "from_name": "Thomas Klein",
+ "from_email": "thomas.klein@saar-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Retoure",
+ "body": "Hallo,\n\nWir möchten Ware zurückgeben.\nBestellung SO-2026-00188\nArtikel: NW-1076\nGrund: falsche Ware geliefert\n\nMit freundlichen Grüßen\n--\nThomas Klein\nSaar Hydraulik GmbH\nTel.: +49 40 335 3144",
+ "received_at": "2026-11-16T20:51:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

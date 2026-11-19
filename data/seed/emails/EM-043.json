@@ -1,0 +1,13 @@
+{
+ "id": "EM-043",
+ "message_id": "<em-043@mail.example>",
+ "thread_id": "T-EM-043",
+ "from_name": "Thomas Klein",
+ "from_email": "thomas.klein@saar-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Beschwerde",
+ "body": "Hello,\n\nOur production line has been stopped since this morning because the parts did not arrive. This is unacceptable!\nBestellung: SO-2026-00108\nWir behalten uns Schadensersatzforderungen vor und haben unsere Rechtsabteilung informiert.\n\nBeste Grüße\n--\nThomas Klein\nSaar Hydraulik GmbH\nTel.: +49 40 854 9601",
+ "received_at": "2026-11-16T20:05:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

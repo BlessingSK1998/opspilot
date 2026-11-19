@@ -1,0 +1,13 @@
+{
+ "id": "EM-015",
+ "message_id": "<em-015@mail.example>",
+ "thread_id": "T-EM-015",
+ "from_name": "Jonas Wagner",
+ "from_email": "jonas.wagner@aller-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Beschwerde",
+ "body": "Guten Tag,\n\nThe delivery was incomplete and two days late.\nOrder: SO-2026-00016\n\nRegards\n--\nJonas Wagner\nAller Maschinenbau GmbH\nTel.: +49 40 425 4896",
+ "received_at": "2026-11-18T19:55:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

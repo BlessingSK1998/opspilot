@@ -1,0 +1,13 @@
+{
+ "id": "EM-004",
+ "message_id": "<em-004@mail.example>",
+ "thread_id": "T-EM-004",
+ "from_name": "Marketing Team",
+ "from_email": "promo64@seo-boost.top",
+ "to": "ops@northwind-supply.de",
+ "subject": "SEO ranking guaranteed #1",
+ "body": "Hallo zusammen,\n\nDear owner, we guarantee first page Google ranking in 7 days for only $99. Reply YES.",
+ "received_at": "2026-11-17T09:36:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

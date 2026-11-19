@@ -1,0 +1,13 @@
+{
+ "id": "EM-048",
+ "message_id": "<em-048@mail.example>",
+ "thread_id": "T-EM-048",
+ "from_name": "Marketing Team",
+ "from_email": "promo69@seo-boost.top",
+ "to": "ops@northwind-supply.de",
+ "subject": "Business proposal",
+ "body": "Dear Sir or Madam,\n\nI am a prince with 10 million USD to transfer. I need your bank details urgently.",
+ "received_at": "2026-11-16T23:43:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

@@ -1,0 +1,13 @@
+{
+ "id": "EM-077",
+ "message_id": "<em-077@mail.example>",
+ "thread_id": "T-EM-077",
+ "from_name": "Thomas Schmidt",
+ "from_email": "thomas.schmidt@oder-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Verbrauchsmaterial",
+ "body": "Hello,\n\nWe would like to place an order:\n- 10 x NW-1056 (Terminal block 3/4\")\nDelivery address: Bahnhofstraße 5, 20457 Hamburg\nAs soon as possible please.\n\nBeste Grüße\n--\nThomas Schmidt\nOder Fördertechnik GmbH\nTel.: +49 40 475 6525",
+ "received_at": "2026-11-17T01:00:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

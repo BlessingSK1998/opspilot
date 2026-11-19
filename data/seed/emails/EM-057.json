@@ -1,0 +1,13 @@
+{
+ "id": "EM-057",
+ "message_id": "<em-057@mail.example>",
+ "thread_id": "T-EM-057",
+ "from_name": "Mehmet Schwarz",
+ "from_email": "mehmet.schwarz@trave-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Question",
+ "body": "Hi team,\n\nDo you have something for our pump problem?\n\nRegards\n--\nMehmet Schwarz\nTrave Antriebstechnik GmbH\nTel.: +49 40 884 7566",
+ "received_at": "2026-11-18T03:49:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

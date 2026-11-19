@@ -1,0 +1,13 @@
+{
+ "id": "EM-039",
+ "message_id": "<em-039@mail.example>",
+ "thread_id": "T-EM-039",
+ "from_name": "Laura Schwarz",
+ "from_email": "laura.schwarz@leine-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Ersatzteile",
+ "body": "Hello,\n\nPlease send us the same parts as in our last order, same quantities.\nDelivery address: Speicherstraße 62, 18055 Rostock\nWunschtermin: 7 December 2026\nPO number: PO-823504\n\nAlso, a second topic:\nHow do we open a customer account with you?\n\nBest regards\n--\nLaura Schwarz\nLeine Stahlbau GmbH\nTel.: +49 40 344 2543",
+ "received_at": "2026-11-18T03:46:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

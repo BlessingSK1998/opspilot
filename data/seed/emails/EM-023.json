@@ -1,0 +1,13 @@
+{
+ "id": "EM-023",
+ "message_id": "<em-023@mail.example>",
+ "thread_id": "T-EM-023",
+ "from_name": "Elena Schulz",
+ "from_email": "elena.schulz@baltic-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Frage",
+ "body": "Hallo,\n\nWie lang ist die übliche Lieferzeit für Hydraulikventile?\n\nBeste Grüße\n--\nElena Schulz\nBaltic Antriebstechnik GmbH\nTel.: +49 40 618 5535\nprivat: elena71@gmail.com",
+ "received_at": "2026-11-18T02:16:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

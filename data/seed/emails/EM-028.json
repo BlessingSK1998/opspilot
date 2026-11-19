@@ -1,0 +1,18 @@
+{
+ "id": "EM-028",
+ "message_id": "<em-028@mail.example>",
+ "thread_id": "T-EM-028",
+ "from_name": "Dichtungswerk Süd AG",
+ "from_email": "rechnung@dichtungswerk.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Invoice RE-2026784",
+ "body": "Sehr geehrte Damen und Herren,\n\nanbei unser Dokument (invoice).\n\nRegards\n--\nDichtungswerk Süd AG\nDichtungswerk Süd AG\nTel.: +49 40 150 9518",
+ "received_at": "2026-11-18T16:26:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-028_RE-2026784.pdf",
+   "content_type": "application/pdf"
+  }
+ ]
+}

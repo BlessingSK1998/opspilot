@@ -1,0 +1,13 @@
+{
+ "id": "EM-050",
+ "message_id": "<em-050@mail.example>",
+ "thread_id": "T-EM-050",
+ "from_name": "Markus Müller",
+ "from_email": "markus.mueller@lahn-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Beschwerde",
+ "body": "Guten Tag,\n\nDie Lieferung war unvollständig und zwei Tage zu spät.\nBestellung: SO-2026-00164\n\nViele Grüße\n--\nMarkus Müller\nLahn Anlagentechnik AG\nTel.: +49 40 550 2881",
+ "received_at": "2026-11-17T21:36:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

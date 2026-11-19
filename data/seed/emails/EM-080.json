@@ -1,0 +1,13 @@
+{
+ "id": "EM-080",
+ "message_id": "<em-080@mail.example>",
+ "thread_id": "T-EM-080",
+ "from_name": "Jens Schulz",
+ "from_email": "jens.schulz@weser.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Complaint",
+ "body": "Hello,\n\nOur production line has been stopped since this morning because the parts did not arrive. This is unacceptable!\nOrder: SO-2026-00183\n\nBest regards\n--\nJens Schulz\nWeser Stahlbau GmbH\nTel.: +49 40 411 6906",
+ "received_at": "2026-11-16T15:12:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

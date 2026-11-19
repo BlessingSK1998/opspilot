@@ -1,0 +1,13 @@
+{
+ "id": "EM-035",
+ "message_id": "<em-035@mail.example>",
+ "thread_id": "T-EM-035",
+ "from_name": "Tobias Becker",
+ "from_email": "tobias.becker@havel-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Verbrauchsmaterial",
+ "body": "Hello Northwind team,\n\nwir möchten gerne bestellen:\n- 100 x NW-1087 (Hydraulic hose 32 mm)\n- NW-1056: 5 pcs\nLieferadresse: Werftstraße 22, 22525 Hamburg\nRequested delivery: 26 November 2026\nPO number: PO-977414\n\nViele Grüße\n--\nTobias Becker\nHavel Fördertechnik GmbH\nTel.: +49 40 953 7441",
+ "received_at": "2026-11-18T10:57:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

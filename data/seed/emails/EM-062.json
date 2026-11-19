@@ -1,0 +1,13 @@
+{
+ "id": "EM-062",
+ "message_id": "<em-062@mail.example>",
+ "thread_id": "T-EM-062",
+ "from_name": "Markus Meyer",
+ "from_email": "markus.meyer@hansa.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Verbrauchsmaterial",
+ "body": "Dear Sir or Madam,\n\nBitte schickt uns wieder die Teile wie bei der letzten Bestellung, gleiche Mengen.\nLieferadresse: Hafenstraße 98, 22525 Hamburg\nWunschtermin: 28 November 2026\nPO number: PO-524134\n\nRegards\n--\nMarkus Meyer\nHansa Metallbau GmbH\nTel.: +49 40 756 2194",
+ "received_at": "2026-11-17T19:32:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

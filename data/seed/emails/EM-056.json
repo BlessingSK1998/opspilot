@@ -1,0 +1,13 @@
+{
+ "id": "EM-056",
+ "message_id": "<em-056@mail.example>",
+ "thread_id": "T-EM-056",
+ "from_name": "Vertrieb Nord",
+ "from_email": "vertrieb@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Fwd: Bestellung Ersatzteile",
+ "body": "FYI, bitte bearbeiten.\n\n---------- Forwarded message ----------\nFrom: Jens Schulz <jens.schulz@weser.de>\nSubject: Fwd: Bestellung Ersatzteile\n\nHello Northwind team,\n\nWe would like to place an order:\n- NW-1045: 50 pcs\n- 200 Stk. NW-1044\n- 5 x NW-1058 (Pillow block M10)\nDelivery address: Am Kanal 60, 22525 Hamburg\nRequested delivery: 07.12.2026\nPO number: PO-909535\n\nAlso, a second topic:\nHow do we open a customer account with you?\n\nBest regards\n--\nJens Schulz\nWeser Stahlbau GmbH\nTel.: +49 40 582 8236",
+ "received_at": "2026-11-17T06:05:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

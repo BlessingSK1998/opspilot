@@ -1,0 +1,13 @@
+{
+ "id": "EM-074",
+ "message_id": "<em-074@mail.example>",
+ "thread_id": "T-EM-074",
+ "from_name": "Vertrieb Nord",
+ "from_email": "vertrieb@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Fwd: Bestellung Ersatzteile",
+ "body": "FYI, bitte bearbeiten.\n\n---------- Forwarded message ----------\nFrom: Nadine Schwarz <nadine.schwarz@werra.de>\nSubject: Fwd: Bestellung Ersatzteile\n\nHallo zusammen,\n\nwir möchten gerne bestellen:\n- NW-1017 (Torque wrench DN25)\nMengen melde ich mich noch.\nLieferadresse: Am Kanal 79, 44135 Dortmund\nWunschtermin: 4 December 2026\n\nMit freundlichen Grüßen\n--\nNadine Schwarz\nWerra Anlagentechnik AG\nTel.: +49 40 824 9528",
+ "received_at": "2026-11-18T06:45:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

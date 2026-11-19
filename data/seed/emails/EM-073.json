@@ -1,0 +1,18 @@
+{
+ "id": "EM-073",
+ "message_id": "<em-073@mail.example>",
+ "thread_id": "T-EM-073",
+ "from_name": "Schrauben Krämer KG",
+ "from_email": "rechnung@schrauben.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Invoice RE-2026446",
+ "body": "Hello,\n\nPlease find our invoice attached.\n\nRegards\n--\nSchrauben Krämer KG\nSchrauben Krämer KG\nTel.: +49 40 183 5518",
+ "received_at": "2026-11-17T19:47:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-073_RE-2026446.pdf",
+   "content_type": "application/pdf"
+  }
+ ]
+}

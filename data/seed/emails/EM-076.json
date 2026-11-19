@@ -1,0 +1,13 @@
+{
+ "id": "EM-076",
+ "message_id": "<em-076@mail.example>",
+ "thread_id": "T-EM-076",
+ "from_name": "Mehmet Schneider",
+ "from_email": "mehmet.schneider@ems-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Nachbestellung",
+ "body": "Hello,\n\nWe would like to place an order:\n- 200 Stk. NW-1017\nDelivery address: Am Kanal 103, 20457 Hamburg\nRequested delivery: 7 December 2026\nPO number: PO-282304\n\nRegards\n--\nMehmet Schneider\nEms Antriebstechnik GmbH\nTel.: +49 40 717 2438",
+ "received_at": "2026-11-18T13:45:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

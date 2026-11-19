@@ -1,0 +1,13 @@
+{
+ "id": "EM-053",
+ "message_id": "<em-053@mail.example>",
+ "thread_id": "T-EM-053",
+ "from_name": "Ingrid Becker",
+ "from_email": "ingrid.becker@havel.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Rechnung INV-2026-00043",
+ "body": "Hello Northwind team,\n\nregarding an invoice:\nIvnoice INV-2026-00043\nAmount: EUR 761.96\nWe believe we were charged too much.\n\nBest regards\n--\nIngrid Becker\nHavel Maschinenbau GmbH\nTel.: +49 40 340 9562\nIBAN: DE21576187914764954397",
+ "received_at": "2026-11-19T00:58:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

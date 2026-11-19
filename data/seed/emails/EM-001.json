@@ -1,0 +1,13 @@
+{
+ "id": "EM-001",
+ "message_id": "<em-001@mail.example>",
+ "thread_id": "T-EM-001",
+ "from_name": "Daniel Roth",
+ "from_email": "daniel.roth@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Access request: VPN",
+ "body": "Guten Tag,\n\nBitte Daniel Roth Zugriff auf VPN geben.\nBerechtigungsstufe: read\nDer Vorgesetzte wurde noch nicht gefragt.\n\nBeste Grüße\n--\nDaniel Roth\nNorthwind Supply GmbH\nTel.: +49 40 824 9429",
+ "received_at": "2026-11-17T23:32:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

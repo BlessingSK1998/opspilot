@@ -1,0 +1,13 @@
+{
+ "id": "EM-049",
+ "message_id": "<em-049@mail.example>",
+ "thread_id": "T-EM-049",
+ "from_name": "Ingrid Wagner",
+ "from_email": "ingrid.wagner@eider-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Retoure",
+ "body": "Hello,\n\nWe want to return goods.\nOrder SO-2026-00192\nItems: NW-1108\nReason: no longer needed\nRefund amount: EUR 12,668.74\n\nKind regards\n--\nIngrid Wagner\nEider Antriebstechnik GmbH\nTel.: +49 40 110 9952\nIBAN: DE44519878729422530510",
+ "received_at": "2026-11-18T09:51:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

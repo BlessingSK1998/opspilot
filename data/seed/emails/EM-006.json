@@ -1,0 +1,13 @@
+{
+ "id": "EM-006",
+ "message_id": "<em-006@mail.example>",
+ "thread_id": "T-EM-006",
+ "from_name": "Henrik Lorenz",
+ "from_email": "henrik.lorenz@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Access request: Salesforce",
+ "body": "Hello,\n\nPlease grant Henrik Lorenz access to Salesforce.\nAccess level: admin\nManager has not been asked yet.\n\nThanks\n--\nHenrik Lorenz\nNorthwind Supply GmbH\nTel.: +49 40 672 3814",
+ "received_at": "2026-11-17T21:17:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

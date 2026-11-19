@@ -1,0 +1,13 @@
+{
+ "id": "EM-031",
+ "message_id": "<em-031@mail.example>",
+ "thread_id": "T-EM-031",
+ "from_name": "Nadine Weber",
+ "from_email": "nadine.weber@main.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Frage",
+ "body": "Sehr geehrte Damen und Herren,\n\nGibt es einen Mindestbestellwert für Lieferungen nach Rostock?\n\nBeste Grüße\n--\nNadine Weber\nMain Stahlbau GmbH\nTel.: +49 40 812 6139",
+ "received_at": "2026-11-18T04:59:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

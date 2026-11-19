@@ -1,0 +1,18 @@
+{
+ "id": "EM-008",
+ "message_id": "<em-008@mail.example>",
+ "thread_id": "T-EM-008",
+ "from_name": "Werkzeugunion Eifel GmbH",
+ "from_email": "rechnung@werkzeugunion.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Invoice RE-2026876",
+ "body": "Guten Tag,\n\nanbei unser Dokument (invoice).\n\nViele Grüße\n--\nWerkzeugunion Eifel GmbH\nWerkzeugunion Eifel GmbH\nTel.: +49 40 153 7682",
+ "received_at": "2026-11-18T13:09:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-008_RE-2026876.pdf",
+   "content_type": "application/pdf"
+  }
+ ]
+}

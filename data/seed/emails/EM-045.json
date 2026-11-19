@@ -1,0 +1,18 @@
+{
+ "id": "EM-045",
+ "message_id": "<em-045@mail.example>",
+ "thread_id": "T-EM-045",
+ "from_name": "Ingrid Neumann",
+ "from_email": "ingrid.neumann@aller-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Rechnung INV-2026-00067",
+ "body": "Guten Tag,\n\nwegen einer Rechnung:\nRcehnung INV-2026-00067\nDiese Rechnung ist bei uns nie angekommen.\nKopie im Anhang.\n\nViele Grüße\n--\nIngrid Neumann\nAller Metallbau GmbH\nTel.: +49 40 853 6654\nIBAN: DE89461416058520609334",
+ "received_at": "2026-11-17T17:56:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-045_INV-2026-00067.pdf",
+   "content_type": "application/pdf"
+  }
+ ]
+}

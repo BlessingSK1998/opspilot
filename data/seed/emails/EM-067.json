@@ -1,0 +1,18 @@
+{
+ "id": "EM-067",
+ "message_id": "<em-067@mail.example>",
+ "thread_id": "T-EM-067",
+ "from_name": "Anna Schwarz",
+ "from_email": "anna.schwarz@main.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Verbrauchsmaterial",
+ "body": "Hi team,\n\nWe would like to place an order:\nItems are in the attached CSV.\nDelivery address: Hafenstraße 111, 24103 Kiel\nRequested delivery: 15.12.2026\nPO number: PO-379114\n\nBest regards\n--\nAnna Schwarz\nMain Maschinenbau GmbH\nTel.: +49 40 667 6533",
+ "received_at": "2026-11-16T23:03:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-067_bestellung.csv",
+   "content_type": "text/csv"
+  }
+ ]
+}

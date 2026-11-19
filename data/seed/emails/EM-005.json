@@ -1,0 +1,13 @@
+{
+ "id": "EM-005",
+ "message_id": "<em-005@mail.example>",
+ "thread_id": "T-EM-005",
+ "from_name": "Vertrieb Nord",
+ "from_email": "vertrieb@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Fwd: Bestellung Ersatzteile",
+ "body": "FYI, bitte bearbeiten.\n\n---------- Forwarded message ----------\nFrom: Nadine Klein <nadine.klein@ruhr-tech.de>\nSubject: Fwd: Bestellung Ersatzteile\n\nGuten Tag,\n\nwir möchten gerne bestellen:\n- 50 x NW-1060 (Proximity sensor 6204)\n- NW-1016: 10 pcs\n- NW-1062: 100 pcs\nLieferadresse: Industrieweg 10, 24103 Kiel\nWunschtermin: 02.12.2026\nPO number: PO-611120\n\nFreundliche Grüße\n--\nNadine Klein\nRuhr Werkzeug KG\nTel.: +49 40 876 2523",
+ "received_at": "2026-11-16T22:20:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

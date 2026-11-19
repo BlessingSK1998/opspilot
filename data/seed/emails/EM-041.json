@@ -1,0 +1,13 @@
+{
+ "id": "EM-041",
+ "message_id": "<em-041@mail.example>",
+ "thread_id": "T-EM-041",
+ "from_name": "Marketing Team",
+ "from_email": "promo81@seo-boost.top",
+ "to": "ops@northwind-supply.de",
+ "subject": "Your mailbox is full",
+ "body": "Hi team,\n\nYour account will be suspended. Verify your password here: http://mail-verify.example/login",
+ "received_at": "2026-11-18T23:53:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

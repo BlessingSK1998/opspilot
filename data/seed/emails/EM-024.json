@@ -1,0 +1,13 @@
+{
+ "id": "EM-024",
+ "message_id": "<em-024@mail.example>",
+ "thread_id": "T-EM-024",
+ "from_name": "Nadine Klein",
+ "from_email": "nadine.klein@ruhr-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Complaint",
+ "body": "Hello Northwind team,\n\nYour delivery note had the wrong contact person.\n\nKind regards\n--\nNadine Klein\nRuhr Werkzeug KG\nTel.: +49 40 684 3114",
+ "received_at": "2026-11-17T03:04:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

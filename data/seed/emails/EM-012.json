@@ -1,0 +1,13 @@
+{
+ "id": "EM-012",
+ "message_id": "<em-012@mail.example>",
+ "thread_id": "T-EM-012",
+ "from_name": "Katrin Neumann",
+ "from_email": "katrin.neumann@baltic-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Ersatzteile",
+ "body": "Sehr geehrte Damen und Herren,\n\nWe would like to place an order:\n- 10 x NW-1066 (Contactor DN25)\nDelivery address: Werftstraße 45, 22525 Hamburg\nRequested delivery: 3 December 2026\n\nBeste Grüße\n--\nKatrin Neumann\nBaltic Fördertechnik GmbH\nTel.: +49 40 521 1590",
+ "received_at": "2026-11-16T12:37:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

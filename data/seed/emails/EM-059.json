@@ -1,0 +1,13 @@
+{
+ "id": "EM-059",
+ "message_id": "<em-059@mail.example>",
+ "thread_id": "T-EM-059",
+ "from_name": "Tobias Schmidt",
+ "from_email": "tobias.schmidt@main-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Retoure",
+ "body": "Guten Tag,\n\nWir möchten Ware zurückgeben.\nBestellung SO-2026-00025\nArtikel: NW-1054, NW-1067\nReason: wrong item delivered\n\nBeste Grüße\n--\nTobias Schmidt\nMain Anlagentechnik AG\nTel.: +49 40 989 3580\nIBAN: DE66808321204025840375\nprivat: tobias84@gmail.com",
+ "received_at": "2026-11-19T02:36:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

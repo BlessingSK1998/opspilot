@@ -1,0 +1,13 @@
+{
+ "id": "EM-052",
+ "message_id": "<em-052@mail.example>",
+ "thread_id": "T-EM-052",
+ "from_name": "Elena Wolf",
+ "from_email": "elena.wolf@ems-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Frage",
+ "body": "Guten Tag,\n\nHow do we open a customer account with you?\n\nBeste Grüße\n--\nElena Wolf\nEms Werkzeug KG\nTel.: +49 40 331 5416",
+ "received_at": "2026-11-17T10:00:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

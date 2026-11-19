@@ -1,0 +1,13 @@
+{
+ "id": "EM-016",
+ "message_id": "<em-016@mail.example>",
+ "thread_id": "T-EM-016",
+ "from_name": "Markus Neumann",
+ "from_email": "markus.neumann@baltic-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Beschwerde",
+ "body": "Dear Sir or Madam,\n\nSeveral bearings from the last batch show visible rust.\nOrder: SO-2026-00250\n\nRegards\n--\nMarkus Neumann\nBaltic Apparatebau GmbH\nTel.: +49 40 751 3605",
+ "received_at": "2026-11-16T13:38:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

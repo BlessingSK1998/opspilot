@@ -1,0 +1,13 @@
+{
+ "id": "EM-040",
+ "message_id": "<em-040@mail.example>",
+ "thread_id": "T-EM-040",
+ "from_name": "Nadine Klein",
+ "from_email": "nadine.klein@ruhr-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Ersatzteile",
+ "body": "Hi team,\n\nWe would like to place an order:\n- 20 x NW-1054 (Hydraulic valve M12)\n- 20 Stk. NW-1038\nDelivery address: Industrieweg 44, 22525 Hamburg\nRequested delivery: 11 December 2026\nPO number: PO-790124\n\nThanks\n--\nNadine Klein\nRuhr Werkzeug KG\nTel.: +49 40 993 9685",
+ "received_at": "2026-11-19T03:09:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

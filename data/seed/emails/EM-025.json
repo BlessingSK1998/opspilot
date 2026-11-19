@@ -1,0 +1,13 @@
+{
+ "id": "EM-025",
+ "message_id": "<em-025@mail.example>",
+ "thread_id": "T-EM-025",
+ "from_name": "Nadine Wagner",
+ "from_email": "nadine.wagner@hansa-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Retoure",
+ "body": "Dear Sir or Madam,\n\nWe want to return goods.\nOrder SO-2026-00026\nItems: NW-1076\n\nThanks\n--\nNadine Wagner\nHansa Antriebstechnik GmbH\nTel.: +49 40 995 6461\nIBAN: DE38666451567870743920\nprivat: nadine71@gmail.com",
+ "received_at": "2026-11-17T16:53:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

@@ -1,0 +1,13 @@
+{
+ "id": "EM-046",
+ "message_id": "<em-046@mail.example>",
+ "thread_id": "T-EM-046-chain",
+ "from_name": "Jonas Wagner",
+ "from_email": "jonas.wagner@aller-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Re: Rechnung INV-2026-00016",
+ "body": "Hallo,\n\nwegen einer Rechnung:\nRechnung INV-2026-00016\nBetrag: EUR 454.58\nDiese Rechnung ist bei uns nie angekommen.\nFalls das nicht gelkärt wird, schalten wir unseren Rechtsanwalt ein.\n\nBeste Grüße\n--\nJonas Wagner\nAller Maschinenbau GmbH\nTel.: +49 40 546 6350\n\nOn 12.11.2026 Jonas Wagner wrote:\n> wegen einer Rechnung:\n> Rechnung INV-2026-00016\n> Betrag: EUR 454.58\n> (no reply from Northwind yet)\n\nOn 11.11.2026 Jonas Wagner wrote:\n> wegen einer Rechnung:\n> Rechnung INV-2026-00016\n> Betrag: EUR 454.58\n> (no reply from Northwind yet)",
+ "received_at": "2026-11-16T13:26:00+01:00",
+ "thread_message_count": 3,
+ "attachments": []
+}

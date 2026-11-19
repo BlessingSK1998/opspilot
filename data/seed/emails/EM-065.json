@@ -1,0 +1,13 @@
+{
+ "id": "EM-065",
+ "message_id": "<em-065@mail.example>",
+ "thread_id": "T-EM-065",
+ "from_name": "Oliver Hinz",
+ "from_email": "oliver.hinz@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Access request: VPN",
+ "body": "Hi team,\n\nPlease grant Oliver Hinz access to VPN.\nApproved by her/his line manager.\n\nKind regards\n--\nOliver Hinz\nNorthwind Supply GmbH\nTel.: +49 40 368 9907",
+ "received_at": "2026-11-17T05:40:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

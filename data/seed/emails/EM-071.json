@@ -1,0 +1,13 @@
+{
+ "id": "EM-071",
+ "message_id": "<em-071@mail.example>",
+ "thread_id": "T-EM-071",
+ "from_name": "Vertrieb Nord",
+ "from_email": "vertrieb@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Fwd: Rechnung",
+ "body": "FYI, bitte bearbeiten.\n\n---------- Forwarded message ----------\nFrom: Stefan Koch <stefan.koch@hansa-gruppe.de>\nSubject: Fwd: Rechnung\n\nHello Northwind team,\n\nregarding an invoice:\nIt is the ivnoice from last month.\nAmount: EUR 2,606.10\nWe believe we were charged too much.\n\nRegards\n--\nStefan Koch\nHansa Fördertechnik GmbH\nTel.: +49 40 847 6406\nIBAN: DE40819415737027221795",
+ "received_at": "2026-11-17T13:17:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

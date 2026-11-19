@@ -1,0 +1,13 @@
+{
+ "id": "EM-013",
+ "message_id": "<em-013@mail.example>",
+ "thread_id": "T-EM-013",
+ "from_name": "Stefan Koch",
+ "from_email": "stefan.koch@hansa-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Verbrauchsmaterial",
+ "body": "Dear Sir or Madam,\n\nWe would like to place an order:\n- NW-1030: 50 pcs\n- 20 x NW-1052 (Contactor DN15)\n- NW-1102: 10 pcs\nRequested delivery: 10 December 2026\n\nKind regards\n--\nStefan Koch\nHansa Fördertechnik GmbH\nTel.: +49 40 523 3627",
+ "received_at": "2026-11-17T09:53:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

@@ -1,0 +1,13 @@
+{
+ "id": "EM-079",
+ "message_id": "<em-079@mail.example>",
+ "thread_id": "T-EM-079",
+ "from_name": "Elena Schmidt",
+ "from_email": "elena.schmidt@havel-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Rechnung INV-2026-00125",
+ "body": "Hello Northwind team,\n\nregarding an invoice:\nInvoice INV-2026-00125\nAmount: EUR 30,228.93\nWe received this invoice twice.\n\nRegards\n--\nElena Schmidt\nHavel Anlagentechnik AG\nTel.: +49 40 513 4161\nIBAN: DE73701759735423790387",
+ "received_at": "2026-11-18T18:21:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

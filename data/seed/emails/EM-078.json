@@ -1,0 +1,13 @@
+{
+ "id": "EM-078",
+ "message_id": "<em-078@mail.example>",
+ "thread_id": "T-EM-078",
+ "from_name": "Henrik Lorenz",
+ "from_email": "henrik.lorenz@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Access request: SAP S/4 (Sales)",
+ "body": "Guten Tag,\n\nBitte Henrik Lorenz Zugriff auf SAP S/4 (Sales) geben.\nBerechtigungsstufe: admin\nDer Vorgesetzte hat zugestimmt.\n\nBeste Grüße\n--\nHenrik Lorenz\nNorthwind Supply GmbH\nTel.: +49 40 946 9190",
+ "received_at": "2026-11-17T08:56:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

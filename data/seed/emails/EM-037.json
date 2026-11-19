@@ -1,0 +1,13 @@
+{
+ "id": "EM-037",
+ "message_id": "<em-037@mail.example>",
+ "thread_id": "T-EM-037",
+ "from_name": "Elena Schulz",
+ "from_email": "elena.schulz@baltic-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Retoure",
+ "body": "Dear Sir or Madam,\n\nWe want to return goods.\nOrder SO-2026-00119\nItems: NW-1001, NW-1066\nReason: wrong item delivered\n\nKind regards\n--\nElena Schulz\nBaltic Antriebstechnik GmbH\nTel.: +49 40 297 3893\nIBAN: DE36918020201226306758\nprivat: elena90@gmail.com",
+ "received_at": "2026-11-16T17:04:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

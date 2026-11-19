@@ -1,0 +1,13 @@
+{
+ "id": "EM-063",
+ "message_id": "<em-063@mail.example>",
+ "thread_id": "T-EM-063",
+ "from_name": "Vertrieb Nord",
+ "from_email": "vertrieb@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Fwd: Frage",
+ "body": "FYI, bitte bearbeiten.\n\n---------- Forwarded message ----------\nFrom: Mehmet Schneider <mehmet.schneider@ems-gruppe.de>\nSubject: Fwd: Frage\n\nSehr geehrte Damen und Herren,\n\nHabt ihr was für unser Pumpenproblem?\n\nBeste Grüße\n--\nMehmet Schneider\nEms Antriebstechnik GmbH\nTel.: +49 40 959 9531",
+ "received_at": "2026-11-17T16:02:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

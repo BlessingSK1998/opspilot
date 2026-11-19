@@ -1,0 +1,13 @@
+{
+ "id": "EM-047",
+ "message_id": "<em-047@mail.example>",
+ "thread_id": "T-EM-047",
+ "from_name": "Mehmet Schwarz",
+ "from_email": "mehmet.schwarz@trave-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Rechnung INV-2026-00086",
+ "body": "Guten Tag,\n\nwegen einer Rechnung:\nRechnung INV-2026-00086\nBetrag: 4.300,07 €\nWir haben diese Rechnung doppelt erhalten.\n\nMit freundlichen Grüßen\n--\nMehmet Schwarz\nTrave Antriebstechnik GmbH\nTel.: +49 40 456 8765",
+ "received_at": "2026-11-16T17:55:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

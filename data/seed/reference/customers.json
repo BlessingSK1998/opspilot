@@ -1,0 +1,402 @@
+[
+ {
+  "id": "C-1001",
+  "name": "Eider Werkzeug KG",
+  "contact_name": "Lukas Meyer",
+  "contact_email": "lukas.meyer@eider-gruppe.de",
+  "email_domain": "eider-gruppe.de",
+  "delivery_address": "Hafenstraße 89, 44135 Dortmund",
+  "vip": false,
+  "payment_terms_days": 14
+ },
+ {
+  "id": "C-1002",
+  "name": "Saar Werkzeug KG",
+  "contact_name": "Katrin Koch",
+  "contact_email": "katrin.koch@saar-tech.de",
+  "email_domain": "saar-tech.de",
+  "delivery_address": "Bahnhofstraße 12, 24103 Kiel",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1003",
+  "name": "Havel Maschinenbau GmbH",
+  "contact_name": "Ingrid Becker",
+  "contact_email": "ingrid.becker@havel.de",
+  "email_domain": "havel.de",
+  "delivery_address": "Hafenstraße 94, 18055 Rostock",
+  "vip": true,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1004",
+  "name": "Lahn Anlagentechnik AG",
+  "contact_name": "Markus Müller",
+  "contact_email": "markus.mueller@lahn-tech.de",
+  "email_domain": "lahn-tech.de",
+  "delivery_address": "Speicherstraße 23, 28195 Bremen",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1005",
+  "name": "Havel Anlagentechnik AG",
+  "contact_name": "Elena Schmidt",
+  "contact_email": "elena.schmidt@havel-gruppe.de",
+  "email_domain": "havel-gruppe.de",
+  "delivery_address": "Industrieweg 76, 18055 Rostock",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1006",
+  "name": "Trave Antriebstechnik GmbH",
+  "contact_name": "Mehmet Schwarz",
+  "contact_email": "mehmet.schwarz@trave-gruppe.de",
+  "email_domain": "trave-gruppe.de",
+  "delivery_address": "Werftstraße 56, 44135 Dortmund",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1007",
+  "name": "Oder Stahlbau GmbH",
+  "contact_name": "Mehmet Schwarz",
+  "contact_email": "mehmet.schwarz@oder-tech.de",
+  "email_domain": "oder-tech.de",
+  "delivery_address": "Industrieweg 94, 39104 Magdeburg",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1008",
+  "name": "Baltic Fördertechnik GmbH",
+  "contact_name": "Katrin Neumann",
+  "contact_email": "katrin.neumann@baltic-tech.de",
+  "email_domain": "baltic-tech.de",
+  "delivery_address": "Hafenstraße 67, 18055 Rostock",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1009",
+  "name": "Leine Stahlbau GmbH",
+  "contact_name": "Laura Schwarz",
+  "contact_email": "laura.schwarz@leine-gruppe.de",
+  "email_domain": "leine-gruppe.de",
+  "delivery_address": "Speicherstraße 62, 18055 Rostock",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1010",
+  "name": "Hansa Fördertechnik GmbH",
+  "contact_name": "Stefan Koch",
+  "contact_email": "stefan.koch@hansa-gruppe.de",
+  "email_domain": "hansa-gruppe.de",
+  "delivery_address": "Werftstraße 97, 44135 Dortmund",
+  "vip": true,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1011",
+  "name": "Rhein Fördertechnik GmbH",
+  "contact_name": "Elena Koch",
+  "contact_email": "elena.koch@rhein.de",
+  "email_domain": "rhein.de",
+  "delivery_address": "Hafenstraße 6, 39104 Magdeburg",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1012",
+  "name": "Neckar Hydraulik GmbH",
+  "contact_name": "Stefan Schulz",
+  "contact_email": "stefan.schulz@neckar-gruppe.de",
+  "email_domain": "neckar-gruppe.de",
+  "delivery_address": "Hafenstraße 24, 20457 Hamburg",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1013",
+  "name": "Ems Antriebstechnik GmbH",
+  "contact_name": "Mehmet Schneider",
+  "contact_email": "mehmet.schneider@ems-gruppe.de",
+  "email_domain": "ems-gruppe.de",
+  "delivery_address": "Am Kanal 103, 20457 Hamburg",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1014",
+  "name": "Ruhr Werkzeug KG",
+  "contact_name": "Nadine Klein",
+  "contact_email": "nadine.klein@ruhr-tech.de",
+  "email_domain": "ruhr-tech.de",
+  "delivery_address": "Industrieweg 10, 24103 Kiel",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1015",
+  "name": "Spree Anlagentechnik AG",
+  "contact_name": "Sabine Schwarz",
+  "contact_email": "sabine.schwarz@spree.de",
+  "email_domain": "spree.de",
+  "delivery_address": "Lagerstraße 51, 30159 Hannover",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1016",
+  "name": "Aller Maschinenbau GmbH",
+  "contact_name": "Jonas Wagner",
+  "contact_email": "jonas.wagner@aller-gruppe.de",
+  "email_domain": "aller-gruppe.de",
+  "delivery_address": "Industrieweg 120, 20457 Hamburg",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1017",
+  "name": "Nordsee Hydraulik GmbH",
+  "contact_name": "Jonas Koch",
+  "contact_email": "jonas.koch@nordsee.de",
+  "email_domain": "nordsee.de",
+  "delivery_address": "Lagerstraße 81, 40213 Düsseldorf",
+  "vip": false,
+  "payment_terms_days": 14
+ },
+ {
+  "id": "C-1018",
+  "name": "Main Maschinenbau GmbH",
+  "contact_name": "Anna Schwarz",
+  "contact_email": "anna.schwarz@main.de",
+  "email_domain": "main.de",
+  "delivery_address": "Hafenstraße 111, 24103 Kiel",
+  "vip": true,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1019",
+  "name": "Oder Fördertechnik GmbH",
+  "contact_name": "Thomas Schmidt",
+  "contact_email": "thomas.schmidt@oder-gruppe.de",
+  "email_domain": "oder-gruppe.de",
+  "delivery_address": "Bahnhofstraße 5, 20457 Hamburg",
+  "vip": false,
+  "payment_terms_days": 14
+ },
+ {
+  "id": "C-1020",
+  "name": "Nordsee Anlagentechnik AG",
+  "contact_name": "Tobias Richter",
+  "contact_email": "tobias.richter@nordsee-gruppe.de",
+  "email_domain": "nordsee-gruppe.de",
+  "delivery_address": "Gewerbering 99, 20457 Hamburg",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1021",
+  "name": "Ems Werkzeug KG",
+  "contact_name": "Elena Wolf",
+  "contact_email": "elena.wolf@ems-gruppe.de",
+  "email_domain": "ems-gruppe.de",
+  "delivery_address": "Werftstraße 32, 30159 Hannover",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1022",
+  "name": "Ems Maschinenbau GmbH",
+  "contact_name": "Elena Wagner",
+  "contact_email": "elena.wagner@ems-gruppe.de",
+  "email_domain": "ems-gruppe.de",
+  "delivery_address": "Werftstraße 33, 20457 Hamburg",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1023",
+  "name": "Weser Stahlbau GmbH",
+  "contact_name": "Jens Schulz",
+  "contact_email": "jens.schulz@weser.de",
+  "email_domain": "weser.de",
+  "delivery_address": "Werftstraße 63, 24103 Kiel",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1024",
+  "name": "Havel Fördertechnik GmbH",
+  "contact_name": "Tobias Becker",
+  "contact_email": "tobias.becker@havel-gruppe.de",
+  "email_domain": "havel-gruppe.de",
+  "delivery_address": "Lagerstraße 20, 18055 Rostock",
+  "vip": false,
+  "payment_terms_days": 14
+ },
+ {
+  "id": "C-1025",
+  "name": "Main Anlagentechnik AG",
+  "contact_name": "Tobias Schmidt",
+  "contact_email": "tobias.schmidt@main-tech.de",
+  "email_domain": "main-tech.de",
+  "delivery_address": "Speicherstraße 17, 40213 Düsseldorf",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1026",
+  "name": "Hansa Antriebstechnik GmbH",
+  "contact_name": "Nadine Wagner",
+  "contact_email": "nadine.wagner@hansa-tech.de",
+  "email_domain": "hansa-tech.de",
+  "delivery_address": "Bahnhofstraße 33, 28195 Bremen",
+  "vip": false,
+  "payment_terms_days": 14
+ },
+ {
+  "id": "C-1027",
+  "name": "Aller Metallbau GmbH",
+  "contact_name": "Ingrid Neumann",
+  "contact_email": "ingrid.neumann@aller-gruppe.de",
+  "email_domain": "aller-gruppe.de",
+  "delivery_address": "Hafenstraße 38, 30159 Hannover",
+  "vip": true,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1028",
+  "name": "Saar Hydraulik GmbH",
+  "contact_name": "Thomas Klein",
+  "contact_email": "thomas.klein@saar-gruppe.de",
+  "email_domain": "saar-gruppe.de",
+  "delivery_address": "Speicherstraße 39, 20457 Hamburg",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1029",
+  "name": "Saar Apparatebau GmbH",
+  "contact_name": "Sabine Meyer",
+  "contact_email": "sabine.meyer@saar-tech.de",
+  "email_domain": "saar-tech.de",
+  "delivery_address": "Speicherstraße 116, 30159 Hannover",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1030",
+  "name": "Isar Hydraulik GmbH",
+  "contact_name": "Ingrid Klein",
+  "contact_email": "ingrid.klein@isar-gruppe.de",
+  "email_domain": "isar-gruppe.de",
+  "delivery_address": "Hafenstraße 82, 40213 Düsseldorf",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1031",
+  "name": "Main Stahlbau GmbH",
+  "contact_name": "Nadine Weber",
+  "contact_email": "nadine.weber@main.de",
+  "email_domain": "main.de",
+  "delivery_address": "Bahnhofstraße 17, 40213 Düsseldorf",
+  "vip": false,
+  "payment_terms_days": 45
+ },
+ {
+  "id": "C-1032",
+  "name": "Eider Antriebstechnik GmbH",
+  "contact_name": "Ingrid Wagner",
+  "contact_email": "ingrid.wagner@eider-tech.de",
+  "email_domain": "eider-tech.de",
+  "delivery_address": "Am Kanal 116, 30159 Hannover",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1033",
+  "name": "Neckar Werkzeug KG",
+  "contact_name": "Felix Klein",
+  "contact_email": "felix.klein@neckar.de",
+  "email_domain": "neckar.de",
+  "delivery_address": "Industrieweg 41, 24103 Kiel",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1034",
+  "name": "Neckar Metallbau GmbH",
+  "contact_name": "Laura Neumann",
+  "contact_email": "laura.neumann@neckar.de",
+  "email_domain": "neckar.de",
+  "delivery_address": "Bahnhofstraße 31, 39104 Magdeburg",
+  "vip": true,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1035",
+  "name": "Werra Anlagentechnik AG",
+  "contact_name": "Nadine Schwarz",
+  "contact_email": "nadine.schwarz@werra.de",
+  "email_domain": "werra.de",
+  "delivery_address": "Am Kanal 79, 44135 Dortmund",
+  "vip": false,
+  "payment_terms_days": 14
+ },
+ {
+  "id": "C-1036",
+  "name": "Aller Werkzeug KG",
+  "contact_name": "Julia Schneider",
+  "contact_email": "julia.schneider@aller-gruppe.de",
+  "email_domain": "aller-gruppe.de",
+  "delivery_address": "Industrieweg 95, 28195 Bremen",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1037",
+  "name": "Hansa Metallbau GmbH",
+  "contact_name": "Markus Meyer",
+  "contact_email": "markus.meyer@hansa.de",
+  "email_domain": "hansa.de",
+  "delivery_address": "Werftstraße 70, 44135 Dortmund",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1038",
+  "name": "Baltic Apparatebau GmbH",
+  "contact_name": "Markus Neumann",
+  "contact_email": "markus.neumann@baltic-gruppe.de",
+  "email_domain": "baltic-gruppe.de",
+  "delivery_address": "Speicherstraße 44, 30159 Hannover",
+  "vip": false,
+  "payment_terms_days": 14
+ },
+ {
+  "id": "C-1039",
+  "name": "Baltic Antriebstechnik GmbH",
+  "contact_name": "Elena Schulz",
+  "contact_email": "elena.schulz@baltic-tech.de",
+  "email_domain": "baltic-tech.de",
+  "delivery_address": "Werftstraße 73, 40213 Düsseldorf",
+  "vip": false,
+  "payment_terms_days": 30
+ },
+ {
+  "id": "C-1040",
+  "name": "Saar Anlagentechnik AG",
+  "contact_name": "Thomas Richter",
+  "contact_email": "thomas.richter@saar.de",
+  "email_domain": "saar.de",
+  "delivery_address": "Am Kanal 4, 40213 Düsseldorf",
+  "vip": false,
+  "payment_terms_days": 30
+ }
+]

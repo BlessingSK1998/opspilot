@@ -1,0 +1,842 @@
+[
+ {
+  "sku": "NW-1000",
+  "name": "Socket screw M6",
+  "family": "Fasteners",
+  "unit_price": 1.02,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1001",
+  "name": "Roller bearing DN25",
+  "family": "Bearings",
+  "unit_price": 43.83,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1002",
+  "name": "Hydraulic valve 3/4\"",
+  "family": "Hydraulics",
+  "unit_price": 68.01,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1003",
+  "name": "O-ring 6306",
+  "family": "Seals",
+  "unit_price": 17.17,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1004",
+  "name": "Terminal block M6",
+  "family": "Electrical",
+  "unit_price": 30.79,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1005",
+  "name": "Torque wrench DN15",
+  "family": "Tools",
+  "unit_price": 48.53,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1006",
+  "name": "Threaded rod 6204",
+  "family": "Fasteners",
+  "unit_price": 1.05,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1007",
+  "name": "Needle bearing 6306",
+  "family": "Bearings",
+  "unit_price": 38.27,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1008",
+  "name": "Hydraulic valve DN15",
+  "family": "Hydraulics",
+  "unit_price": 95.23,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1009",
+  "name": "V-ring 3/4\"",
+  "family": "Seals",
+  "unit_price": 17.76,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1010",
+  "name": "Contactor 1/2\"",
+  "family": "Electrical",
+  "unit_price": 4.31,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1011",
+  "name": "Drill bit set M8",
+  "family": "Tools",
+  "unit_price": 83.97,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1012",
+  "name": "Hex bolt 6204",
+  "family": "Fasteners",
+  "unit_price": 1.82,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1013",
+  "name": "Needle bearing 6204",
+  "family": "Bearings",
+  "unit_price": 14.4,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1014",
+  "name": "Hydraulic hose 1/2\"",
+  "family": "Hydraulics",
+  "unit_price": 51.41,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1015",
+  "name": "V-ring M10",
+  "family": "Seals",
+  "unit_price": 11.7,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1016",
+  "name": "Contactor M10",
+  "family": "Electrical",
+  "unit_price": 2.01,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1017",
+  "name": "Torque wrench DN25",
+  "family": "Tools",
+  "unit_price": 12.95,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1018",
+  "name": "Washer M6",
+  "family": "Fasteners",
+  "unit_price": 0.89,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1019",
+  "name": "Pillow block DN15",
+  "family": "Bearings",
+  "unit_price": 25.63,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1020",
+  "name": "Pressure gauge 6204",
+  "family": "Hydraulics",
+  "unit_price": 52.02,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1021",
+  "name": "V-ring M12",
+  "family": "Seals",
+  "unit_price": 2.89,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1022",
+  "name": "Terminal block 32 mm",
+  "family": "Electrical",
+  "unit_price": 30.36,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1023",
+  "name": "Calliper M10",
+  "family": "Tools",
+  "unit_price": 43.28,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1024",
+  "name": "Socket screw M12",
+  "family": "Fasteners",
+  "unit_price": 2.53,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1025",
+  "name": "Pillow block DN25",
+  "family": "Bearings",
+  "unit_price": 21.89,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1026",
+  "name": "Quick coupling DN25",
+  "family": "Hydraulics",
+  "unit_price": 35.31,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1027",
+  "name": "Flat gasket 32 mm",
+  "family": "Seals",
+  "unit_price": 15.84,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1028",
+  "name": "Hex key set M6",
+  "family": "Tools",
+  "unit_price": 21.02,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1029",
+  "name": "Hex nut 6204",
+  "family": "Fasteners",
+  "unit_price": 0.75,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1030",
+  "name": "Roller bearing M10",
+  "family": "Bearings",
+  "unit_price": 10.9,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1031",
+  "name": "Hydraulic valve 32 mm",
+  "family": "Hydraulics",
+  "unit_price": 74.37,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1032",
+  "name": "Radial shaft seal M12",
+  "family": "Seals",
+  "unit_price": 15.85,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1033",
+  "name": "Cable gland M12",
+  "family": "Electrical",
+  "unit_price": 14.67,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1034",
+  "name": "Calliper 6306",
+  "family": "Tools",
+  "unit_price": 71.49,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1035",
+  "name": "Socket screw 20 mm",
+  "family": "Fasteners",
+  "unit_price": 3.14,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1036",
+  "name": "Radial shaft seal M10",
+  "family": "Seals",
+  "unit_price": 4.43,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1037",
+  "name": "Contactor 20 mm",
+  "family": "Electrical",
+  "unit_price": 17.68,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1038",
+  "name": "Hex key set 6306",
+  "family": "Tools",
+  "unit_price": 19.74,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1039",
+  "name": "Ball bearing 20 mm",
+  "family": "Bearings",
+  "unit_price": 3.69,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1040",
+  "name": "Hydraulic valve M6",
+  "family": "Hydraulics",
+  "unit_price": 23.89,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1041",
+  "name": "V-ring M6",
+  "family": "Seals",
+  "unit_price": 3.14,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1042",
+  "name": "Contactor 32 mm",
+  "family": "Electrical",
+  "unit_price": 1.71,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1043",
+  "name": "Torque wrench 6306",
+  "family": "Tools",
+  "unit_price": 79.67,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1044",
+  "name": "Washer 20 mm",
+  "family": "Fasteners",
+  "unit_price": 0.16,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1045",
+  "name": "Quick coupling 6204",
+  "family": "Hydraulics",
+  "unit_price": 28.86,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1046",
+  "name": "O-ring M6",
+  "family": "Seals",
+  "unit_price": 15.07,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1047",
+  "name": "Cable gland 1/2\"",
+  "family": "Electrical",
+  "unit_price": 2.22,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1048",
+  "name": "Socket screw M8",
+  "family": "Fasteners",
+  "unit_price": 1.6,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1049",
+  "name": "Ball bearing M8",
+  "family": "Bearings",
+  "unit_price": 46.47,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1050",
+  "name": "Hydraulic hose M6",
+  "family": "Hydraulics",
+  "unit_price": 31.91,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1051",
+  "name": "V-ring 32 mm",
+  "family": "Seals",
+  "unit_price": 14.6,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1052",
+  "name": "Contactor DN15",
+  "family": "Electrical",
+  "unit_price": 16.06,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1053",
+  "name": "Socket screw DN25",
+  "family": "Fasteners",
+  "unit_price": 2.01,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1054",
+  "name": "Hydraulic valve M12",
+  "family": "Hydraulics",
+  "unit_price": 28.46,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1055",
+  "name": "O-ring 3/4\"",
+  "family": "Seals",
+  "unit_price": 8.87,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1056",
+  "name": "Terminal block 3/4\"",
+  "family": "Electrical",
+  "unit_price": 33.21,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1057",
+  "name": "Hex bolt 1/2\"",
+  "family": "Fasteners",
+  "unit_price": 0.19,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1058",
+  "name": "Pillow block M10",
+  "family": "Bearings",
+  "unit_price": 25.61,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1059",
+  "name": "V-ring 6204",
+  "family": "Seals",
+  "unit_price": 4.94,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1060",
+  "name": "Proximity sensor 6204",
+  "family": "Electrical",
+  "unit_price": 7.19,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1061",
+  "name": "Hex key set 3/4\"",
+  "family": "Tools",
+  "unit_price": 86.52,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1062",
+  "name": "Hex bolt M8",
+  "family": "Fasteners",
+  "unit_price": 3.5,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1063",
+  "name": "Pillow block 32 mm",
+  "family": "Bearings",
+  "unit_price": 23.82,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1064",
+  "name": "Pressure gauge DN15",
+  "family": "Hydraulics",
+  "unit_price": 61.17,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1065",
+  "name": "O-ring 6204",
+  "family": "Seals",
+  "unit_price": 11.87,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1066",
+  "name": "Contactor DN25",
+  "family": "Electrical",
+  "unit_price": 17.81,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1067",
+  "name": "Hex bolt 6306",
+  "family": "Fasteners",
+  "unit_price": 2.58,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1068",
+  "name": "Roller bearing 32 mm",
+  "family": "Bearings",
+  "unit_price": 35.86,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1069",
+  "name": "Flat gasket 1/2\"",
+  "family": "Seals",
+  "unit_price": 14.16,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1070",
+  "name": "Cable gland 6204",
+  "family": "Electrical",
+  "unit_price": 10.88,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1071",
+  "name": "Drill bit set M12",
+  "family": "Tools",
+  "unit_price": 88.35,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1072",
+  "name": "Hex bolt DN15",
+  "family": "Fasteners",
+  "unit_price": 0.6,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1073",
+  "name": "Ball bearing DN25",
+  "family": "Bearings",
+  "unit_price": 21.34,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1074",
+  "name": "Quick coupling M10",
+  "family": "Hydraulics",
+  "unit_price": 64.99,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1075",
+  "name": "Flat gasket DN25",
+  "family": "Seals",
+  "unit_price": 3.67,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1076",
+  "name": "Cable gland 32 mm",
+  "family": "Electrical",
+  "unit_price": 38.5,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1077",
+  "name": "Drill bit set DN15",
+  "family": "Tools",
+  "unit_price": 57.25,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1078",
+  "name": "Flat gasket 6306",
+  "family": "Seals",
+  "unit_price": 8.39,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1079",
+  "name": "Calliper M6",
+  "family": "Tools",
+  "unit_price": 36.8,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1080",
+  "name": "Hex nut M10",
+  "family": "Fasteners",
+  "unit_price": 0.84,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1081",
+  "name": "Roller bearing DN15",
+  "family": "Bearings",
+  "unit_price": 37.28,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1082",
+  "name": "Hydraulic hose DN25",
+  "family": "Hydraulics",
+  "unit_price": 17.02,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1083",
+  "name": "Flat gasket M6",
+  "family": "Seals",
+  "unit_price": 2.68,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1084",
+  "name": "Contactor 6306",
+  "family": "Electrical",
+  "unit_price": 36.8,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1085",
+  "name": "Washer M8",
+  "family": "Fasteners",
+  "unit_price": 2.51,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1086",
+  "name": "Needle bearing 1/2\"",
+  "family": "Bearings",
+  "unit_price": 9.76,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1087",
+  "name": "Hydraulic hose 32 mm",
+  "family": "Hydraulics",
+  "unit_price": 93.53,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1088",
+  "name": "Radial shaft seal 6306",
+  "family": "Seals",
+  "unit_price": 13.51,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1089",
+  "name": "Proximity sensor 20 mm",
+  "family": "Electrical",
+  "unit_price": 22.65,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1090",
+  "name": "Threaded rod 3/4\"",
+  "family": "Fasteners",
+  "unit_price": 0.63,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1091",
+  "name": "Pillow block 3/4\"",
+  "family": "Bearings",
+  "unit_price": 22.58,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1092",
+  "name": "Quick coupling 1/2\"",
+  "family": "Hydraulics",
+  "unit_price": 107.69,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1093",
+  "name": "Flat gasket M12",
+  "family": "Seals",
+  "unit_price": 7.74,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1094",
+  "name": "Proximity sensor 3/4\"",
+  "family": "Electrical",
+  "unit_price": 13.03,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1095",
+  "name": "Calliper 1/2\"",
+  "family": "Tools",
+  "unit_price": 84.29,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1096",
+  "name": "Threaded rod M6",
+  "family": "Fasteners",
+  "unit_price": 0.88,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1097",
+  "name": "Ball bearing M10",
+  "family": "Bearings",
+  "unit_price": 36.8,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1098",
+  "name": "Hydraulic valve M8",
+  "family": "Hydraulics",
+  "unit_price": 11.75,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1099",
+  "name": "Socket screw 6306",
+  "family": "Fasteners",
+  "unit_price": 0.99,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1100",
+  "name": "Ball bearing 6306",
+  "family": "Bearings",
+  "unit_price": 12.35,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1101",
+  "name": "Pressure gauge M10",
+  "family": "Hydraulics",
+  "unit_price": 94.47,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1102",
+  "name": "Torque wrench M8",
+  "family": "Tools",
+  "unit_price": 79.78,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1103",
+  "name": "Ball bearing M12",
+  "family": "Bearings",
+  "unit_price": 13.4,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1104",
+  "name": "Pressure gauge M6",
+  "family": "Hydraulics",
+  "unit_price": 61.49,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1105",
+  "name": "Cable gland DN25",
+  "family": "Electrical",
+  "unit_price": 9.63,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1106",
+  "name": "Hex bolt 20 mm",
+  "family": "Fasteners",
+  "unit_price": 0.31,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1107",
+  "name": "Ball bearing 3/4\"",
+  "family": "Bearings",
+  "unit_price": 41.33,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1108",
+  "name": "Hydraulic hose 6306",
+  "family": "Hydraulics",
+  "unit_price": 106.46,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1109",
+  "name": "Calliper 6204",
+  "family": "Tools",
+  "unit_price": 78.48,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1110",
+  "name": "Hex nut M8",
+  "family": "Fasteners",
+  "unit_price": 1.11,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1111",
+  "name": "Quick coupling DN15",
+  "family": "Hydraulics",
+  "unit_price": 10.33,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1112",
+  "name": "V-ring 1/2\"",
+  "family": "Seals",
+  "unit_price": 14.04,
+  "stock": 6000
+ },
+ {
+  "sku": "NW-1113",
+  "name": "Threaded rod 20 mm",
+  "family": "Fasteners",
+  "unit_price": 0.17,
+  "stock": 80
+ },
+ {
+  "sku": "NW-1114",
+  "name": "Ball bearing 32 mm",
+  "family": "Bearings",
+  "unit_price": 32.93,
+  "stock": 0
+ },
+ {
+  "sku": "NW-1115",
+  "name": "V-ring DN25",
+  "family": "Seals",
+  "unit_price": 9.06,
+  "stock": 12
+ },
+ {
+  "sku": "NW-1116",
+  "name": "Terminal block 6204",
+  "family": "Electrical",
+  "unit_price": 6.29,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1117",
+  "name": "Torque wrench M12",
+  "family": "Tools",
+  "unit_price": 39.78,
+  "stock": 1500
+ },
+ {
+  "sku": "NW-1118",
+  "name": "Washer 3/4\"",
+  "family": "Fasteners",
+  "unit_price": 0.83,
+  "stock": 340
+ },
+ {
+  "sku": "NW-1119",
+  "name": "Roller bearing M12",
+  "family": "Bearings",
+  "unit_price": 9.22,
+  "stock": 12
+ }
+]

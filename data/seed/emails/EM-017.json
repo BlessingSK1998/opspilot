@@ -1,0 +1,13 @@
+{
+ "id": "EM-017",
+ "message_id": "<em-017@mail.example>",
+ "thread_id": "T-EM-017",
+ "from_name": "Markus Meyer",
+ "from_email": "markus.meyer@hansa.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Rechnung INV-2026-00037",
+ "body": "Hallo,\n\nwegen einer Rechnung:\nRechnung INV-2026-00037\nBetrag: EUR 7,815.32\nunserer Meinung nach wurde zu viel berechnet.\n\nMit freundlichen Grüßen\n--\nMarkus Meyer\nHansa Metallbau GmbH\nTel.: +49 40 107 4481\nIBAN: DE77981292112586854997",
+ "received_at": "2026-11-17T14:07:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

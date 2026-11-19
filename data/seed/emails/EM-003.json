@@ -1,0 +1,13 @@
+{
+ "id": "EM-003",
+ "message_id": "<em-003@mail.example>",
+ "thread_id": "T-EM-003",
+ "from_name": "Kerstin Albers",
+ "from_email": "kerstin.albers@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Access request: Shared drive 'Logistik'",
+ "body": "Dear Sir or Madam,\n\nPlease grant Kerstin Albers access to Shared drive 'Logistik'.\nAccess level: read\nApproved by her/his line manager.\n\nBest regards\n--\nKerstin Albers\nNorthwind Supply GmbH\nTel.: +49 40 397 6680",
+ "received_at": "2026-11-18T11:13:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

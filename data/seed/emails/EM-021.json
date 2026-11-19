@@ -1,0 +1,13 @@
+{
+ "id": "EM-021",
+ "message_id": "<em-021@mail.example>",
+ "thread_id": "T-EM-021",
+ "from_name": "Marketing Team",
+ "from_email": "promo10@seo-boost.top",
+ "to": "ops@northwind-supply.de",
+ "subject": "Make EUR 5000 a day with crypto!!!",
+ "body": "Hello Northwind team,\n\nCONGRATULATIONS! You have been selected. Click http://bit.ly/x9 to claim your bitcoin bonus now.",
+ "received_at": "2026-11-18T10:49:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

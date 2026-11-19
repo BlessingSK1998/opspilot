@@ -1,0 +1,13 @@
+{
+ "id": "EM-027",
+ "message_id": "<em-027@mail.example>",
+ "thread_id": "T-EM-027",
+ "from_name": "Markus Müller",
+ "from_email": "markus.mueller@lahn-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Frage",
+ "body": "Hallo,\n\nKönnt ihr 3.1-Werkstoffzeugnisse für Edelstahl-Verbindungselemente liefern?\n\nBeste Grüße\n--\nMarkus Müller\nLahn Anlagentechnik AG\nTel.: +49 40 971 7167",
+ "received_at": "2026-11-19T05:14:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

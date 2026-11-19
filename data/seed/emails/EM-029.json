@@ -1,0 +1,13 @@
+{
+ "id": "EM-029",
+ "message_id": "<em-029@mail.example>",
+ "thread_id": "T-EM-029",
+ "from_name": "Anna Schwarz",
+ "from_email": "anna.schwarz@main.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Beschwerde",
+ "body": "Guten Tag,\n\nOur production line has been stopped since this morning because the parts did not arrive. This is unacceptable!\nBestellung: SO-2026-00018\n\nThanks\n--\nAnna Schwarz\nMain Maschinenbau GmbH\nTel.: +49 40 409 6121",
+ "received_at": "2026-11-16T15:42:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

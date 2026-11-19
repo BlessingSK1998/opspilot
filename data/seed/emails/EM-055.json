@@ -1,0 +1,13 @@
+{
+ "id": "EM-055",
+ "message_id": "<em-055@mail.example>",
+ "thread_id": "T-EM-055",
+ "from_name": "Stefan Koch",
+ "from_email": "stefan.koch@hansa-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Bestellung Verbrauchsmaterial",
+ "body": "Hi team,\n\nWe would like to place an order:\n- 5 x NW-1039 (Ball bearing 20 mm)\n- 100 Stk. NW-1063\n- 100 Stk. NW-1075\nDelivery address: Werftstraße 97, 44135 Dortmund\nRequested delivery: 12 December 2026\n\nAlso, a second topic:\nWe want to return goods.\nOrder SO-2026-00090\nItems: NW-1041, NW-1117\nReason: no longer needed\nRefund amount: EUR 2,441.64\n\nRegards\n--\nStefan Koch\nHansa Fördertechnik GmbH\nTel.: +49 40 454 8622",
+ "received_at": "2026-11-16T08:25:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

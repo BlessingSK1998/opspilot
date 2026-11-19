@@ -1,0 +1,18 @@
+{
+ "id": "EM-070",
+ "message_id": "<em-070@mail.example>",
+ "thread_id": "T-EM-070",
+ "from_name": "Kugellager Brandt GmbH",
+ "from_email": "rechnung@kugellager.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Invoice RE-2026940",
+ "body": "Guten Tag,\n\nanbei unser Dokument (invoice).\n\nBeste Grüße\n--\nKugellager Brandt GmbH\nKugellager Brandt GmbH\nTel.: +49 40 893 1531",
+ "received_at": "2026-11-17T22:12:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-070_RE-2026940.pdf",
+   "content_type": "application/pdf"
+  }
+ ]
+}

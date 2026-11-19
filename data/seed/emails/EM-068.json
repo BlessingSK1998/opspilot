@@ -1,0 +1,18 @@
+{
+ "id": "EM-068",
+ "message_id": "<em-068@mail.example>",
+ "thread_id": "T-EM-068",
+ "from_name": "Elektro Lindner GmbH",
+ "from_email": "rechnung@elektro.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Certificate CERT-2642-B",
+ "body": "Guten Tag,\n\nPlease find our certificate attached.\n\nThanks\n--\nElektro Lindner GmbH\nElektro Lindner GmbH\nTel.: +49 40 703 4429",
+ "received_at": "2026-11-16T10:40:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [
+  {
+   "filename": "EM-068_CERT-2642-B.pdf",
+   "content_type": "application/pdf"
+  }
+ ]
+}

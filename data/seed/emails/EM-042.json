@@ -1,0 +1,13 @@
+{
+ "id": "EM-042",
+ "message_id": "<em-042@mail.example>",
+ "thread_id": "T-EM-042",
+ "from_name": "Nadine Klein",
+ "from_email": "nadine.klein@ruhr-tech.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Retoure",
+ "body": "Sehr geehrte Damen und Herren,\n\nWir möchten Ware zurückgeben.\nEs war eure Lieferung von vor zwei Wochen.\nArtikel: NW-1040, NW-1078\nGrund: falsche Ware geliefert\n\nViele Grüße\n--\nNadine Klein\nRuhr Werkzeug KG\nTel.: +49 40 299 5776",
+ "received_at": "2026-11-18T13:22:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

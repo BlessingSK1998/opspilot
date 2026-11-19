@@ -1,0 +1,13 @@
+{
+ "id": "EM-026",
+ "message_id": "<em-026@mail.example>",
+ "thread_id": "T-EM-026",
+ "from_name": "Oliver Hinz",
+ "from_email": "oliver.hinz@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Access request: Shared drive 'Logistik'",
+ "body": "Sehr geehrte Damen und Herren,\n\nBitte Oliver Hinz Zugriff auf Shared drive 'Logistik' geben.\nBerechtigungsstufe: write\nDer Vorgesetzte hat zugestimmt.\n\nMit freundlichen Grüßen\n--\nOliver Hinz\nNorthwind Supply GmbH\nTel.: +49 40 625 5354",
+ "received_at": "2026-11-17T04:57:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

@@ -1,0 +1,13 @@
+{
+ "id": "EM-034",
+ "message_id": "<em-034@mail.example>",
+ "thread_id": "T-EM-034",
+ "from_name": "Oliver Hinz",
+ "from_email": "oliver.hinz@northwind-supply.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Access request: Power BI workspace 'Ops'",
+ "body": "Hallo zusammen,\n\nBitte Oliver Hinz Zugriff auf Power BI workspace 'Ops' geben.\nBerechtigungsstufe: admin\n\nMit freundlichen Grüßen\n--\nOliver Hinz\nNorthwind Supply GmbH\nTel.: +49 40 325 1406",
+ "received_at": "2026-11-18T23:43:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

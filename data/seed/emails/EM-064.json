@@ -1,0 +1,13 @@
+{
+ "id": "EM-064",
+ "message_id": "<em-064@mail.example>",
+ "thread_id": "T-EM-064",
+ "from_name": "Elena Schmidt",
+ "from_email": "elena.schmidt@havel-gruppe.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Retoure",
+ "body": "Guten Tag,\n\nWir möchten Ware zurückgeben.\nBestellung SO-2026-00165\nArtikel: NW-1051\nGrund: beim Transport beschädigt\nErstattungsbetrag: EUR 868.70\n\nFreundliche Grüße\n--\nElena Schmidt\nHavel Anlagentechnik AG\nTel.: +49 40 638 6119\nIBAN: DE10143901879642645850",
+ "received_at": "2026-11-17T03:59:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}

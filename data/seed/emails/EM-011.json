@@ -1,0 +1,13 @@
+{
+ "id": "EM-011",
+ "message_id": "<em-011@mail.example>",
+ "thread_id": "T-EM-011",
+ "from_name": "Jonas Koch",
+ "from_email": "jonas.koch@nordsee.de",
+ "to": "ops@northwind-supply.de",
+ "subject": "Rechnung INV-2026-00177",
+ "body": "Hallo,\n\nwegen einer Rechnung:\nRechnung INV-2026-00177\nBetrag: 8.154,59 €\nunserer Meinung nach wurde zu viel berechnet.\n\nViele Grüße\n--\nJonas Koch\nNordsee Hydraulik GmbH\nTel.: +49 40 195 7379",
+ "received_at": "2026-11-18T10:48:00+01:00",
+ "thread_message_count": 1,
+ "attachments": []
+}
