@@ -100,6 +100,8 @@ class OpsState(BaseModel):
     draft: DraftResult | None = None
     review: dict[str, Any] | None = None
     task_id: str | None = None
+    assignee_team: str | None = None
+    sla_due_at: datetime | None = None
     task_status: TaskStatus | None = None
 
     audit: Annotated[list[AuditEntry], operator.add] = Field(default_factory=list)

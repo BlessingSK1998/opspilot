@@ -47,7 +47,7 @@ def ingest(state: OpsState, deps: Deps) -> dict[str, Any]:
         sender_name=raw.from_name, subject=raw.subject.strip(), body=raw.body.strip(), received_at=raw.received_at,
         thread_message_count=raw.thread_message_count, content_hash=chash, attachments=atts,
     )  # fmt: skip
-    message_id = deps.backend.sink.register_message(msg)
+    message_id = deps.backend.sink.register_message(msg, state.run_id)
     if message_id is None:
         return finish(
             "ingest",
