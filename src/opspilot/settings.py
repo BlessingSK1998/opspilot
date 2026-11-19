@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     api_url: str = Field(default="http://localhost:8000", alias="OPSPILOT_API_URL")
 
     openai_api_key: SecretStr | None = None
-    openai_model: str = "gpt-4o-mini"
+    openai_model: str = "gpt-4.1-mini"
     llm_timeout_seconds: float = 30.0
     llm_max_retries: int = 4
 

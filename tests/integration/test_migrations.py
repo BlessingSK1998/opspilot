@@ -6,9 +6,21 @@ from sqlalchemy import Engine, inspect
 pytestmark = pytest.mark.integration
 
 EXPECTED = {
-    "messages", "attachments", "runs", "extractions", "tasks", "drafts", "review_decisions",
-    "audit_events", "notifications", "customers", "orders", "invoices", "products", "sla_policies",
-}  # fmt: skip
+    "messages",
+    "attachments",
+    "runs",
+    "extractions",
+    "tasks",
+    "drafts",
+    "review_decisions",
+    "audit_events",
+    "notifications",
+    "customers",
+    "orders",
+    "invoices",
+    "products",
+    "sla_policies",
+}
 
 
 def test_all_tables_created(migrated_engine: Engine) -> None:

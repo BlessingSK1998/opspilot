@@ -14,6 +14,15 @@ dependencies = [
   "psycopg[binary]>=3.2",
   "reportlab>=5.1.0",
   "faker>=40.54.0",
+  "langgraph>=1.2.23",
+  "langgraph-checkpoint-postgres>=3.2.1",
+  "psycopg-pool>=3.3.3",
+  "openai>=3.55.1",
+  "pypdf>=7.1.1",
+  "python-multipart>=0.0.34",
+  "streamlit>=1.67.0",
+  "plotly>=7.1.0",
+  "httpx>=0.28.1",
 ]
 
 [dependency-groups]
@@ -41,6 +50,7 @@ src = ["src", "tests", "dashboard"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM", "C4", "RUF"]
+ignore = ["E501", "RUF001", "RUF002", "RUF003"]  # formatter owns line length
 
 [tool.mypy]
 python_version = "3.12"
@@ -56,5 +66,3 @@ markers = ["integration: needs a real Postgres (docker compose up postgres)"]
 [tool.coverage.report]
 fail_under = 85
 
-[tool.ruff.lint.per-file-ignores]
-"src/opspilot/db/seed_data.py" = ["E501", "RUF001", "RUF003"]
