@@ -21,8 +21,9 @@ lint:
 	$(UV) run ruff format --check .
 	$(UV) run mypy
 
-eval:             ## offline evaluation (added in milestone 8)
-	$(UV) run python -m opspilot.eval.run
+PROVIDER ?= mock
+eval:             ## evaluation report in reports/ (PROVIDER=openai for the real model)
+	$(UV) run python -m opspilot.eval.run --provider $(PROVIDER)
 
 demo: setup up seed  ## one command: everything running with no API key
 	@echo "Demo ready (dashboard arrives in milestone 7)."

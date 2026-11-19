@@ -147,6 +147,12 @@ def parse_amount(raw: str) -> float | None:
         return None
 
 
+def _first_paragraph(text: str) -> str:
+    """First line of the first paragraph after the subject line and the greeting."""
+    parts = text.split("\n\n")
+    return parts[2].split("\n")[0].strip() if len(parts) > 2 else ""
+
+
 def is_german(text: str) -> bool:
     de = len(
         re.findall(
@@ -351,8 +357,7 @@ class MockProvider:
 
     def _complaint(self, text: str) -> Complaint:
         sig = self._sig(text)
-        body = text.split("\n\n", 2)
-        desc = body[1].split("\n")[0].strip() if len(body) > 1 else ""
+        desc = _first_paragraph(text)
         sev = self.assess_risk(text).parsed.severity_signal
         return Complaint(
             company=StrField(value=sig[1], confidence=0.85, source_span=sig[1]) if sig else None,
@@ -390,7 +395,7 @@ class MockProvider:
         who = _search(
             r"(?:Please grant|Bitte) ([A-ZÄÖÜ][\w]+ [A-ZÄÖÜ][\w]+)(?: access| Zugriff)", text
         )
-        system = _search(r"(?:access to|Zugriff auf) (.+?)\.?$", text, re.M)
+        system = _search(r"(?:access to|Zugriff auf) (.+?)(?: geben)?\.?$", text, re.M)
         level = _search(r"(?:Access level|Berechtigungsstufe): (read|write|admin)", text)
         approval: BoolField | None = None
         if m := re.search(r"Approved by|zugestimmt", text):
@@ -405,8 +410,7 @@ class MockProvider:
         )
 
     def _general(self, text: str) -> GeneralInquiry:
-        parts = text.split("\n\n")
-        q = parts[1].split("\n")[0].strip() if len(parts) > 1 else ""
+        q = _first_paragraph(text)
         topic = "unclear"
         for key, pat in (
             ("opening hours", r"opening hours|Öffnungszeiten"),

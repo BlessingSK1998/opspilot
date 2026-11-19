@@ -1,0 +1,421 @@
+{
+  "provider": "mock",
+  "model": "mock-rules-v1",
+  "n_messages": 80,
+  "generated_at": "2026-11-19T13:14:27+00:00",
+  "classification": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "labels": [
+      "order_request",
+      "invoice_query",
+      "refund_or_return",
+      "complaint",
+      "supplier_document",
+      "access_or_it_request",
+      "general_inquiry",
+      "spam_or_irrelevant"
+    ],
+    "confusion": [
+      [
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        13,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        11,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ]
+    ],
+    "per_class": {
+      "order_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 15
+      },
+      "invoice_query": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 13
+      },
+      "refund_or_return": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "complaint": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 11
+      },
+      "supplier_document": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8
+      },
+      "access_or_it_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8
+      },
+      "general_inquiry": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "spam_or_irrelevant": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 5
+      }
+    }
+  },
+  "extraction": {
+    "order_request": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 92,
+      "fp": 0,
+      "fn": 0
+    },
+    "invoice_query": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 50,
+      "fp": 0,
+      "fn": 0
+    },
+    "refund_or_return": {
+      "precision": 0.9024,
+      "recall": 0.9024,
+      "f1": 0.9024,
+      "tp": 37,
+      "fp": 4,
+      "fn": 4
+    },
+    "complaint": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 42,
+      "fp": 0,
+      "fn": 0
+    },
+    "supplier_document": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 33,
+      "fp": 0,
+      "fn": 0
+    },
+    "access_or_it_request": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 30,
+      "fp": 0,
+      "fn": 0
+    },
+    "general_inquiry": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1": 0.9,
+      "tp": 18,
+      "fp": 2,
+      "fn": 2
+    }
+  },
+  "extraction_micro": {
+    "precision": 0.9805,
+    "recall": 0.9805,
+    "f1": 0.9805
+  },
+  "missing_info": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 16,
+    "fp": 0,
+    "fn": 0,
+    "message_level": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 14,
+      "fp": 0,
+      "fn": 0,
+      "tn": 66
+    }
+  },
+  "validation_issues": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "escalation": {
+    "precision": 0.871,
+    "recall": 1.0,
+    "f1": 0.931,
+    "tp": 27,
+    "fp": 4,
+    "fn": 0,
+    "tn": 49,
+    "false_negatives": [],
+    "false_positives": [
+      {
+        "id": "EM-027",
+        "category": "general_inquiry",
+        "predicted_reasons": [
+          "low_confidence"
+        ]
+      },
+      {
+        "id": "EM-057",
+        "category": "general_inquiry",
+        "predicted_reasons": [
+          "low_confidence"
+        ]
+      },
+      {
+        "id": "EM-063",
+        "category": "general_inquiry",
+        "predicted_reasons": [
+          "low_confidence"
+        ]
+      },
+      {
+        "id": "EM-066",
+        "category": "order_request",
+        "predicted_reasons": [
+          "low_confidence"
+        ]
+      }
+    ],
+    "rules_only": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 27,
+      "fp": 0,
+      "fn": 0,
+      "tn": 53
+    },
+    "per_reason": {
+      "amount_over_5000": {
+        "support": 11,
+        "recall": 1.0
+      },
+      "legal_language": {
+        "support": 3,
+        "recall": 1.0
+      },
+      "high_severity_complaint": {
+        "support": 4,
+        "recall": 1.0
+      },
+      "vip_customer": {
+        "support": 7,
+        "recall": 1.0
+      },
+      "prompt_injection": {
+        "support": 3,
+        "recall": 1.0
+      },
+      "unresolved_thread": {
+        "support": 3,
+        "recall": 1.0
+      }
+    }
+  },
+  "injection": {
+    "attempts": 3,
+    "resisted": 3,
+    "failed_ids": []
+  },
+  "pii_leaks": {
+    "count": 0,
+    "ids": []
+  },
+  "latency_ms": {
+    "ingest": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 80
+    },
+    "sanitize": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 80
+    },
+    "classify": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 80
+    },
+    "extract": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 80
+    },
+    "validate": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 80
+    },
+    "assess_priority": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 80
+    },
+    "draft_info_request": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 21
+    },
+    "create_task": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 44
+    },
+    "audit": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 49
+    },
+    "draft_response": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 54
+    },
+    "queue_review": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 31
+    },
+    "archive": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 5
+    }
+  },
+  "end_to_end_ms": {
+    "p50": 9.0,
+    "p95": 9.0
+  },
+  "tokens_per_message": 461,
+  "cost_per_message_eur": 0.0,
+  "error_analysis": [
+    {
+      "id": "EM-063",
+      "category": "general_inquiry",
+      "reason": "extraction topic: expected 'product advice', got 'unclear'; extraction question: expected 'Habt ihr was f\u00fcr unser Pumpenproblem?', got '---------- Forwarded message ----------'; unneeded escalation (low_confidence)",
+      "score": 3
+    },
+    {
+      "id": "EM-002",
+      "category": "refund_or_return",
+      "reason": "extraction reason: expected 'does not meet specification', got 'entspricht nicht der Spezifikation'",
+      "score": 1
+    },
+    {
+      "id": "EM-018",
+      "category": "refund_or_return",
+      "reason": "extraction reason: expected 'wrong item delivered', got 'falsche Ware geliefert'",
+      "score": 1
+    },
+    {
+      "id": "EM-027",
+      "category": "general_inquiry",
+      "reason": "unneeded escalation (low_confidence)",
+      "score": 1
+    },
+    {
+      "id": "EM-042",
+      "category": "refund_or_return",
+      "reason": "extraction reason: expected 'wrong item delivered', got 'falsche Ware geliefert'",
+      "score": 1
+    }
+  ]
+}

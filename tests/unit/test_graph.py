@@ -3,6 +3,7 @@ from typing import Any
 import pytest
 from langgraph.checkpoint.memory import InMemorySaver
 
+from opspilot.graph.serde import make_serde
 from opspilot.llm import MockProvider
 from opspilot.llm.base import LLMResult
 from opspilot.nodes import Deps
@@ -23,7 +24,9 @@ def sink() -> MemorySink:
 
 @pytest.fixture
 def pipe(reference: MemoryReference, sink: MemorySink) -> Pipeline:
-    return Pipeline(Deps(MockProvider(), Backend(reference, sink)), InMemorySaver())
+    return Pipeline(
+        Deps(MockProvider(), Backend(reference, sink)), InMemorySaver(serde=make_serde())
+    )
 
 
 @pytest.fixture
@@ -193,7 +196,9 @@ def test_draft_guardrail_replaces_ungrounded_drafts(
     reference: MemoryReference, customer: dict[str, Any], cheap_sku: str
 ) -> None:
     sink = MemorySink()
-    pipe = Pipeline(Deps(_InventingProvider(), Backend(reference, sink)), InMemorySaver())
+    pipe = Pipeline(
+        Deps(_InventingProvider(), Backend(reference, sink)), InMemorySaver(serde=make_serde())
+    )
     res = pipe.start(order_email(customer, cheap_sku))
     assert res.state.draft and "SO-2030-99999" not in res.state.draft.body
     assert any(w.startswith("draft_ungrounded") for w in res.state.warnings)

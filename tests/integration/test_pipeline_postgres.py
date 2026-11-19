@@ -19,6 +19,7 @@ from opspilot.db.models import (
 from opspilot.db.seed import load_reference
 from opspilot.db.seed_data import OUT_DIR
 from opspilot.db.sql_sink import SqlSink
+from opspilot.graph.serde import postgres_saver
 from opspilot.llm import MockProvider
 from opspilot.nodes import Deps
 from opspilot.runner import Pipeline
@@ -63,8 +64,7 @@ def test_interrupted_run_survives_restart_and_resumes(
         "Beschwerde",
         "Our production line has been stopped since 6am. This is unacceptable!",
     )
-    with PostgresSaver.from_conn_string(dsn) as saver:
-        saver.setup()
+    with postgres_saver(dsn) as saver:
         res = make_pipeline(factory, saver).start(raw)
     assert res.status is RunStatus.INTERRUPTED
     run_id = res.run_id
@@ -83,7 +83,7 @@ def test_interrupted_run_survives_restart_and_resumes(
         )
 
     # "restart": brand-new saver, graph and pipeline objects; only Postgres carries the state
-    with PostgresSaver.from_conn_string(dsn) as saver2:
+    with postgres_saver(dsn) as saver2:
         pipe2 = make_pipeline(factory, saver2)
         assert pipe2.is_interrupted(run_id)
         done = pipe2.resume(run_id, {"action": "approve", "reviewer": "ops.lead", "reason": "ok"})
@@ -119,8 +119,7 @@ def test_duplicate_message_is_idempotent_in_db(
     factory: sessionmaker[Session], dsn: str, customer_row: dict[str, Any]
 ) -> None:
     raw = make_raw(customer_row, "Frage", "Could you send us your current product catalogue?")
-    with PostgresSaver.from_conn_string(dsn) as saver:
-        saver.setup()
+    with postgres_saver(dsn) as saver:
         pipe = make_pipeline(factory, saver)
         first, second = pipe.start(raw), pipe.start(raw)
     assert first.state.task_id and second.state.duplicate
@@ -141,8 +140,7 @@ def test_non_escalated_run_completes_in_db(
         "Bestellung",
         f"We would like to place an order:\n- 5 x {sku} (x)\nDelivery address: Hafenstraße 1, 20457 Hamburg\nRequested delivery: 2030-01-15",
     )
-    with PostgresSaver.from_conn_string(dsn) as saver:
-        saver.setup()
+    with postgres_saver(dsn) as saver:
         res = make_pipeline(factory, saver).start(raw)
     assert res.status is RunStatus.COMPLETED
     with Session(factory.kw["bind"]) as s:

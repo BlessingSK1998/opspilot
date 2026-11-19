@@ -13,6 +13,7 @@ from opspilot.api.app import create_app
 from opspilot.api.container import build_container
 from opspilot.db.seed import load_reference
 from opspilot.db.seed_data import OUT_DIR
+from opspilot.graph.serde import make_serde
 from opspilot.settings import Settings
 from tests.unit.conftest import make_raw, ref_rows
 
@@ -26,7 +27,9 @@ def client(migrated_engine: Engine, pg_url: str) -> Iterator[TestClient]:
         load_reference(s, OUT_DIR)
         s.commit()
     settings = Settings(_env_file=None, database_url=pg_url, api_key="test-key")  # type: ignore[call-arg,arg-type]
-    app = create_app(lambda st: build_container(st, InMemorySaver(), migrated_engine), settings)
+    app = create_app(
+        lambda st: build_container(st, InMemorySaver(serde=make_serde()), migrated_engine), settings
+    )
     with TestClient(app) as c:
         yield c
 

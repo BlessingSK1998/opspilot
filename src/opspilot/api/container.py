@@ -12,6 +12,7 @@ from sqlalchemy import Engine, create_engine
 from sqlalchemy.orm import Session, sessionmaker
 
 from opspilot.db.sql_sink import SqlSink
+from opspilot.graph.serde import make_serde
 from opspilot.llm import get_provider
 from opspilot.nodes.common import Deps
 from opspilot.runner import Pipeline
@@ -50,7 +51,7 @@ def build_container(
             max_size=10,
             open=True,
         )
-        saver = PostgresSaver(pool)
+        saver = PostgresSaver(pool, serde=make_serde())
         saver.setup()
         checkpointer, closer = saver, pool
     provider = get_provider(settings)
