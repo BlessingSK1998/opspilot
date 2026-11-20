@@ -272,3 +272,33 @@ def test_batch_ingest_survives_one_failing_email(
     assert res.status_code == 200
     statuses = [r["status"] for r in res.json()["results"]]
     assert statuses == ["completed", "failed"]
+
+
+def test_eval_latest_is_filtered_by_dataset(
+    client: TestClient, tmp_path: Any, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr("opspilot.api.app.REPORTS_DIR", tmp_path)
+    (tmp_path / "eval_20260101_000000.json").write_text('{"dataset": "ops", "n": 80}')
+    (tmp_path / "eval_personal_20260102_000000.json").write_text(
+        '{"dataset": "personal", "n": 32}'
+    )  # newer name sorts later
+    assert client.get("/eval/latest", headers=H).json()["report"]["n"] == 80
+    assert (
+        client.get("/eval/latest", params={"dataset": "ops"}, headers=H).json()["report"]["n"] == 80
+    )
+    assert (
+        client.get("/eval/latest", params={"dataset": "personal"}, headers=H).json()["report"]["n"]
+        == 32
+    )
+    assert client.get("/eval/latest", params={"dataset": "other"}, headers=H).status_code == 404
+
+
+def test_samples_by_dataset(client: TestClient) -> None:
+    assert len(client.get("/samples", headers=H).json()) == 80
+    personal = client.get("/samples", params={"dataset": "personal"}, headers=H).json()
+    assert len(personal) >= 30 and personal[0]["id"].startswith("PM-")
+    raw = client.get(
+        f"/samples/{personal[0]['id']}", params={"dataset": "personal"}, headers=H
+    ).json()
+    assert raw["profile"] == "personal"
+    assert client.get("/samples", params={"dataset": "nope"}, headers=H).status_code == 422

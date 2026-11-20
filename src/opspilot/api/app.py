@@ -293,16 +293,14 @@ def create_app(
         dependencies=[Auth],
         summary="Latest evaluation report (JSON + Markdown)",
     )
-    def latest_eval() -> dict[str, Any]:
-        files = sorted(REPORTS_DIR.glob("eval_*.json"))
-        if not files:
-            raise HTTPException(404, "no evaluation report yet; run `make eval`")
-        md = files[-1].with_suffix(".md")
-        return {
-            "name": files[-1].stem,
-            "report": json.loads(files[-1].read_text()),
-            "markdown": md.read_text() if md.exists() else "",
-        }
+    def latest_eval(dataset: str = "ops") -> dict[str, Any]:
+        found = [(f, json.loads(f.read_text())) for f in sorted(REPORTS_DIR.glob("eval*_*.json"))]
+        found = [(f, r) for f, r in found if r.get("dataset", "ops") == dataset]
+        if not found:
+            raise HTTPException(404, f"no {dataset} evaluation report yet; run `make eval`")
+        f, report = found[-1]
+        md = f.with_suffix(".md")
+        return {"name": f.stem, "report": report, "markdown": md.read_text() if md.exists() else ""}
 
     # ---- demo helpers -----------------------------------------------------
     @app.get("/samples", response_model=list[SampleOut], tags=["demo"], dependencies=[Auth])
