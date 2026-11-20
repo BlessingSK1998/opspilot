@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Annotated, Any
 
 from fastapi import Depends, FastAPI, Header, HTTPException, Query, Request
-from fastapi.responses import StreamingResponse
+from fastapi.responses import RedirectResponse, StreamingResponse
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -105,6 +105,10 @@ def create_app(
     S = Annotated[Session, Depends(session)]
 
     # ---- system -----------------------------------------------------------
+    @app.get("/", include_in_schema=False)
+    def root() -> RedirectResponse:
+        return RedirectResponse("/docs")
+
     @app.get("/health", response_model=HealthResponse, tags=["system"])
     def health() -> HealthResponse:
         return HealthResponse(status="ok", version=__version__, llm_provider=settings.llm_provider)

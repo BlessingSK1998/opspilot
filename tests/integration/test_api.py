@@ -49,6 +49,11 @@ def test_health_is_open_but_everything_else_needs_key(client: TestClient) -> Non
     assert client.get("/tasks", headers=H).status_code == 200
 
 
+def test_root_redirects_to_docs(client: TestClient) -> None:
+    r = client.get("/", follow_redirects=False)
+    assert r.status_code in (302, 307) and r.headers["location"] == "/docs"
+
+
 def test_openapi_is_typed(client: TestClient) -> None:
     spec = client.get("/openapi.json").json()
     for path in (
