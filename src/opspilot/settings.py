@@ -16,7 +16,7 @@ class Settings(BaseSettings):
 
     database_url: str = "postgresql+psycopg://opspilot:opspilot@localhost:5432/opspilot"
     api_key: SecretStr = Field(default=SecretStr("dev-key"), alias="OPSPILOT_API_KEY")
-    api_url: str = Field(default="http://localhost:8000", alias="OPSPILOT_API_URL")
+    api_url: str = Field(default="http://127.0.0.1:8000", alias="OPSPILOT_API_URL")
 
     openai_api_key: SecretStr | None = None
     openai_model: str = "gpt-4.1-mini"

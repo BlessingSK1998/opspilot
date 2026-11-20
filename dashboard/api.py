@@ -7,7 +7,7 @@ from typing import Any
 
 import httpx
 
-BASE = os.environ.get("OPSPILOT_API_URL", "http://localhost:8000")
+BASE = os.environ.get("OPSPILOT_API_URL", "http://127.0.0.1:8000")
 KEY = os.environ.get("OPSPILOT_API_KEY", "dev-key")
 
 

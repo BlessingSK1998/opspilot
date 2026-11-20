@@ -40,7 +40,7 @@ def main() -> None:
         env["DATABASE_URL"] = server.get_uri().replace("postgresql://", "postgresql+psycopg://", 1)
         print(f"embedded Postgres ready in {HOME}")
     env.setdefault("OPSPILOT_API_KEY", "dev-key")
-    env["OPSPILOT_API_URL"] = f"http://localhost:{API_PORT}"
+    env["OPSPILOT_API_URL"] = f"http://127.0.0.1:{API_PORT}"
     py = sys.executable
 
     subprocess.run([py, "-m", "opspilot.db.seed"], env=env, check=True)
@@ -77,8 +77,8 @@ def main() -> None:
         ),
     ]
     try:
-        _wait(f"http://localhost:{API_PORT}/health")
-        _wait(f"http://localhost:{DASH_PORT}/_stcore/health")
+        _wait(f"http://127.0.0.1:{API_PORT}/health")
+        _wait(f"http://127.0.0.1:{DASH_PORT}/_stcore/health")
         print(
             f"\n  OpsPilot is running\n  dashboard: http://localhost:{DASH_PORT}\n  API docs:  http://localhost:{API_PORT}/docs  (X-API-Key: {env['OPSPILOT_API_KEY']})\n  Ctrl-C to stop\n"
         )
