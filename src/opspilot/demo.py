@@ -76,8 +76,20 @@ def main() -> None:
             env=env,
         ),
     ]
+    from opspilot.settings import Settings
+
+    cfg = Settings()
     try:
         _wait(f"http://127.0.0.1:{API_PORT}/health")
+        if (
+            cfg.imap_user and cfg.imap_password
+        ):  # live mailbox connected: keep syncing new mail in the background
+            procs.append(
+                subprocess.Popen([py, "-m", "opspilot.sync.imap_sync", "--watch"], env=env)
+            )
+            print(
+                f"  mailbox sync: watching {cfg.imap_user} ({cfg.imap_host}, read-only, every {cfg.sync_interval_seconds}s)"
+            )
         _wait(f"http://127.0.0.1:{DASH_PORT}/_stcore/health")
         print(
             f"\n  OpsPilot is running\n  dashboard: http://localhost:{DASH_PORT}\n  API docs:  http://localhost:{API_PORT}/docs  (X-API-Key: {env['OPSPILOT_API_KEY']})\n  Ctrl-C to stop\n"

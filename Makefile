@@ -1,6 +1,6 @@
 UV ?= uv
 PROVIDER ?= mock
-.PHONY: setup up down seed test lint eval demo demo-docker demo-local demo-reset
+.PHONY: sync sync-watch setup up down seed test lint eval demo demo-docker demo-local demo-reset
 
 setup:            ## install dependencies
 	$(UV) sync
@@ -25,6 +25,12 @@ lint:
 eval:             ## evaluation report in reports/ (PROVIDER=openai for the real model)
 	$(UV) run python -m opspilot.eval.run --provider $(PROVIDER)
 	$(UV) run python -m opspilot.eval.run --provider $(PROVIDER) --dataset personal
+
+sync:             ## fetch new mail from your mailbox once (read-only IMAP; set IMAP_* in .env)
+	$(UV) run python -m opspilot.sync.imap_sync
+
+sync-watch:       ## keep syncing every SYNC_INTERVAL_SECONDS
+	$(UV) run python -m opspilot.sync.imap_sync --watch
 
 demo:             ## one command, no API key: Docker if available, otherwise embedded Postgres
 	@if command -v docker >/dev/null 2>&1; then $(MAKE) demo-docker; else $(MAKE) demo-local; fi

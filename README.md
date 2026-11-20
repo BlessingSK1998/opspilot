@@ -76,6 +76,16 @@ Open **http://localhost:8501**. You will see a populated dashboard; open **Human
 
 `make test` · `make lint` · `make eval` (writes `reports/eval_<timestamp>.md`) · `make eval PROVIDER=openai` (real model, needs `OPENAI_API_KEY`). Requires Python 3.12 and [uv](https://docs.astral.sh/uv/). Optional n8n: `COMPOSE_PROFILES=n8n make up`, then import `integrations/n8n/opspilot_workflow.json` (n8n UI > Workflows > Import from file; attach IMAP, Slack and SMTP credentials).
 
+## Connect your own mailbox (live, read-only)
+
+`make sync` (once) or `make sync-watch` (keeps polling) reads new mail from a real mailbox over IMAP and sends it through the pipeline. `make demo` starts the watcher automatically when credentials are set.
+
+1. In Google Account > Security, turn on 2-step verification, then create an **app password** (never use your normal password).
+2. Put it in `.env` (git-ignored): `IMAP_USER=you@gmail.com`, `IMAP_PASSWORD=<app password>`, and `IMAP_PROFILE=personal` (or `ops`). All settings are documented in `.env.example`.
+3. `make sync`. The first run fetches the last `IMAP_SINCE_DAYS` (14) days, at most `IMAP_MAX_PER_RUN` (50) messages; after that only mail newer than the last seen UID.
+
+Safety: the folder is opened **read-only** and mail is fetched with `BODY.PEEK[]`, so nothing is marked as read, flagged, moved or deleted; replies are never sent. Messages over 10 MB are skipped without being downloaded; a message that fails to ingest is retried on the next run instead of being skipped. The only thing written locally is the last-seen UID (`.opspilot-sync.json`, no credentials). The sync logic is tested against an in-memory fake IMAP server (9 tests); it has **not** yet been run against a live mailbox. With the OpenAI provider configured, the text of synced mail is sent to OpenAI after PII masking.
+
 ## Personal inbox mode
 
 The same pipeline also triages a **personal** mailbox (job search, finances, accounts, people). Each e-mail carries a `profile` (`ops` by default, or `personal`); the profile selects the categories, the classifier prompt and the routing, so the Northwind behaviour is untouched.
@@ -101,7 +111,7 @@ Personal mail is never answered with "please send us the missing information", a
 | Injection resistance | 2 / 2 | 2 / 2 |
 | Tokens per message / cost | 206 / €0 | 1162 / €0.00056 |
 
-The mock cannot recognise an ordinary message from a person (it falls back to low confidence and asks for review), and the real model mislabelled one promotion as a job alert; both are in the report's error analysis. A smoke test on 34 real emails from the author's own inbox (not committed) archived 29 junk mails correctly, kept the 3 application replies visible, and sent the one payment reminder to review; one marketing mail from a "personal"-looking sender was wrongly given a reply draft. There is **no live Gmail/IMAP sync**: mail enters through `/ingest` or the n8n workflow.
+The mock cannot recognise an ordinary message from a person (it falls back to low confidence and asks for review), and the real model mislabelled one promotion as a job alert; both are in the report's error analysis. A smoke test on 34 real emails from the author's own inbox (not committed) archived 29 junk mails correctly, kept the 3 application replies visible, and sent the one payment reminder to review; one marketing mail from a "personal"-looking sender was wrongly given a reply draft. Live mailbox sync is described above (IMAP, read-only); mail can also enter through `/ingest` or the n8n workflow.
 
 ## Results (evaluation on the 80-email synthetic set)
 

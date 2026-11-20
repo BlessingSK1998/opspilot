@@ -26,6 +26,18 @@ class Settings(BaseSettings):
     # Name used to sign drafts in the personal profile (leave empty for a generic sign-off).
     owner_name: str | None = Field(default=None, alias="OPSPILOT_OWNER_NAME")
 
+    # Mailbox sync (read-only IMAP). Leave IMAP_USER / IMAP_PASSWORD empty to disable.
+    imap_host: str = "imap.gmail.com"
+    imap_port: int = 993
+    imap_user: str | None = None
+    imap_password: SecretStr | None = None
+    imap_folder: str = "INBOX"
+    imap_profile: Literal["ops", "personal"] = "personal"
+    imap_since_days: int = 14
+    imap_max_per_run: int = 50
+    sync_interval_seconds: int = 120
+    sync_state_path: str = ".opspilot-sync.json"
+
     slack_webhook_url: str | None = None
     langsmith_tracing: bool = False
 
