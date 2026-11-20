@@ -17,7 +17,7 @@ ALLOWED: list[tuple[str, str]] = [
     ("opspilot.schemas.llm", "DraftResult"), ("opspilot.schemas.llm", "Usage"),
     ("opspilot.schemas.enums", "Category"), ("opspilot.schemas.enums", "Priority"),
     ("opspilot.schemas.enums", "TaskStatus"), ("opspilot.schemas.enums", "DraftKind"),
-    ("opspilot.schemas.enums", "ReviewAction"),
+    ("opspilot.schemas.enums", "ReviewAction"), ("opspilot.schemas.enums", "Profile"),
 ]  # fmt: skip
 
 

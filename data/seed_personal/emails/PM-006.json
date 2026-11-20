@@ -1,0 +1,14 @@
+{
+ "id": "PM-006",
+ "message_id": "<pm-006@mail.example>",
+ "thread_id": "T-PM-006",
+ "from_name": "Meridian Logistics Recruiting",
+ "from_email": "careers@meridian.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Your application for Business Analyst",
+ "body": "Dear Alex,\n\nThank you for your interest in joining Meridian Logistics! We would like to invite you to an interview for the Business Analyst position. Please let us know which day next week suits you.\n\nBest regards,\nTalent Team\nMeridian Logistics",
+ "received_at": "2026-11-19T10:42:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

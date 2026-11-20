@@ -1,0 +1,14 @@
+{
+ "id": "PM-012",
+ "message_id": "<pm-012@mail.example>",
+ "thread_id": "T-PM-012",
+ "from_name": "Indeedish",
+ "from_email": "donotreply@match.indeedish.example",
+ "to": "alex.morgen@example.org",
+ "subject": "System Administrator @ Example GmbH",
+ "body": "Hi Alex, it looks like your background could be a match for this System Administrator role. Please submit a quick application if you have any interest.",
+ "received_at": "2026-11-19T14:24:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

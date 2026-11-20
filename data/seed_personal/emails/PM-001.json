@@ -1,0 +1,14 @@
+{
+ "id": "PM-001",
+ "message_id": "<pm-001@mail.example>",
+ "thread_id": "T-PM-001",
+ "from_name": "Northlight Analytics Recruiting",
+ "from_email": "careers@northlight.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Your application for Data Analyst",
+ "body": "Dear Alex,\n\nThank you for your interest in joining Northlight Analytics! We have received your application for the Data Analyst position and will review it shortly.\n\nBest regards,\nTalent Team\nNorthlight Analytics",
+ "received_at": "2026-11-19T07:37:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

@@ -27,7 +27,7 @@ TOKEN_RE = re.compile(
 )
 
 
-def build_facts(state: OpsState, kind: DraftKind) -> dict[str, Any]:
+def build_facts(state: OpsState, kind: DraftKind, owner_name: str | None = None) -> dict[str, Any]:
     cust = state.records.get("customer") or {}
     name = (
         state.flat_fields().get("customer_name")
@@ -36,6 +36,9 @@ def build_facts(state: OpsState, kind: DraftKind) -> dict[str, Any]:
     )
     slim = {k: v for k, v in state.records.items() if k != "customer"}
     facts: dict[str, Any] = {
+        "profile": state.profile.value,
+        "owner_name": owner_name,
+        "subject": state.message.subject if state.message else None,
         "language": "de" if is_german(state.safe_text) else "en",
         "customer_name": name,
         "category": state.category.value if state.category else None,
@@ -107,7 +110,7 @@ def _safe_fallback(facts: dict[str, Any]) -> DraftResult:
 
 def _draft(node: str, kind: DraftKind, state: OpsState, deps: Deps) -> dict[str, Any]:
     t0 = time.perf_counter()
-    facts = build_facts(state, kind)
+    facts = build_facts(state, kind, deps.owner_name)
     res = deps.provider.draft(kind, facts)
     draft, warnings = res.parsed, list(state.warnings)
     bad = ungrounded_tokens(draft.body, facts)

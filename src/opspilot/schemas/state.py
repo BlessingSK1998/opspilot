@@ -6,7 +6,7 @@ from typing import Annotated, Any
 
 from pydantic import BaseModel, Field
 
-from opspilot.schemas.enums import Category, DraftKind, Priority, TaskStatus
+from opspilot.schemas.enums import Category, DraftKind, Priority, Profile, TaskStatus
 from opspilot.schemas.llm import ClassificationResult, DraftResult, RiskAssessment
 
 
@@ -29,6 +29,7 @@ class RawEmail(BaseModel):
     received_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
     thread_message_count: int = 1
     attachments: list[AttachmentIn] = Field(default_factory=list)
+    profile: Profile = Profile.OPS
 
 
 class NormalizedMessage(BaseModel):
@@ -62,6 +63,7 @@ class AuditEntry(BaseModel):
 class OpsState(BaseModel):
     run_id: str
     raw: RawEmail | None = None
+    profile: Profile = Profile.OPS
 
     # ingest
     message: NormalizedMessage | None = None

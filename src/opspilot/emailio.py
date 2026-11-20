@@ -12,6 +12,7 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
+from opspilot.schemas.enums import Profile
 from opspilot.schemas.state import AttachmentIn, RawEmail
 
 MAX_ATTACHMENT_TEXT = 20_000
@@ -46,7 +47,8 @@ def raw_from_seed_json(path: Path, attachments_dir: Path) -> RawEmail:
     return RawEmail(
         message_id=d["message_id"], thread_id=d["thread_id"], from_name=d["from_name"], from_email=d["from_email"],
         to=d["to"], subject=d["subject"], body=d["body"], received_at=datetime.fromisoformat(d["received_at"]),
-        thread_message_count=d.get("thread_message_count", 1), attachments=atts,
+        thread_message_count=d.get("thread_message_count", 1),
+        profile=Profile(d.get("profile", "ops")), attachments=atts,
     )  # fmt: skip
 
 

@@ -169,6 +169,21 @@ def validate(state: OpsState, deps: Deps) -> dict[str, Any]:
         if "access_level" in f and f["access_level"] not in ("read", "write", "admin"):
             issues.append("invalid_access_level")
 
+    elif cat is Category.JOB_APPLICATION_UPDATE:
+        if "status" in f and f["status"] not in (
+            "received",
+            "rejected",
+            "interview",
+            "offer",
+            "other",
+        ):
+            issues.append("invalid_application_status")
+
+    elif cat is Category.FINANCE_NOTICE:
+        amount = f.get("amount")
+        if "due_date" in f and _valid_iso(f["due_date"]) is None:
+            issues.append("invalid_due_date")
+
     if amount is not None and amount <= 0:
         issues.append("invalid_amount")
 

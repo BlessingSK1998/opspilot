@@ -1,0 +1,14 @@
+{
+ "id": "PM-004",
+ "message_id": "<pm-004@mail.example>",
+ "thread_id": "T-PM-004",
+ "from_name": "Kestrel Energy Recruiting",
+ "from_email": "careers@kestrel.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Your application for Operations Analyst @Kestrel Energy",
+ "body": "Dear Alex,\n\nThank you for your interest in joining Kestrel Energy. Unfortunately it has not been selected: we have decided to proceed with candidates who meet our needs more closely.\n\nBest regards,\nTalent Team\nKestrel Energy",
+ "received_at": "2026-11-19T09:28:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

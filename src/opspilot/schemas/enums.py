@@ -12,6 +12,13 @@ class Category(StrEnum):
     ACCESS_OR_IT_REQUEST = "access_or_it_request"
     GENERAL_INQUIRY = "general_inquiry"
     SPAM_OR_IRRELEVANT = "spam_or_irrelevant"
+    # personal-inbox profile
+    JOB_APPLICATION_UPDATE = "job_application_update"
+    JOB_ALERT = "job_alert"
+    NEWSLETTER_OR_PROMO = "newsletter_or_promo"
+    FINANCE_NOTICE = "finance_notice"
+    ACCOUNT_OR_SECURITY = "account_or_security"
+    PERSONAL_MESSAGE = "personal_message"
 
 
 class Priority(StrEnum):
@@ -67,3 +74,23 @@ class InvoiceStatus(StrEnum):
     OPEN = "open"
     PAID = "paid"
     OVERDUE = "overdue"
+
+
+class Profile(StrEnum):
+    """Which kind of mailbox an e-mail belongs to; selects categories, prompts and routing."""
+
+    OPS = "ops"
+    PERSONAL = "personal"
+
+
+OPS_CATEGORIES = [
+    Category.ORDER_REQUEST, Category.INVOICE_QUERY, Category.REFUND_OR_RETURN, Category.COMPLAINT,
+    Category.SUPPLIER_DOCUMENT, Category.ACCESS_OR_IT_REQUEST, Category.GENERAL_INQUIRY, Category.SPAM_OR_IRRELEVANT,
+]  # fmt: skip
+PERSONAL_CATEGORIES = [
+    Category.JOB_APPLICATION_UPDATE, Category.JOB_ALERT, Category.NEWSLETTER_OR_PROMO, Category.FINANCE_NOTICE,
+    Category.ACCOUNT_OR_SECURITY, Category.PERSONAL_MESSAGE, Category.SPAM_OR_IRRELEVANT,
+]  # fmt: skip
+CATEGORIES_BY_PROFILE = {Profile.OPS: OPS_CATEGORIES, Profile.PERSONAL: PERSONAL_CATEGORIES}
+# Categories that are filed away without a reply or a task for a person.
+JUNK_CATEGORIES = {Category.SPAM_OR_IRRELEVANT, Category.JOB_ALERT, Category.NEWSLETTER_OR_PROMO}

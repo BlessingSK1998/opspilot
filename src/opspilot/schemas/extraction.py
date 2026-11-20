@@ -142,6 +142,58 @@ class SpamOrIrrelevant(CategoryExtraction):
     CATEGORY = Category.SPAM_OR_IRRELEVANT
 
 
+class JobApplicationUpdate(CategoryExtraction):
+    REQUIRED = ("company", "status")
+    CATEGORY = Category.JOB_APPLICATION_UPDATE
+    company: StrField | None = None
+    position: StrField | None = None
+    status: StrField | None = Field(None, description="received|rejected|interview|offer|other")
+    reference: StrField | None = None
+    next_step: StrField | None = Field(
+        None, description="What the sender asks the candidate to do next, if anything"
+    )
+
+
+class JobAlert(CategoryExtraction):
+    CATEGORY = Category.JOB_ALERT
+
+
+class NewsletterOrPromo(CategoryExtraction):
+    CATEGORY = Category.NEWSLETTER_OR_PROMO
+
+
+class FinanceNotice(CategoryExtraction):
+    REQUIRED = ("organization", "notice_type")
+    CATEGORY = Category.FINANCE_NOTICE
+    organization: StrField | None = None
+    notice_type: StrField | None = Field(
+        None, description="payment_reminder|statement|invoice|loan|other"
+    )
+    amount: FloatField | None = None
+    due_date: StrField | None = Field(None, description="ISO date YYYY-MM-DD")
+    action_required: BoolField | None = Field(
+        None, description="true if the sender expects the recipient to do something"
+    )
+
+
+class AccountOrSecurity(CategoryExtraction):
+    REQUIRED = ("service", "notice")
+    CATEGORY = Category.ACCOUNT_OR_SECURITY
+    service: StrField | None = None
+    notice: StrField | None = Field(
+        None, description="trial_ended|password|login_alert|verification|other"
+    )
+    action_required: BoolField | None = None
+
+
+class PersonalMessage(CategoryExtraction):
+    REQUIRED = ("topic",)
+    CATEGORY = Category.PERSONAL_MESSAGE
+    sender_name: StrField | None = None
+    topic: StrField | None = None
+    request: StrField | None = Field(None, description="What the sender asks for, if anything")
+
+
 SCHEMAS: dict[Category, type[CategoryExtraction]] = {
     cls.CATEGORY: cls
     for cls in (
@@ -153,5 +205,11 @@ SCHEMAS: dict[Category, type[CategoryExtraction]] = {
         AccessOrItRequest,
         GeneralInquiry,
         SpamOrIrrelevant,
+        JobApplicationUpdate,
+        JobAlert,
+        NewsletterOrPromo,
+        FinanceNotice,
+        AccountOrSecurity,
+        PersonalMessage,
     )
 }

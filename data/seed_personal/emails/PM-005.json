@@ -1,0 +1,14 @@
+{
+ "id": "PM-005",
+ "message_id": "<pm-005@mail.example>",
+ "thread_id": "T-PM-005",
+ "from_name": "Alder Health Recruiting",
+ "from_email": "careers@alder.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Your application for Business Analyst",
+ "body": "Dear Alex,\n\nThank you for your application for the Business Analyst position. We regret to inform you that we will not move forward with your application.\n\nBest regards,\nTalent Team\nAlder Health",
+ "received_at": "2026-11-19T10:05:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

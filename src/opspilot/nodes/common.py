@@ -16,6 +16,7 @@ from opspilot.tools.sink import Backend
 class Deps:
     provider: LLMProvider
     backend: Backend
+    owner_name: str | None = None  # signs personal-profile drafts
 
 
 def state_hash(state: OpsState) -> str:

@@ -1,0 +1,14 @@
+{
+ "id": "PM-014",
+ "message_id": "<pm-014@mail.example>",
+ "thread_id": "T-PM-014",
+ "from_name": "Staffing Weekly",
+ "from_email": "info@promo.staffing.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Hiring underway! Companies offering Visa Sponsorship",
+ "body": "These job offers are exclusive to you. New Jobs for Tier 2 Visa Sponsorship.",
+ "received_at": "2026-11-19T15:38:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

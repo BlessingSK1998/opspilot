@@ -5,8 +5,17 @@ import streamlit as st
 from dashboard import api, theme
 
 st.title("Evaluation")
+dataset = st.radio(
+    "Data set",
+    ["ops", "personal"],
+    horizontal=True,
+    format_func=lambda d: {
+        "ops": "Operations inbox (80 emails)",
+        "personal": "Personal inbox (32 emails)",
+    }[d],
+)
 try:
-    data = api.get("/eval/latest")
+    data = api.get("/eval/latest", dataset=dataset)
 except api.ApiError as exc:
     theme.empty(
         f"No evaluation report available yet.<br>Run <code>make eval</code>. <span class='muted'>({exc})</span>"

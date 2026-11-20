@@ -1,6 +1,7 @@
 """FastAPI application."""
 
 import json
+import re
 import secrets
 import uuid
 from collections.abc import Callable, Iterator
@@ -44,6 +45,7 @@ from opspilot.schemas.state import RawEmail
 from opspilot.settings import Settings, get_settings
 
 SEED_DIR = Path("data/seed")
+SAMPLE_DIRS = {"ops": SEED_DIR, "personal": Path("data/seed_personal")}
 REPORTS_DIR = Path("reports")
 
 
@@ -148,9 +150,16 @@ def create_app(
         "/ingest/batch", response_model=BatchIngestResponse, tags=["ingest"], dependencies=[Auth]
     )
     def ingest_batch(body: BatchIngestRequest, c: C) -> BatchIngestResponse:
-        return BatchIngestResponse(
-            results=[_ingest_response(c.pipeline.start(e)) for e in body.emails]
-        )
+        results: list[IngestResponse] = []
+        for e in body.emails:
+            run_id = str(uuid.uuid4())
+            try:
+                results.append(_ingest_response(c.pipeline.start(e, run_id)))
+            except (
+                Exception
+            ):  # one bad e-mail must not lose the rest of the batch; the run is recorded as failed
+                results.append(IngestResponse(run_id=run_id, status=RunStatus.FAILED))
+        return BatchIngestResponse(results=results)
 
     # ---- runs -------------------------------------------------------------
     @app.get("/runs/{run_id}", response_model=RunDetail, tags=["runs"], dependencies=[Auth])
@@ -297,19 +306,25 @@ def create_app(
 
     # ---- demo helpers -----------------------------------------------------
     @app.get("/samples", response_model=list[SampleOut], tags=["demo"], dependencies=[Auth])
-    def samples() -> list[SampleOut]:
+    def samples(dataset: str = "ops") -> list[SampleOut]:
+        base = SAMPLE_DIRS.get(dataset)
+        if base is None:
+            raise HTTPException(422, "dataset must be 'ops' or 'personal'")
         out = []
-        for p in sorted((SEED_DIR / "emails").glob("EM-*.json")):
+        for p in sorted((base / "emails").glob("*.json")):
             d = json.loads(p.read_text())
             out.append(SampleOut(id=d["id"], subject=d["subject"], from_email=d["from_email"]))
         return out
 
     @app.get("/samples/{sample_id}", response_model=RawEmail, tags=["demo"], dependencies=[Auth])
-    def sample(sample_id: str) -> RawEmail:
-        p = SEED_DIR / "emails" / f"{sample_id}.json"
-        if not p.exists() or not sample_id.startswith("EM-") or "/" in sample_id:
+    def sample(sample_id: str, dataset: str = "ops") -> RawEmail:
+        base = SAMPLE_DIRS.get(dataset)
+        if base is None or not re.fullmatch(r"[A-Z]{2}-\d{3}", sample_id):
             raise HTTPException(404, "sample not found")
-        return raw_from_seed_json(p, SEED_DIR / "attachments")
+        p = base / "emails" / f"{sample_id}.json"
+        if not p.exists():
+            raise HTTPException(404, "sample not found")
+        return raw_from_seed_json(p, base / "attachments")
 
     @app.post(
         "/simulate/stream",

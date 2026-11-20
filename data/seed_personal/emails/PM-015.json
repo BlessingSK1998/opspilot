@@ -1,0 +1,14 @@
+{
+ "id": "PM-015",
+ "message_id": "<pm-015@mail.example>",
+ "thread_id": "T-PM-015",
+ "from_name": "ShoeShop",
+ "from_email": "hello@shoeshop.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Jetzt bis zu 40 % Rabatt",
+ "body": "Die Black Friday Days sind da. Bis 1. Dezember.",
+ "received_at": "2026-11-19T16:15:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

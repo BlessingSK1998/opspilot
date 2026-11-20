@@ -27,14 +27,14 @@ from opspilot.graph.serde import make_serde
 from opspilot.llm import get_provider
 from opspilot.nodes.common import Deps
 from opspilot.runner import Pipeline, RunResult
-from opspilot.schemas.enums import Category, RunStatus
+from opspilot.schemas.enums import CATEGORIES_BY_PROFILE, Profile, RunStatus, TaskStatus
 from opspilot.schemas.state import OpsState
 from opspilot.settings import Settings
 from opspilot.tools.reference import MemoryReference
 from opspilot.tools.sink import Backend, MemorySink
 
 SEED = Path("data/seed")
-LABELS = [c.value for c in Category]
+PERSONAL_SEED = Path("data/seed_personal")
 REASONS = [
     "amount_over_5000",
     "legal_language",
@@ -56,7 +56,11 @@ class Case:
 
 
 def run_cases(
-    provider_name: str, base: Path = SEED, workers: int = 1, settings: Settings | None = None
+    provider_name: str,
+    base: Path = SEED,
+    workers: int = 1,
+    settings: Settings | None = None,
+    profile: Profile = Profile.OPS,
 ) -> list[Case]:
     from opspilot.emailio import raw_from_seed_json
 
@@ -64,12 +68,12 @@ def run_cases(
     provider = get_provider(settings or Settings(), force=provider_name)
     sink = MemorySink()
     pipe = Pipeline(
-        Deps(provider, Backend(MemoryReference(base), sink)), InMemorySaver(serde=make_serde())
+        Deps(provider, Backend(MemoryReference(SEED), sink)), InMemorySaver(serde=make_serde())
     )
 
     def one(gt: dict[str, Any]) -> Case:
         raw = raw_from_seed_json(base / "emails" / f"{gt['id']}.json", base / "attachments")
-        return Case(gt, pipe.start(raw))
+        return Case(gt, pipe.start(raw.model_copy(update={"profile": profile})))
 
     with ThreadPoolExecutor(max_workers=workers) as ex:
         return list(ex.map(one, gts))
@@ -83,8 +87,19 @@ def rule_escalation(c: Case) -> bool:
     return bool(set(c.state.escalation_reasons) - {"low_confidence"})
 
 
-def score(cases: list[Case], provider: str, model: str) -> dict[str, Any]:
+OUTCOME_OF = {
+    "archived": TaskStatus.ARCHIVED,
+    "closed": TaskStatus.CLOSED,
+    "draft": TaskStatus.READY_TO_SEND,
+    "review": TaskStatus.PENDING_REVIEW,
+}
+
+
+def score(
+    cases: list[Case], provider: str, model: str, profile: Profile = Profile.OPS
+) -> dict[str, Any]:
     n = len(cases)
+    LABELS = [c.value for c in CATEGORIES_BY_PROFILE[profile]]
     cls = classification_report(
         [c.gt["category"] for c in cases],
         [c.state.category.value if c.state.category else "general_inquiry" for c in cases],
@@ -100,7 +115,11 @@ def score(cases: list[Case], provider: str, model: str) -> dict[str, Any]:
             got = (
                 c.state.flat_fields() if c.state.category and c.state.category.value == cat else {}
             )
-            d_tp, d_fp, d_fn, errs = field_counts(c.gt["fields"], got)
+            skip = set(c.gt.get("unscored_fields", []))  # free text with no single right answer
+            d_tp, d_fp, d_fn, errs = field_counts(
+                {k: v for k, v in c.gt["fields"].items() if k not in skip},
+                {k: v for k, v in got.items() if k not in skip},
+            )
             tp, fp, fn = tp + d_tp, fp + d_fp, fn + d_fn
             case_errors[c.gt["id"]] += [f"extraction {e}" for e in errs]
         if tp + fp + fn:
@@ -209,6 +228,21 @@ def score(cases: list[Case], provider: str, model: str) -> dict[str, Any]:
     tokens = [sum(a.tokens_in + a.tokens_out for a in c.state.audit) for c in cases]
     cost = [sum(a.cost_eur for a in c.state.audit) for c in cases]
 
+    outcome_hits = 0
+    outcome_total = 0
+    for c in cases:
+        want = c.gt.get("expected_outcome")
+        if want is None:
+            continue
+        outcome_total += 1
+        got_status = c.state.task_status
+        if got_status is OUTCOME_OF[want]:
+            outcome_hits += 1
+        else:
+            case_errors[c.gt["id"]].append(
+                f"wrong outcome: expected {want}, got {got_status.value if got_status else None}"
+            )
+
     weights = {
         "ESCALATION MISSED": 5,
         "INJECTION": 5,
@@ -242,7 +276,8 @@ def score(cases: list[Case], provider: str, model: str) -> dict[str, Any]:
     ]
 
     return {
-        "provider": provider, "model": model, "n_messages": n, "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
+        "dataset": profile.value, "provider": provider, "model": model, "n_messages": n,
+        "outcome": {"accuracy": round(outcome_hits / outcome_total, 4) if outcome_total else None, "checked": outcome_total}, "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "classification": cls,
         "extraction": ext,
         "extraction_micro": prf(sum(e["tp"] for e in ext.values()), sum(e["fp"] for e in ext.values()), sum(e["fn"] for e in ext.values())),
@@ -269,26 +304,31 @@ def main(argv: list[str] | None = None) -> int:
         help="exit 1 if classification accuracy is below this",
     )
     ap.add_argument("--min-escalation-recall", type=float, default=None)
+    ap.add_argument("--dataset", choices=["ops", "personal"], default="ops")
     ap.add_argument("--out", type=Path, default=Path("reports"))
     ap.add_argument("--workers", type=int, default=None)
     args = ap.parse_args(argv)
 
     settings = Settings()
     provider = get_provider(settings, force=args.provider)
+    profile = Profile(args.dataset)
     cases = run_cases(
         args.provider,
+        PERSONAL_SEED if profile is Profile.PERSONAL else SEED,
         workers=args.workers or (1 if args.provider == "mock" else 4),
         settings=settings,
+        profile=profile,
     )
-    report = score(cases, args.provider, provider.model)
+    report = score(cases, args.provider, provider.model, profile)
 
     args.out.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
-    (args.out / f"eval_{stamp}.json").write_text(json.dumps(report, indent=2))
-    (args.out / f"eval_{stamp}.md").write_text(render_markdown(report))
+    prefix = "eval_personal" if profile is Profile.PERSONAL else "eval"
+    (args.out / f"{prefix}_{stamp}.json").write_text(json.dumps(report, indent=2))
+    (args.out / f"{prefix}_{stamp}.md").write_text(render_markdown(report))
     print(f"accuracy={report['classification']['accuracy']:.3f} macro_f1={report['classification']['macro_f1']:.3f} "
           f"escalation_recall={report['escalation']['recall']:.3f} injection={report['injection']['resisted']}/{report['injection']['attempts']} "
-          f"-> {args.out}/eval_{stamp}.md")  # fmt: skip
+          f"-> {args.out}/{prefix}_{stamp}.md")  # fmt: skip
     if args.min_accuracy is not None and report["classification"]["accuracy"] < args.min_accuracy:
         print(f"FAIL: accuracy below {args.min_accuracy}", file=sys.stderr)
         return 1

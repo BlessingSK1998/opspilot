@@ -1,0 +1,14 @@
+{
+ "id": "PM-022",
+ "message_id": "<pm-022@mail.example>",
+ "thread_id": "T-PM-022",
+ "from_name": "LoanCo",
+ "from_email": "service@loanco.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Zahlungserinnerung zu Ihrem Kredit",
+ "body": "Hallo Herr Morgen,\n\nIhre Rate ist fällig. Bitte zahlen Sie den Betrag: 120,00 € bis zum Monatsende.\n\nFreundliche Grüße,\nIhr LoanCo-Team",
+ "received_at": "2026-11-19T20:34:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

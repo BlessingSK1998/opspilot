@@ -13,7 +13,7 @@ from pydantic import BaseModel
 from opspilot.llm.base import LLMResult
 from opspilot.llm.pricing import cost_eur
 from opspilot.prompts import load_prompt
-from opspilot.schemas.enums import Category, DraftKind
+from opspilot.schemas.enums import Category, DraftKind, Profile
 from opspilot.schemas.extraction import SCHEMAS, CategoryExtraction
 from opspilot.schemas.llm import ClassificationResult, DraftResult, RiskAssessment, Usage
 
@@ -97,8 +97,11 @@ class OpenAIProvider:
         return LLMResult(msg.parsed, usage)
 
     # ---- tasks ----------------------------------------------------------
-    def classify(self, email_text: str) -> LLMResult[ClassificationResult]:
-        return self._call("classify", f"<email>\n{email_text}\n</email>", ClassificationResult, 0.0)
+    def classify(
+        self, email_text: str, profile: Profile = Profile.OPS
+    ) -> LLMResult[ClassificationResult]:
+        name = "classify_personal" if profile is Profile.PERSONAL else "classify"
+        return self._call(name, f"<email>\n{email_text}\n</email>", ClassificationResult, 0.0)
 
     def extract(self, category: Category, email_text: str) -> LLMResult[CategoryExtraction]:
         cls = SCHEMAS[category]
@@ -111,5 +114,7 @@ class OpenAIProvider:
 
     def draft(self, kind: DraftKind, facts: dict[str, Any]) -> LLMResult[DraftResult]:
         name = "draft_response" if kind is DraftKind.RESPONSE else "draft_info_request"
+        if facts.get("profile") == Profile.PERSONAL.value:
+            name = "draft_personal"
         user = "Facts (JSON):\n" + json.dumps(facts, ensure_ascii=False, default=str)
         return self._call(name, user, DraftResult, 0.3)

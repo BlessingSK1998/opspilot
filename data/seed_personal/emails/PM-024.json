@@ -1,0 +1,14 @@
+{
+ "id": "PM-024",
+ "message_id": "<pm-024@mail.example>",
+ "thread_id": "T-PM-024",
+ "from_name": "CloudData",
+ "from_email": "no-reply@clouddata.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Your CloudData Trial Has Ended",
+ "body": "Your CloudData free trial has ended, but your work doesn't have to. Your account is currently suspended, but you can continue using this account by adding your credit card.",
+ "received_at": "2026-11-19T21:48:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

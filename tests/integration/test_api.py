@@ -249,3 +249,26 @@ def test_samples_simulate_stream_graph_and_eval(
     assert client.get("/eval/latest", headers=H).status_code == 404
     (tmp_path / "eval_20260101_000000.json").write_text('{"ok": true}')
     assert client.get("/eval/latest", headers=H).json()["report"] == {"ok": True}
+
+
+def test_batch_ingest_survives_one_failing_email(
+    client: TestClient, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    import opspilot.runner as runner
+
+    real = runner.Pipeline.start
+
+    def flaky(self: runner.Pipeline, raw: Any, run_id: str | None = None) -> Any:
+        if "boom" in raw.subject:
+            raise RuntimeError("provider exploded")
+        return real(self, raw, run_id)
+
+    monkeypatch.setattr(runner.Pipeline, "start", flaky)
+    emails = [
+        payload("Frage batch ok", "Could you send us your current product catalogue? ok"),
+        payload("Frage boom", "boom"),
+    ]
+    res = client.post("/ingest/batch", json={"emails": emails}, headers=H)
+    assert res.status_code == 200
+    statuses = [r["status"] for r in res.json()["results"]]
+    assert statuses == ["completed", "failed"]

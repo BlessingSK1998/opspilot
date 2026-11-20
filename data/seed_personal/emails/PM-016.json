@@ -1,0 +1,14 @@
+{
+ "id": "PM-016",
+ "message_id": "<pm-016@mail.example>",
+ "thread_id": "T-PM-016",
+ "from_name": "FashionHub",
+ "from_email": "getmore@fashionhub.example",
+ "to": "alex.morgen@example.org",
+ "subject": "UP TO 60% OFF | One last Black Friday Teaser!",
+ "body": "Grab superb style for less. View online. Unsubscribe anytime.",
+ "received_at": "2026-11-19T16:52:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

@@ -1,0 +1,14 @@
+{
+ "id": "PM-018",
+ "message_id": "<pm-018@mail.example>",
+ "thread_id": "T-PM-018",
+ "from_name": "NeoBank",
+ "from_email": "no-reply@neobank.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Earn 70 € for each friend that joins",
+ "body": "Want to earn 70 €? Hi Alex, invite friends. Referral terms apply.",
+ "received_at": "2026-11-19T18:06:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

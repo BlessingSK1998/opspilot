@@ -9,18 +9,22 @@ from typing import Any
 
 from opspilot.llm.base import LLMResult
 from opspilot.prompts import load_prompt
-from opspilot.schemas.enums import Category, DraftKind
+from opspilot.schemas.enums import Category, DraftKind, Profile
 from opspilot.schemas.extraction import (
     SCHEMAS,
     AccessOrItRequest,
+    AccountOrSecurity,
     BoolField,
     CategoryExtraction,
     Complaint,
+    FinanceNotice,
     FloatField,
     GeneralInquiry,
     IntListField,
     InvoiceQuery,
+    JobApplicationUpdate,
     OrderRequest,
+    PersonalMessage,
     RefundOrReturn,
     StrField,
     StrListField,
@@ -97,6 +101,46 @@ RULES: dict[Category, list[tuple[str, float]]] = {
             r"bit\.ly|https?://|bitcoin|crypto|Rolex|prince|guarantee|ranking|Unsubscribe|CONGRATULATIONS|Verify your password|suspended",
             4,
         ),
+    ],
+}
+
+PERSONAL_RULES: dict[Category, list[tuple[str, float]]] = {
+    Category.JOB_APPLICATION_UPDATE: [
+        (
+            r"Thank you for your application|your application (?:at|for|to)|Application Received|Bewerbung eingegangen|Ihre Bewerbung",
+            6,
+        ),
+        (
+            r"regret to inform|not been selected|unfortunately it has not|leider nicht|Absage|interview|Vorstellungsgespr|Einladung zum Gespr|offer of employment|Jobangebot f",
+            4,
+        ),
+    ],
+    Category.JOB_ALERT: [
+        (
+            r"jobs? (?:you|for you)|job alert|Stellenangebote|Jobangebote|Kandidaten wie Dich|don't want to miss|match for this .{0,60}role|New Jobs|Karrieremöglichkeit|looking for staff|Hiring underway|Visa Sponsorship|Talent Trends",
+            6,
+        ),
+    ],
+    Category.NEWSLETTER_OR_PROMO: [
+        (
+            r"% off|% Rabatt|Rabatt|Black Friday|Unsubscribe|Newsletter|Daily Digest|\bsale\b|Angebot|referral|Earn \d+|free plugins|stream is live|Premium|Digest|highlights",
+            5,
+        ),
+    ],
+    Category.FINANCE_NOTICE: [
+        (
+            r"Kredit|Darlehen|Cashper|\bloan\b|Mahnung|Zahlungserinnerung|payment reminder|overdue|fällig|Kontoauszug|account statement|Rückmeldung zu unserer",
+            6,
+        ),
+    ],
+    Category.ACCOUNT_OR_SECURITY: [
+        (
+            r"trial has ended|free trial|account is currently suspended|password|Passwort|Verify your|verification code|security alert|Sicherheitswarnung|login attempt",
+            6,
+        ),
+    ],
+    Category.SPAM_OR_IRRELEVANT: [
+        (r"bit\.ly|bitcoin|crypto|prince|CONGRATULATIONS|Verify your password here", 7)
     ],
 }
 
@@ -181,12 +225,17 @@ class MockProvider:
         )
 
     # ---- classify -------------------------------------------------------
-    def classify(self, email_text: str) -> LLMResult[ClassificationResult]:
+    def classify(
+        self, email_text: str, profile: Profile = Profile.OPS
+    ) -> LLMResult[ClassificationResult]:
+        personal = profile is Profile.PERSONAL
+        rules_by_cat = PERSONAL_RULES if personal else RULES
+        fallback = Category.PERSONAL_MESSAGE if personal else Category.GENERAL_INQUIRY
         text = _body_only(email_text)
         text = INJECTION_NOISE.sub("", text)
         cutoff = max(1, int(len(text) * 0.45))
         scores: dict[Category, float] = {}
-        for cat, rules in RULES.items():
+        for cat, rules in rules_by_cat.items():
             s = 0.0
             for pat, w in rules:
                 for m in re.finditer(
@@ -198,13 +247,20 @@ class MockProvider:
         ranked = sorted(scores.items(), key=lambda kv: -kv[1])
         (best, top), (_, second) = ranked[0], ranked[1]
         if top < 2.5 or (best is Category.GENERAL_INQUIRY and top < 4.5):
-            best, conf = Category.GENERAL_INQUIRY, 0.55
-            rationale = "No strong signals; treated as a general or unclear inquiry."
+            best, conf = fallback, 0.55
+            rationale = "No strong signals; treated as an unclear message."
         else:
             conf = round(min(0.97, 0.6 + 0.37 * (top - second) / max(top, 1)), 2)
             rationale = f"Matched {best.value} keywords (score {top:.1f} vs {second:.1f})."
         res = ClassificationResult(category=best, confidence=conf, rationale=rationale)
-        return LLMResult(res, self._usage(load_prompt("classify").version, email_text, rationale))
+        return LLMResult(
+            res,
+            self._usage(
+                load_prompt("classify_personal" if personal else "classify").version,
+                email_text,
+                rationale,
+            ),
+        )
 
     # ---- risk -----------------------------------------------------------
     def assess_risk(self, email_text: str) -> LLMResult[RiskAssessment]:
@@ -248,6 +304,10 @@ class MockProvider:
             Category.SUPPLIER_DOCUMENT: self._supplier,
             Category.ACCESS_OR_IT_REQUEST: self._access,
             Category.GENERAL_INQUIRY: self._general,
+            Category.JOB_APPLICATION_UPDATE: self._job,
+            Category.FINANCE_NOTICE: self._finance,
+            Category.ACCOUNT_OR_SECURITY: self._account,
+            Category.PERSONAL_MESSAGE: self._personal,
         }.get(category)
         result = fn(text) if fn else SCHEMAS[category]()
         return LLMResult(
@@ -409,6 +469,118 @@ class MockProvider:
             manager_approval=approval,
         )
 
+    def _job(self, text: str) -> JobApplicationUpdate:
+        status = "other"
+        if re.search(
+            r"(?i)regret to inform|not been selected|unfortunately it has not|leider nicht|Absage",
+            text,
+        ):
+            status = "rejected"
+        elif re.search(r"(?i)interview|Vorstellungsgespr|Einladung zum Gespr", text):
+            status = "interview"
+        elif re.search(r"(?i)offer of employment|pleased to offer|Jobangebot f", text):
+            status = "offer"
+        elif re.search(
+            r"(?i)Application Received|Bewerbung eingegangen|received your application|Thank you for your application",
+            text,
+        ):
+            status = "received"
+        st = _search(
+            r"(?i)(regret to inform|not been selected|unfortunately it has not|interview|Vorstellungsgespr\w*|Application Received|Bewerbung eingegangen|Thank you for your application)",
+            text,
+        )
+        company = (
+            _search(r"@([A-Z][\w&.-]+(?: [A-Z][\w&.-]+)*)\s*$", text.split("\n")[0], re.M)
+            or _search(r"[Oo]n behalf of the ([A-Z][\w ]+?)[,.]", text)
+            or _search(
+                r"interest in (?:joining|careers at) ([A-Z][\w&. ]+?)(?: SE| GmbH| AG)?[,.!]", text
+            )
+            or _search(r"(?:Team|Regards|regards|Grüße),?\s*\n(?:[\w ]+\n)?([A-Z][\w ]+)\s*$", text)
+        )
+        position = _search(
+            r"(?:position of|for the|our|role) ([A-Z][^.\n/]{4,70}?)(?: role| position| /|[.\n])",
+            text,
+        )
+        ref = _search(r"Reference ?([A-Z]{2,}\d+)", text)
+        return JobApplicationUpdate(
+            company=self._str(company, 0.7),
+            position=self._str(position, 0.6),
+            status=StrField(value=status, confidence=0.7, source_span=st[1] if st else None),
+            reference=self._str(ref, 0.9),
+        )
+
+    def _finance(self, text: str) -> FinanceNotice:
+        org = _search(r"(?:Ihr|Your|Dein) ([A-Z][A-Za-z0-9]+)[- ](?:Team|team)", text)
+        kind = (
+            "statement"
+            if re.search(r"(?i)Kontoauszug|account statement", text)
+            else "loan"
+            if re.search(r"(?i)Kredit|loan|Darlehen|Cashper", text)
+            else "payment_reminder"
+            if re.search(r"(?i)Mahnung|reminder|overdue|fällig", text)
+            else "other"
+        )
+        amt = _search(r"(?:Betrag|Amount|Summe)[: ]+([^\n]+)", text)
+        action = re.search(
+            r"(?i)warten (?:noch )?auf Ihre|bitte lassen Sie uns wissen|please (?:pay|reply|respond)|bitte (?:zahlen|überweisen)|overdue|fällig",
+            text,
+        )
+        return FinanceNotice(
+            organization=self._str(org, 0.8),
+            notice_type=StrField(value=kind, confidence=0.6, source_span=None),
+            amount=(
+                FloatField(value=a, confidence=0.8, source_span=amt[1])
+                if amt and (a := parse_amount(amt[0])) is not None
+                else None
+            ),
+            action_required=BoolField(value=True, confidence=0.7, source_span=action.group(0))
+            if action
+            else BoolField(value=False, confidence=0.5, source_span=None),
+        )
+
+    def _account(self, text: str) -> AccountOrSecurity:
+        service = _search(
+            r"(?:Your |your |Ihr )([A-Z][A-Za-z0-9]+)(?: free)? (?:trial|Trial|account|Account|password|Passwort|Konto)",
+            text,
+        )
+        notice = (
+            "trial_ended"
+            if re.search(r"(?i)trial has ended", text)
+            else "password"
+            if re.search(r"(?i)password|Passwort", text)
+            else "verification"
+            if re.search(r"(?i)verif", text)
+            else "other"
+        )
+        action = re.search(
+            r"(?i)adding your credit card|please verify|bitte bestätigen|reset your password", text
+        )
+        return AccountOrSecurity(
+            service=self._str(service, 0.7),
+            notice=StrField(value=notice, confidence=0.7, source_span=None),
+            action_required=BoolField(
+                value=bool(action), confidence=0.6, source_span=action.group(0) if action else None
+            ),
+        )
+
+    def _personal(self, text: str) -> PersonalMessage:
+        sig = re.search(
+            r"(?:--|Best regards|Kind regards|Viele Grüße|Beste Grüße|Cheers|Regards)\s*,?\n([A-Z][a-zäöüß]+(?: [A-Z][a-zäöüß]+)?)",
+            text,
+        )
+        first = _first_paragraph(text)
+        return PersonalMessage(
+            sender_name=StrField(value=sig.group(1), confidence=0.7, source_span=sig.group(1))
+            if sig
+            else None,
+            topic=StrField(value=first[:60], confidence=0.5, source_span=first[:60])
+            if first
+            else None,
+            request=StrField(value=first, confidence=0.5, source_span=first)
+            if "?" in first
+            else None,
+        )
+
     def _general(self, text: str) -> GeneralInquiry:
         q = _first_paragraph(text)
         topic = "unclear"
@@ -460,6 +632,16 @@ class MockProvider:
                 body = f"{hi}\n\nthank you for your message. To process it we still need:\n{items}"
                 body += f"\n\nWe also need clarification on:\n{issues}" if issues else ""
                 subject = "Information needed for your request"
+        elif facts.get("profile") == Profile.PERSONAL.value:
+            body = self._personal_body(facts, de, hi)
+            bye = (
+                f"Mit freundlichen Grüßen\n{facts.get('owner_name') or ''}".strip()
+                if de
+                else f"Kind regards\n{facts.get('owner_name') or ''}".strip()
+            )
+            subject = "Re: " + str(
+                facts.get("subject") or ("Ihre Nachricht" if de else "your message")
+            )
         else:
             body = self._response_body(facts, de, hi)
             subject = "Ihre Anfrage bei Northwind" if de else "Your request to Northwind"
@@ -474,6 +656,31 @@ class MockProvider:
                 str(facts),
                 body,
             ),
+        )
+
+    def _personal_body(self, facts: dict[str, Any], de: bool, hi: str) -> str:
+        f = facts.get("fields", {})
+        cat = facts.get("category")
+        who = f.get("company") or f.get("organization") or ""
+        if cat == "job_application_update":
+            status = f.get("status")
+            if status == "interview":
+                return (
+                    f"{hi}\n\nvielen Dank für die Einladung. Ich bestätige gern den Termin: [your availability]."
+                    if de
+                    else f"{hi}\n\nthank you for the invitation to interview{' at ' + who if who else ''}. I would be glad to attend; my availability is: [your availability]."
+                )
+            if status == "offer":
+                return f"{hi}\n\nthank you very much for the offer{' from ' + who if who else ''}. I would like to review the details and will come back to you shortly."
+            if status == "rejected":
+                return f"{hi}\n\nthank you for letting me know{' and for considering my application at ' + who if who else ''}. I would appreciate it if you kept me in mind for future openings."
+            return f"{hi}\n\nthank you for your message{' regarding ' + who if who else ''}."
+        if cat == "finance_notice":
+            return f"{hi}\n\nthank you for your message{' from ' + who if who else ''}. I will look into this and get back to you."
+        return (
+            f"{hi}\n\nthank you for your message. I will get back to you soon."
+            if not de
+            else f"{hi}\n\nvielen Dank für Ihre Nachricht. Ich melde mich bald bei Ihnen."
         )
 
     def _response_body(self, facts: dict[str, Any], de: bool, hi: str) -> str:

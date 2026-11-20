@@ -1,0 +1,14 @@
+{
+ "id": "PM-003",
+ "message_id": "<pm-003@mail.example>",
+ "thread_id": "T-PM-003",
+ "from_name": "Brightwell Institute Recruiting",
+ "from_email": "careers@brightwell.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Your application for Research Associate",
+ "body": "Dear Alex,\n\nThank you for your application for the position of Research Associate. On behalf of the Brightwell Institute, we regret to inform you that your application was not selected for further process.\n\nBest regards,\nTalent Team\nBrightwell Institute",
+ "received_at": "2026-11-19T08:51:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

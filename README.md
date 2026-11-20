@@ -76,6 +76,33 @@ Open **http://localhost:8501**. You will see a populated dashboard; open **Human
 
 `make test` · `make lint` · `make eval` (writes `reports/eval_<timestamp>.md`) · `make eval PROVIDER=openai` (real model, needs `OPENAI_API_KEY`). Requires Python 3.12 and [uv](https://docs.astral.sh/uv/). Optional n8n: `COMPOSE_PROFILES=n8n make up`, then import `integrations/n8n/opspilot_workflow.json` (n8n UI > Workflows > Import from file; attach IMAP, Slack and SMTP credentials).
 
+## Personal inbox mode
+
+The same pipeline also triages a **personal** mailbox (job search, finances, accounts, people). Each e-mail carries a `profile` (`ops` by default, or `personal`); the profile selects the categories, the classifier prompt and the routing, so the Northwind behaviour is untouched.
+
+| Category | What happens |
+|---|---|
+| `job_application_update` | Received / rejected: **closed but kept visible** under team *Job search*. Interview / offer: **P1, human review**, with a reply draft |
+| `finance_notice` | Needs action: **P2, human review** with a draft; purely informational: closed |
+| `account_or_security` | Closed (informational), visible under *Accounts* |
+| `personal_message` | Reply draft, ready for you to edit and send |
+| `job_alert`, `newsletter_or_promo`, `spam_or_irrelevant` | Archived, no draft |
+
+Personal mail is never answered with "please send us the missing information", and injection attempts still force a human review. Drafts are signed with `OPSPILOT_OWNER_NAME`. Use it by adding `"profile": "personal"` to the `/ingest` body, or pick **Personal inbox** on the Simulate page.
+
+**Results on a 32-email synthetic personal set** (invented companies and people; `make eval` runs both sets):
+
+| Metric | Mock | OpenAI `gpt-4.1-mini` |
+|---|---|---|
+| Classification accuracy / macro-F1 | 100.0% / 1.000 | 96.9% / 0.978 |
+| Correct outcome (archived / closed / draft / review) | 90.6% | 100.0% |
+| Escalation recall / precision | 100.0% / 70.0% | 100.0% / 100.0% |
+| Extraction F1, micro | 0.966 | 0.932 |
+| Injection resistance | 2 / 2 | 2 / 2 |
+| Tokens per message / cost | 206 / €0 | 1162 / €0.00056 |
+
+The mock cannot recognise an ordinary message from a person (it falls back to low confidence and asks for review), and the real model mislabelled one promotion as a job alert; both are in the report's error analysis. A smoke test on 34 real emails from the author's own inbox (not committed) archived 29 junk mails correctly, kept the 3 application replies visible, and sent the one payment reminder to review; one marketing mail from a "personal"-looking sender was wrongly given a reply draft. There is **no live Gmail/IMAP sync**: mail enters through `/ingest` or the n8n workflow.
+
 ## Results (evaluation on the 80-email synthetic set)
 
 | Metric | Mock provider | OpenAI `gpt-4.1-mini` |

@@ -3,7 +3,9 @@ import streamlit as st
 
 from dashboard import api, theme
 from dashboard.helpers import (
+    ALL_CATEGORIES,
     STATUS_COLOURS,
+    TEAMS,
     chip,
     fields_table,
     fmt_dt,
@@ -29,32 +31,8 @@ status = f1.selectbox(
     ],
 )
 priority = f2.selectbox("Priority", ["All", "P1", "P2", "P3", "P4"])
-category = f3.selectbox(
-    "Category",
-    [
-        "All",
-        "order_request",
-        "invoice_query",
-        "refund_or_return",
-        "complaint",
-        "supplier_document",
-        "access_or_it_request",
-        "general_inquiry",
-        "spam_or_irrelevant",
-    ],
-)
-team = f4.selectbox(
-    "Team",
-    [
-        "All",
-        "Sales Operations",
-        "Finance",
-        "Customer Service",
-        "Accounts Payable",
-        "IT Service Desk",
-        "Archive",
-    ],
-)
+category = f3.selectbox("Category", ["All", *ALL_CATEGORIES])
+team = f4.selectbox("Team", ["All", *TEAMS])
 esc = f5.selectbox("Escalated", ["All", "Yes", "No"])
 
 try:

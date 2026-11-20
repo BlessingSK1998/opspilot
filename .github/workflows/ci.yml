@@ -17,3 +17,5 @@ jobs:
       # Integration tests use embedded Postgres (pgserver).
       - name: Offline eval (fails if mock-mode quality drops)
         run: uv run python -m opspilot.eval.run --provider mock --out /tmp/eval --min-accuracy 0.90 --min-escalation-recall 0.95
+      - name: Offline eval, personal profile
+        run: uv run python -m opspilot.eval.run --provider mock --dataset personal --out /tmp/eval-personal --min-accuracy 0.90 --min-escalation-recall 0.95

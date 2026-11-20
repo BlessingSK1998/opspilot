@@ -1,0 +1,14 @@
+{
+ "id": "PM-017",
+ "message_id": "<pm-017@mail.example>",
+ "thread_id": "T-PM-017",
+ "from_name": "Data Digest",
+ "from_email": "noreply@datadigest.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Change Data Capture for Data Engineers",
+ "body": "Daily Digest. Today's highlights: Change Data Capture explained.",
+ "received_at": "2026-11-19T17:29:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

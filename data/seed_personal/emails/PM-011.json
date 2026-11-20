@@ -1,0 +1,14 @@
+{
+ "id": "PM-011",
+ "message_id": "<pm-011@mail.example>",
+ "thread_id": "T-PM-011",
+ "from_name": "Hirely",
+ "from_email": "info@hirely.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Firma Beta und 9 andere Firmen suchen Kandidaten wie Dich",
+ "body": "Verpasse nicht deine Chance auf den richtigen Job!",
+ "received_at": "2026-11-19T13:47:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

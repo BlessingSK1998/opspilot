@@ -1,0 +1,14 @@
+{
+ "id": "PM-026",
+ "message_id": "<pm-026@mail.example>",
+ "thread_id": "T-PM-026",
+ "from_name": "MailPlus",
+ "from_email": "no-reply@mailplus.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Reset your password",
+ "body": "Hello Alex, you asked to reset your MailPlus password. Use the link within 24 hours to choose a new password.",
+ "received_at": "2026-11-19T23:02:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

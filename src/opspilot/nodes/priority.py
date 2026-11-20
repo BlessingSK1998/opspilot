@@ -9,7 +9,7 @@ from typing import Any
 
 from opspilot.nodes.common import Deps, finish
 from opspilot.nodes.validate import CUSTOMER_CATEGORIES
-from opspilot.schemas.enums import Category, Priority
+from opspilot.schemas.enums import JUNK_CATEGORIES, Category, Priority
 from opspilot.schemas.state import OpsState
 
 AMOUNT_LIMIT = 5000.0
@@ -20,6 +20,8 @@ BASE_PRIORITY = {
     Category.COMPLAINT: Priority.P2, Category.INVOICE_QUERY: Priority.P2, Category.REFUND_OR_RETURN: Priority.P2,
     Category.ORDER_REQUEST: Priority.P3, Category.SUPPLIER_DOCUMENT: Priority.P3, Category.ACCESS_OR_IT_REQUEST: Priority.P3,
     Category.GENERAL_INQUIRY: Priority.P4, Category.SPAM_OR_IRRELEVANT: Priority.P4,
+    Category.JOB_APPLICATION_UPDATE: Priority.P3, Category.FINANCE_NOTICE: Priority.P2, Category.ACCOUNT_OR_SECURITY: Priority.P3,
+    Category.PERSONAL_MESSAGE: Priority.P3, Category.JOB_ALERT: Priority.P4, Category.NEWSLETTER_OR_PROMO: Priority.P4,
 }  # fmt: skip
 ORDER = [Priority.P1, Priority.P2, Priority.P3, Priority.P4]
 URGENCY_TO_PRIORITY = {1: Priority.P1, 2: Priority.P2, 3: Priority.P3, 4: Priority.P4}
@@ -37,7 +39,7 @@ def assess_priority(state: OpsState, deps: Deps) -> dict[str, Any]:
     usage = None
     risk = None
 
-    if cat is not Category.SPAM_OR_IRRELEVANT:
+    if cat not in JUNK_CATEGORIES:
         res = deps.provider.assess_risk(state.safe_text)
         risk, usage = res.parsed, res.usage
 
@@ -50,6 +52,11 @@ def assess_priority(state: OpsState, deps: Deps) -> dict[str, Any]:
         reasons.append("high_severity_complaint")
     if customer and customer.get("vip") and cat in CUSTOMER_CATEGORIES | {Category.GENERAL_INQUIRY}:
         reasons.append("vip_customer")
+    flat = state.flat_fields()
+    if cat is Category.JOB_APPLICATION_UPDATE and flat.get("status") in ("interview", "offer"):
+        reasons.append("interview_or_offer")
+    if cat is Category.FINANCE_NOTICE and flat.get("action_required") is True:
+        reasons.append("finance_action_required")
     if state.classification.confidence < CONFIDENCE_FLOOR:
         reasons.append("low_confidence")
     if state.injection_flags:
@@ -58,7 +65,7 @@ def assess_priority(state: OpsState, deps: Deps) -> dict[str, Any]:
         reasons.append("unresolved_thread")
 
     rule = BASE_PRIORITY[cat]
-    if {"high_severity_complaint", "legal_language"} & set(reasons) or {
+    if {"high_severity_complaint", "legal_language", "interview_or_offer"} & set(reasons) or {
         "vip_customer",
         "amount_over_5000",
     } <= set(reasons):

@@ -8,7 +8,15 @@ from typing import Any
 from langgraph.types import interrupt
 
 from opspilot.nodes.common import Deps, finish
-from opspilot.schemas.enums import Category, DraftKind, Priority, ReviewAction, TaskStatus
+from opspilot.schemas.enums import (
+    JUNK_CATEGORIES,
+    Category,
+    DraftKind,
+    Priority,
+    Profile,
+    ReviewAction,
+    TaskStatus,
+)
 from opspilot.schemas.llm import DraftResult
 from opspilot.schemas.state import OpsState
 from opspilot.tools.agent_tools import GetSlaPolicyArgs, get_sla_policy
@@ -18,6 +26,8 @@ TEAM_BY_CATEGORY = {
     Category.REFUND_OR_RETURN: "Customer Service", Category.COMPLAINT: "Customer Service",
     Category.SUPPLIER_DOCUMENT: "Accounts Payable", Category.ACCESS_OR_IT_REQUEST: "IT Service Desk",
     Category.GENERAL_INQUIRY: "Customer Service", Category.SPAM_OR_IRRELEVANT: "Archive",
+    Category.JOB_APPLICATION_UPDATE: "Job search", Category.FINANCE_NOTICE: "Finances", Category.ACCOUNT_OR_SECURITY: "Accounts",
+    Category.PERSONAL_MESSAGE: "Personal", Category.JOB_ALERT: "Archive", Category.NEWSLETTER_OR_PROMO: "Archive",
 }  # fmt: skip
 
 
@@ -26,12 +36,28 @@ def after_ingest(state: OpsState) -> str:
     return "end" if state.duplicate else "sanitize"
 
 
+def needs_reply(state: OpsState) -> bool:
+    """Personal profile: does this e-mail call for a reply from the owner?"""
+    f = state.flat_fields()
+    cat = state.category
+    if cat is Category.PERSONAL_MESSAGE:
+        return True
+    if cat is Category.JOB_APPLICATION_UPDATE:
+        return f.get("status") not in ("received", "rejected")  # interview, offer or unclear
+    if cat is Category.FINANCE_NOTICE:
+        return f.get("action_required") is True
+    return False
+
+
 def route_after_priority(state: OpsState) -> str:
-    if (
-        state.category is Category.SPAM_OR_IRRELEVANT
-        and "prompt_injection" not in state.escalation_reasons
-    ):
+    injected = "prompt_injection" in state.escalation_reasons
+    if state.category in JUNK_CATEGORIES and not injected:
         return "archive"
+    if state.profile is Profile.PERSONAL:
+        # Informational mail is filed (closed) unless something needs a human; nobody is asked for "missing info".
+        if not needs_reply(state) and not state.escalation_reasons:
+            return "archive"
+        return "draft_response"
     if state.missing_fields or state.validation_issues:
         return "draft_info_request"
     return "draft_response"
@@ -136,16 +162,19 @@ def create_task(state: OpsState, deps: Deps) -> dict[str, Any]:
 
 
 def archive(state: OpsState, deps: Deps) -> dict[str, Any]:
+    """File the message away: junk is archived; informational mail that needs no reply is closed."""
     t0 = time.perf_counter()
     fields = _task_fields(state, deps)
-    final = state.model_copy(update={"task_status": TaskStatus.ARCHIVED, **fields})
+    status = TaskStatus.ARCHIVED if state.category in JUNK_CATEGORIES else TaskStatus.CLOSED
+    final = state.model_copy(update={"task_status": status, **fields})
     task_id = deps.backend.sink.save_outcome(final)
+    why = "junk filed away" if status is TaskStatus.ARCHIVED else "informational, no reply needed"
     return finish(
         "archive",
         state,
         t0,
-        "spam/irrelevant archived",
-        {"task_id": task_id, "task_status": TaskStatus.ARCHIVED, **fields},
+        f"{why} ({status.value})",
+        {"task_id": task_id, "task_status": status, **fields},
     )
 
 

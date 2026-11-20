@@ -29,8 +29,8 @@ def test_all_categories_have_schema_and_required_matches_seed() -> None:
 
     assert set(SCHEMAS) == set(Category)
     for cat, cls in SCHEMAS.items():
-        if cat is Category.SUPPLIER_DOCUMENT:
-            continue  # type-dependent; covered below
+        if cat is Category.SUPPLIER_DOCUMENT or cat.value not in REQUIRED:
+            continue  # supplier is type-dependent (covered below); personal categories are not in the ops seed
         assert list(cls.REQUIRED) == REQUIRED[cat.value], cat
 
 

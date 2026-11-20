@@ -24,6 +24,7 @@ lint:
 
 eval:             ## evaluation report in reports/ (PROVIDER=openai for the real model)
 	$(UV) run python -m opspilot.eval.run --provider $(PROVIDER)
+	$(UV) run python -m opspilot.eval.run --provider $(PROVIDER) --dataset personal
 
 demo:             ## one command, no API key: Docker if available, otherwise embedded Postgres
 	@if command -v docker >/dev/null 2>&1; then $(MAKE) demo-docker; else $(MAKE) demo-local; fi

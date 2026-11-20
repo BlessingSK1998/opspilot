@@ -1,0 +1,14 @@
+{
+ "id": "PM-030",
+ "message_id": "<pm-030@mail.example>",
+ "thread_id": "T-PM-030",
+ "from_name": "Promo Team",
+ "from_email": "promo77@seo-boost.top",
+ "to": "alex.morgen@example.org",
+ "subject": "You won!!!",
+ "body": "CONGRATULATIONS! Click http://bit.ly/x9 to claim your bitcoin bonus now.",
+ "received_at": "2026-11-20T01:30:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

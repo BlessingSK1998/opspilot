@@ -1,0 +1,14 @@
+{
+ "id": "PM-028",
+ "message_id": "<pm-028@mail.example>",
+ "thread_id": "T-PM-028",
+ "from_name": "Maria Lopez",
+ "from_email": "maria.lopez@example.net",
+ "to": "alex.morgen@example.org",
+ "subject": "Reference letter",
+ "body": "Hi Alex,\n\ncould you send me the reference letter we talked about? I need it for my application.\n\nCheers,\nMaria Lopez",
+ "received_at": "2026-11-20T00:16:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

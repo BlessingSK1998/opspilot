@@ -1,0 +1,14 @@
+{
+ "id": "PM-025",
+ "message_id": "<pm-025@mail.example>",
+ "thread_id": "T-PM-025",
+ "from_name": "PhotoApp",
+ "from_email": "security@photoapp.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Security alert: new login attempt",
+ "body": "Hello Alex, we noticed a login attempt to your PhotoApp account from a new device. If this was you, no action is needed. security alert.",
+ "received_at": "2026-11-19T22:25:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

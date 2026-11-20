@@ -1,0 +1,14 @@
+{
+ "id": "PM-007",
+ "message_id": "<pm-007@mail.example>",
+ "thread_id": "T-PM-007",
+ "from_name": "Fjord Software Recruiting",
+ "from_email": "careers@fjord.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Your application for AI Operations Specialist",
+ "body": "Dear Alex,\n\nThank you for your interest in joining Fjord Software. We were impressed and would like to invite you to an interview for the AI Operations Specialist position.\n\nBest regards,\nTalent Team\nFjord Software",
+ "received_at": "2026-11-19T11:19:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

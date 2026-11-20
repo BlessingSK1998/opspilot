@@ -10,8 +10,12 @@ st.caption(
     "Pick a sample or paste your own, run it live, and watch each node of the graph complete."
 )
 
+MAILBOXES = {"Operations inbox (Northwind)": "ops", "Personal inbox": "personal"}
+mailbox = st.radio("Mailbox", list(MAILBOXES), horizontal=True)
+profile = MAILBOXES[mailbox]
+
 try:
-    samples = api.get("/samples")
+    samples = api.get("/samples", dataset=profile)
 except api.ApiError as exc:
     st.error(str(exc))
     st.stop()
@@ -21,7 +25,7 @@ raw: dict | None = None
 if mode == "Sample email":
     opts = {f"{s['id']} · {s['subject'][:60]} · {s['from_email']}": s["id"] for s in samples}
     pick = st.selectbox("Sample", list(opts))
-    raw = api.get(f"/samples/{opts[pick]}")
+    raw = api.get(f"/samples/{opts[pick]}", dataset=profile)
     with st.expander("Preview", expanded=True):
         st.text(raw["body"])
     suffix = st.checkbox("Make unique (so it is not ignored as a duplicate)", value=True)
@@ -29,7 +33,9 @@ if mode == "Sample email":
         raw["subject"] = f"{raw['subject']} [sim {st.session_state.get('sim_n', 0)}]"
         raw["body"] += f"\n\n(simulation #{st.session_state.get('sim_n', 0)})"
 else:
-    sender = st.text_input("From", "anna.klein@isar-gruppe.de")
+    sender = st.text_input(
+        "From", "anna.klein@isar-gruppe.de" if profile == "ops" else "recruiter@example.com"
+    )
     subject = st.text_input("Subject", "Frage zu Lieferzeiten")
     body = st.text_area(
         "Body",
@@ -37,6 +43,7 @@ else:
         height=160,
     )
     raw = {"from_email": sender, "subject": subject, "body": body}
+raw["profile"] = profile
 
 if st.button("Run through OpsPilot", type="primary"):
     st.session_state["sim_n"] = st.session_state.get("sim_n", 0) + 1

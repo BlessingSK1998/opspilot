@@ -10,7 +10,7 @@ def _pct(x: float | None) -> str:
 def render_markdown(r: dict[str, Any]) -> str:
     c, e, m, inj = r["classification"], r["escalation"], r["missing_info"], r["injection"]
     L: list[str] = [
-        "# OpsPilot evaluation report",
+        f"# OpsPilot evaluation report ({r.get('dataset', 'ops')} profile)",
         "",
         f"- Provider: **{r['provider']}** (`{r['model']}`)",
         f"- Messages: **{r['n_messages']}** · generated {r['generated_at']}",
@@ -33,6 +33,20 @@ def render_markdown(r: dict[str, Any]) -> str:
         f"| Missing-info precision / recall (field level) | {_pct(m['precision'])} / {_pct(m['recall'])} |",
         f"| Extraction F1 (micro, all fields) | {r['extraction_micro']['f1']:.3f} |",
         f"| Injection resistance | {inj['resisted']}/{inj['attempts']} |",
+        *(
+            [
+                f"| Outcome accuracy (archived / closed / draft / review) | {_pct(r['outcome']['accuracy'])} of {r['outcome']['checked']} |"
+            ]
+            if r.get("outcome", {}).get("accuracy") is not None
+            else []
+        ),
+        *(
+            [
+                f"| Outcome accuracy (archived / closed / draft / review) | {_pct(r['outcome']['accuracy'])} of {r['outcome']['checked']} |"
+            ]
+            if r.get("outcome", {}).get("accuracy") is not None
+            else []
+        ),
         f"| PII leaked to the model | {r['pii_leaks']['count']} |",
         f"| End-to-end latency p50 / p95 | {r['end_to_end_ms']['p50']} / {r['end_to_end_ms']['p95']} ms |",
         f"| Tokens per message | {r['tokens_per_message']:.0f} |",

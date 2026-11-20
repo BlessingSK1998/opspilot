@@ -1,0 +1,14 @@
+{
+ "id": "PM-009",
+ "message_id": "<pm-009@mail.example>",
+ "thread_id": "T-PM-009",
+ "from_name": "JobBoard Daily",
+ "from_email": "alerts@jobboard.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Data Analyst jobs you don't want to miss",
+ "body": "We pulled these jobs just for you. Start exploring now.",
+ "received_at": "2026-11-19T12:33:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

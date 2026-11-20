@@ -1,0 +1,14 @@
+{
+ "id": "PM-023",
+ "message_id": "<pm-023@mail.example>",
+ "thread_id": "T-PM-023",
+ "from_name": "NeoBank",
+ "from_email": "statements@neobank.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Ihr Kontoauszug für Oktober",
+ "body": "Guten Tag,\n\nIhr Kontoauszug für Oktober steht in der App bereit. Statement account statement.\n\nIhr NeoBank-Team",
+ "received_at": "2026-11-19T21:11:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

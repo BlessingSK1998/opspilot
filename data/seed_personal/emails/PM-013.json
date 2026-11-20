@@ -1,0 +1,14 @@
+{
+ "id": "PM-013",
+ "message_id": "<pm-013@mail.example>",
+ "thread_id": "T-PM-013",
+ "from_name": "CareerMatch",
+ "from_email": "agent@careermatch.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Wir haben 1 neue Karrieremöglichkeit für Project Manager",
+ "body": "Ergebnisse für Ihre gespeicherte Suche. Wir haben eine neue Position für Ihre gespeicherte Suche gefunden.",
+ "received_at": "2026-11-19T15:01:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

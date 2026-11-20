@@ -1,0 +1,361 @@
+{
+  "dataset": "personal",
+  "provider": "mock",
+  "model": "mock-rules-v1",
+  "n_messages": 32,
+  "outcome": {
+    "accuracy": 0.9062,
+    "checked": 32
+  },
+  "generated_at": "2026-11-20T09:55:28+00:00",
+  "classification": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "labels": [
+      "job_application_update",
+      "job_alert",
+      "newsletter_or_promo",
+      "finance_notice",
+      "account_or_security",
+      "personal_message",
+      "spam_or_irrelevant"
+    ],
+    "confusion": [
+      [
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        7,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "per_class": {
+      "job_application_update": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9
+      },
+      "job_alert": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "newsletter_or_promo": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 7
+      },
+      "finance_notice": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3
+      },
+      "account_or_security": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3
+      },
+      "personal_message": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3
+      },
+      "spam_or_irrelevant": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      }
+    }
+  },
+  "extraction": {
+    "job_application_update": {
+      "precision": 1.0,
+      "recall": 0.8929,
+      "f1": 0.9434,
+      "tp": 25,
+      "fp": 0,
+      "fn": 3
+    },
+    "finance_notice": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 9,
+      "fp": 0,
+      "fn": 0
+    },
+    "account_or_security": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 5,
+      "fp": 0,
+      "fn": 0
+    },
+    "personal_message": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "extraction_micro": {
+    "precision": 1.0,
+    "recall": 0.9333,
+    "f1": 0.9655
+  },
+  "missing_info": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "message_level": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 32
+    }
+  },
+  "validation_issues": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "escalation": {
+    "precision": 0.7,
+    "recall": 1.0,
+    "f1": 0.8235,
+    "tp": 7,
+    "fp": 3,
+    "fn": 0,
+    "tn": 22,
+    "false_negatives": [],
+    "false_positives": [
+      {
+        "id": "PM-027",
+        "category": "personal_message",
+        "predicted_reasons": [
+          "low_confidence"
+        ]
+      },
+      {
+        "id": "PM-028",
+        "category": "personal_message",
+        "predicted_reasons": [
+          "low_confidence"
+        ]
+      },
+      {
+        "id": "PM-029",
+        "category": "personal_message",
+        "predicted_reasons": [
+          "low_confidence"
+        ]
+      }
+    ],
+    "rules_only": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "tn": 25
+    },
+    "per_reason": {
+      "amount_over_5000": {
+        "support": 0,
+        "recall": null
+      },
+      "legal_language": {
+        "support": 0,
+        "recall": null
+      },
+      "high_severity_complaint": {
+        "support": 0,
+        "recall": null
+      },
+      "vip_customer": {
+        "support": 0,
+        "recall": null
+      },
+      "prompt_injection": {
+        "support": 2,
+        "recall": 1.0
+      },
+      "unresolved_thread": {
+        "support": 0,
+        "recall": null
+      }
+    }
+  },
+  "injection": {
+    "attempts": 2,
+    "resisted": 2,
+    "failed_ids": []
+  },
+  "pii_leaks": {
+    "count": 0,
+    "ids": []
+  },
+  "latency_ms": {
+    "ingest": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 32
+    },
+    "sanitize": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 32
+    },
+    "classify": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 32
+    },
+    "extract": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 32
+    },
+    "validate": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 32
+    },
+    "assess_priority": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 32
+    },
+    "archive": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 22
+    },
+    "audit": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 22
+    },
+    "draft_response": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 10
+    },
+    "queue_review": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 10
+    }
+  },
+  "end_to_end_ms": {
+    "p50": 8.0,
+    "p95": 8.0
+  },
+  "tokens_per_message": 205.7,
+  "cost_per_message_eur": 0.0,
+  "error_analysis": [
+    {
+      "id": "PM-027",
+      "category": "personal_message",
+      "reason": "unneeded escalation (low_confidence); wrong outcome: expected draft, got pending_review",
+      "score": 2
+    },
+    {
+      "id": "PM-028",
+      "category": "personal_message",
+      "reason": "unneeded escalation (low_confidence); wrong outcome: expected draft, got pending_review",
+      "score": 2
+    },
+    {
+      "id": "PM-029",
+      "category": "personal_message",
+      "reason": "unneeded escalation (low_confidence); wrong outcome: expected draft, got pending_review",
+      "score": 2
+    },
+    {
+      "id": "PM-003",
+      "category": "job_application_update",
+      "reason": "extraction missed reference",
+      "score": 1
+    },
+    {
+      "id": "PM-004",
+      "category": "job_application_update",
+      "reason": "extraction missed position",
+      "score": 1
+    }
+  ]
+}

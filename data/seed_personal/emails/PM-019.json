@@ -1,0 +1,14 @@
+{
+ "id": "PM-019",
+ "message_id": "<pm-019@mail.example>",
+ "thread_id": "T-PM-019",
+ "from_name": "CV Builder",
+ "from_email": "hello@cvbuilder.example",
+ "to": "alex.morgen@example.org",
+ "subject": "57% OFF Premium - BLACK FRIDAY",
+ "body": "Use the code for 57% off Premium. Sale ends tonight.",
+ "received_at": "2026-11-19T18:43:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

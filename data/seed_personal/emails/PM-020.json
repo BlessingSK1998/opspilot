@@ -1,0 +1,14 @@
+{
+ "id": "PM-020",
+ "message_id": "<pm-020@mail.example>",
+ "thread_id": "T-PM-020",
+ "from_name": "Beats Club",
+ "from_email": "team@beatsclub.example",
+ "to": "alex.morgen@example.org",
+ "subject": "stream is live: 3 new plugins",
+ "body": "JOIN LIVESTREAM HERE: free plugins, live now. Unsubscribe.",
+ "received_at": "2026-11-19T19:20:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

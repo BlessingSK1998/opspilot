@@ -1,0 +1,14 @@
+{
+ "id": "PM-010",
+ "message_id": "<pm-010@mail.example>",
+ "thread_id": "T-PM-010",
+ "from_name": "TalentFinder",
+ "from_email": "no-reply@talentfinder.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Neue Stellenangebote für Dich",
+ "body": "Hey Alex! Wir haben neue Jobs für Dich rausgesucht: Operations Manager (m/w/d), Hamburg.",
+ "received_at": "2026-11-19T13:10:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

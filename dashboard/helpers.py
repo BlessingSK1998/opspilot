@@ -4,6 +4,13 @@ import html
 from datetime import UTC, datetime
 from typing import Any
 
+ALL_CATEGORIES = [
+    "order_request", "invoice_query", "refund_or_return", "complaint", "supplier_document", "access_or_it_request",
+    "general_inquiry", "spam_or_irrelevant", "job_application_update", "job_alert", "newsletter_or_promo",
+    "finance_notice", "account_or_security", "personal_message",
+]  # fmt: skip
+TEAMS = ["Sales Operations", "Finance", "Customer Service", "Accounts Payable", "IT Service Desk",
+         "Job search", "Finances", "Accounts", "Personal", "Archive"]  # fmt: skip
 PRIORITY_COLOURS = {"P1": "#C0392B", "P2": "#E08A1E", "P3": "#2F6FB0", "P4": "#8A94A3"}
 STATUS_COLOURS = {
     "pending_review": "#C0392B", "awaiting_customer": "#E08A1E", "ready_to_send": "#0F766E",
@@ -23,6 +30,8 @@ REASON_LABELS = {
     "amount_over_5000": "Amount over €5,000", "legal_language": "Legal language", "high_severity_complaint": "High-severity complaint",
     "vip_customer": "VIP customer", "low_confidence": "Low classification confidence", "prompt_injection": "Possible prompt injection",
     "unresolved_thread": "3+ messages, unresolved",
+    "interview_or_offer": "Interview or offer: needs your reply",
+    "finance_action_required": "Money matter: action expected",
 }  # fmt: skip
 
 

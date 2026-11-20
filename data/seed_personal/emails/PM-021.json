@@ -1,0 +1,14 @@
+{
+ "id": "PM-021",
+ "message_id": "<pm-021@mail.example>",
+ "thread_id": "T-PM-021",
+ "from_name": "LoanCo",
+ "from_email": "service@loanco.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Herr Morgen, wir warten auf Ihre Rückmeldung",
+ "body": "Hallo Herr Morgen,\n\nwir warten noch auf Ihre Rückmeldung zu unserer vorherigen Nachricht.\nBitte lassen Sie uns wissen, sobald möglich.\n\nFreundliche Grüße,\nIhr LoanCo-Team",
+ "received_at": "2026-11-19T19:57:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

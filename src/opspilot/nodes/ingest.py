@@ -54,7 +54,7 @@ def ingest(state: OpsState, deps: Deps) -> dict[str, Any]:
             state,
             t0,
             "duplicate content: skipped",
-            {"message": msg, "duplicate": True, "route": "duplicate"},
+            {"message": msg, "duplicate": True, "route": "duplicate", "profile": raw.profile},
         )
     text = assemble_text(msg.subject, msg.body, atts)
     return finish(
@@ -62,5 +62,5 @@ def ingest(state: OpsState, deps: Deps) -> dict[str, Any]:
         state,
         t0,
         f"{len(atts)} attachment(s), {len(text)} chars",
-        {"message": msg, "message_id": message_id, "email_text": text},
+        {"message": msg, "message_id": message_id, "email_text": text, "profile": raw.profile},
     )

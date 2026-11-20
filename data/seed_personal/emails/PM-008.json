@@ -1,0 +1,14 @@
+{
+ "id": "PM-008",
+ "message_id": "<pm-008@mail.example>",
+ "thread_id": "T-PM-008",
+ "from_name": "Quayside Capital Recruiting",
+ "from_email": "careers@quayside.example",
+ "to": "alex.morgen@example.org",
+ "subject": "Your application for Reporting Analyst",
+ "body": "Dear Alex,\n\nThank you for your interest in joining Quayside Capital! We are pleased to offer you the Reporting Analyst position. A contract will follow by post.\n\nBest regards,\nTalent Team\nQuayside Capital",
+ "received_at": "2026-11-19T11:56:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

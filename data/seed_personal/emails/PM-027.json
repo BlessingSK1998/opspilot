@@ -1,0 +1,14 @@
+{
+ "id": "PM-027",
+ "message_id": "<pm-027@mail.example>",
+ "thread_id": "T-PM-027",
+ "from_name": "Jonas Weber",
+ "from_email": "jonas.weber@example.net",
+ "to": "alex.morgen@example.org",
+ "subject": "Kaffee nächste Woche?",
+ "body": "Hallo Alex,\n\nhast du nächste Woche Zeit für einen Kaffee? Ich würde gern von deinem neuen Projekt hören.\n\nViele Grüße\nJonas Weber",
+ "received_at": "2026-11-19T23:39:00+01:00",
+ "thread_message_count": 1,
+ "attachments": [],
+ "profile": "personal"
+}

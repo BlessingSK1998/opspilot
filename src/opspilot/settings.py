@@ -23,6 +23,9 @@ class Settings(BaseSettings):
     llm_timeout_seconds: float = 30.0
     llm_max_retries: int = 4
 
+    # Name used to sign drafts in the personal profile (leave empty for a generic sign-off).
+    owner_name: str | None = Field(default=None, alias="OPSPILOT_OWNER_NAME")
+
     slack_webhook_url: str | None = None
     langsmith_tracing: bool = False
 

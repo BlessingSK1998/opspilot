@@ -3,7 +3,7 @@
 from dataclasses import dataclass
 from typing import Any, Protocol
 
-from opspilot.schemas.enums import Category, DraftKind
+from opspilot.schemas.enums import Category, DraftKind, Profile
 from opspilot.schemas.extraction import CategoryExtraction
 from opspilot.schemas.llm import ClassificationResult, DraftResult, RiskAssessment, Usage
 
@@ -18,7 +18,9 @@ class LLMProvider(Protocol):
     name: str
     model: str
 
-    def classify(self, email_text: str) -> LLMResult[ClassificationResult]: ...
+    def classify(
+        self, email_text: str, profile: Profile = Profile.OPS
+    ) -> LLMResult[ClassificationResult]: ...
 
     def extract(self, category: Category, email_text: str) -> LLMResult[CategoryExtraction]: ...
 
