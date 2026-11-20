@@ -142,3 +142,12 @@ def test_helpers() -> None:
         ]
         == "a, b"
     )
+
+
+def test_inbox_opens_task_detail_from_dropdown() -> None:
+    with patch("dashboard.api.request", fake_request):
+        at = AppTest.from_file(str(VIEWS / "inbox.py"), default_timeout=90).run()
+        at.selectbox(key="open_task").select_index(1).run()
+    assert not at.exception, [e.value for e in at.exception]
+    text = " ".join(m.value for m in at.markdown)
+    assert "Beschwerde Lieferung" in text  # the dialog rendered the selected task's email
