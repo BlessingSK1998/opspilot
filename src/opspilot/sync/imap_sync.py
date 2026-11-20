@@ -141,8 +141,8 @@ def sync_once(
                 continue
             try:
                 res = ingest(raw)
-            except Exception:
-                log.warning("ingest failed for uid=%s; will retry on the next run", uid)
+            except Exception as exc:
+                log.warning("ingest failed for uid=%s (%s); will retry on the next run", uid, exc)
                 result.failed += 1
                 break  # keep order: do not advance past a message that was not ingested
             result.ingested += 1
@@ -175,6 +175,10 @@ def http_ingest(api_url: str, api_key: str) -> Callable[[RawEmail], dict[str, An
             headers={"X-API-Key": api_key, "content-type": "application/json"},
             timeout=300.0,
         )
+        if (
+            r.status_code == 503
+        ):  # the LLM provider is down (e.g. out of credits): surface the reason
+            raise RuntimeError(r.json().get("detail", "service unavailable"))
         r.raise_for_status()
         out: dict[str, Any] = r.json()
         return out
@@ -197,19 +201,23 @@ def main(argv: list[str] | None = None) -> int:
     if args.reset and cfg.state_path.exists():
         cfg.state_path.unlink()
     ingest = http_ingest(s.api_url, s.api_key.get_secret_value())
+    failures = 0
     while True:
         try:
             r = sync_once(cfg, ingest)
+            failures = failures + 1 if r.failed else 0
             print(
                 f"sync: fetched {r.fetched}, ingested {r.ingested} (duplicates {r.duplicates}), skipped {r.skipped}, failed {r.failed}; outcomes {r.outcomes}"
             )
         except Exception as exc:  # network / auth problems: report, keep watching
+            failures += 1
             print(f"sync error: {type(exc).__name__}: {exc}")
             if not args.watch:
                 return 1
         if not args.watch:
             return 0
-        time.sleep(s.sync_interval_seconds)
+        # back off while ingestion keeps failing (e.g. the LLM provider is out of credits): 2x, 4x, ... up to 30 min
+        time.sleep(min(s.sync_interval_seconds * (2 ** min(failures, 4)), 1800))
 
 
 if __name__ == "__main__":

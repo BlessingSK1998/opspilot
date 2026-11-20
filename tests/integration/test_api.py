@@ -302,3 +302,21 @@ def test_samples_by_dataset(client: TestClient) -> None:
     ).json()
     assert raw["profile"] == "personal"
     assert client.get("/samples", params={"dataset": "nope"}, headers=H).status_code == 422
+
+
+def test_llm_outage_is_a_clear_503_not_a_500(
+    client: TestClient, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    import opspilot.runner as runner
+    from opspilot.llm.base import LLMUnavailableError
+
+    def down(self: runner.Pipeline, raw: Any, run_id: str | None = None) -> Any:
+        raise LLMUnavailableError("The OpenAI account has no credits left.")
+
+    monkeypatch.setattr(runner.Pipeline, "start", down)
+    res = client.post(
+        "/ingest",
+        json=payload("Frage outage", "Could you send us your catalogue? outage"),
+        headers=H,
+    )
+    assert res.status_code == 503 and "no credits" in res.json()["detail"]

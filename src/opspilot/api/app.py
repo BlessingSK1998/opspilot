@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Annotated, Any
 
 from fastapi import Depends, FastAPI, Header, HTTPException, Query, Request
-from fastapi.responses import RedirectResponse, StreamingResponse
+from fastapi.responses import JSONResponse, RedirectResponse, StreamingResponse
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -38,6 +38,7 @@ from opspilot.api.models import (
 from opspilot.db.models import AuditEvent, Draft, Extraction, Message, ReviewDecision, Run, Task
 from opspilot.emailio import raw_from_eml, raw_from_seed_json
 from opspilot.graph.build import MERMAID
+from opspilot.llm.base import LLMUnavailableError
 from opspilot.logging_setup import configure_logging
 from opspilot.runner import RunResult
 from opspilot.schemas.enums import Category, Priority, ReviewAction, RunStatus, TaskStatus
@@ -89,6 +90,10 @@ def create_app(
         "validated work items; a human approves anything risky. Authenticate with the `X-API-Key` header.",
         openapi_tags=[{"name": "system"}, {"name": "ingest"}, {"name": "runs"}, {"name": "tasks"}, {"name": "reviews"}, {"name": "insights"}, {"name": "demo"}],
     )  # fmt: skip
+
+    @app.exception_handler(LLMUnavailableError)
+    async def llm_unavailable(_: Request, exc: LLMUnavailableError) -> JSONResponse:
+        return JSONResponse(status_code=503, content={"detail": f"LLM provider unavailable: {exc}"})
 
     def container() -> Container:
         return holder["c"]
@@ -332,8 +337,11 @@ def create_app(
     )
     def simulate(raw: RawEmail, c: C) -> StreamingResponse:
         def events() -> Iterator[str]:
-            for ev in c.pipeline.stream(raw):
-                yield f"data: {json.dumps(ev)}\n\n"
+            try:
+                for ev in c.pipeline.stream(raw):
+                    yield f"data: {json.dumps(ev)}\n\n"
+            except LLMUnavailableError as exc:
+                yield f"data: {json.dumps({'event': 'error', 'message': str(exc)})}\n\n"
 
         return StreamingResponse(events(), media_type="text/event-stream")
 

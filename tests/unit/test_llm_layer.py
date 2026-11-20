@@ -207,3 +207,43 @@ def test_openai_extract_binds_category_schema() -> None:
     p.extract(Category.INVOICE_QUERY, "t")
     assert comp.kwargs["response_format"] is InvoiceQuery
     json.dumps(InvoiceQuery.model_json_schema())  # schema is serialisable for Structured Outputs
+
+
+def test_no_credits_fails_fast_without_retrying() -> None:
+    from opspilot.llm.base import LLMUnavailableError
+
+    class _Quota:
+        calls = 0
+
+        def parse(self, **_: Any) -> Any:
+            _Quota.calls += 1
+            raise openai.RateLimitError(
+                "You have no credits remaining.",
+                response=httpx.Response(429, request=httpx.Request("POST", "http://x")),
+                body={"code": "insufficient_quota", "message": "You have no credits remaining."},
+            )
+
+    sleeps: list[float] = []
+    client = SimpleNamespace(chat=SimpleNamespace(completions=_Quota()))
+    p = OpenAIProvider("k", "gpt-4.1-mini", max_retries=4, client=client, sleep=sleeps.append)
+    with pytest.raises(LLMUnavailableError, match="no credits"):
+        p.classify("x")
+    assert _Quota.calls == 1 and sleeps == []  # no retries, no waiting
+
+
+def test_bad_key_is_reported_as_unavailable() -> None:
+    from opspilot.llm.base import LLMUnavailableError
+
+    class _Auth:
+        def parse(self, **_: Any) -> Any:
+            raise openai.AuthenticationError(
+                "bad key",
+                response=httpx.Response(401, request=httpx.Request("POST", "http://x")),
+                body=None,
+            )
+
+    p = OpenAIProvider(
+        "k", "gpt-4.1-mini", client=SimpleNamespace(chat=SimpleNamespace(completions=_Auth()))
+    )
+    with pytest.raises(LLMUnavailableError, match="API key"):
+        p.classify("x")

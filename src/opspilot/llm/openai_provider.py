@@ -10,7 +10,7 @@ import openai
 from openai import OpenAI
 from pydantic import BaseModel
 
-from opspilot.llm.base import LLMResult
+from opspilot.llm.base import LLMResult, LLMUnavailableError
 from opspilot.llm.pricing import cost_eur
 from opspilot.prompts import load_prompt
 from opspilot.schemas.enums import Category, DraftKind, Profile
@@ -25,6 +25,15 @@ RETRYABLE = (
     openai.APIConnectionError,
     openai.InternalServerError,
 )
+
+
+def _is_quota_error(exc: Exception) -> bool:
+    code = getattr(exc, "code", None)
+    return (
+        code == "insufficient_quota"
+        or "no credits" in str(exc).lower()
+        or "insufficient_quota" in str(exc)
+    )
 
 
 class OpenAIProvider:
@@ -72,7 +81,18 @@ class OpenAIProvider:
             try:
                 resp = self._client.chat.completions.parse(**kwargs)
                 break
+            except openai.AuthenticationError as exc:
+                raise LLMUnavailableError(
+                    "OpenAI rejected the API key (check OPENAI_API_KEY)"
+                ) from exc
             except RETRYABLE as exc:
+                if _is_quota_error(
+                    exc
+                ):  # permanent until billing is fixed: do not burn retries on it
+                    raise LLMUnavailableError(
+                        "The OpenAI account has no credits left. Add credits at "
+                        "https://platform.openai.com/settings/organization/billing"
+                    ) from exc
                 if attempt == self.max_retries:
                     raise
                 delay = min(2**attempt, 20) + random.random() * 0.25

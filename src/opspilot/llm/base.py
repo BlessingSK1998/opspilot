@@ -8,6 +8,10 @@ from opspilot.schemas.extraction import CategoryExtraction
 from opspilot.schemas.llm import ClassificationResult, DraftResult, RiskAssessment, Usage
 
 
+class LLMUnavailableError(RuntimeError):
+    """The model provider cannot serve requests (no credits, bad key, ...). Retrying will not help."""
+
+
 @dataclass(frozen=True)
 class LLMResult[T]:
     parsed: T

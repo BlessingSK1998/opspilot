@@ -58,6 +58,8 @@ if st.button("Run through OpsPilot", type="primary"):
                     )
                 elif ev["event"] == "interrupt":
                     st.markdown("⏸️ **paused: waiting for a human decision**")
+                elif ev["event"] == "error":
+                    st.error(ev["message"])
                 elif ev["event"] == "done":
                     done = ev
             box.update(label="Finished" if done else "No result", state="complete", expanded=True)
