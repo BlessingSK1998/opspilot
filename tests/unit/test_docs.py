@@ -5,19 +5,30 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def test_readme_results_match_latest_eval_report() -> None:
-    """The README quotes headline numbers; fail if someone re-runs eval and forgets the README."""
-    latest = json.loads(
-        Path(sorted(glob.glob(str(ROOT / "reports" / "eval_*.json")))[-1]).read_text()
-    )
+def _latest(provider: str) -> dict:  # type: ignore[type-arg]
+    reports = [
+        json.loads(Path(f).read_text())
+        for f in sorted(glob.glob(str(ROOT / "reports" / "eval_*.json")))
+    ]
+    return [r for r in reports if r["provider"] == provider][-1]  # type: ignore[no-any-return]
+
+
+def test_readme_results_match_latest_eval_reports() -> None:
+    """The README quotes headline numbers for both providers; fail if eval is re-run and README is not."""
     readme = (ROOT / "README.md").read_text()
-    c, e, m = latest["classification"], latest["escalation"], latest["missing_info"]
-    assert f"{c['accuracy']:.1%} / {c['macro_f1']:.3f}" in readme
-    assert f"{e['recall']:.1%}, {e['fn']} missed" in readme
-    assert f"{e['precision']:.1%}" in readme
-    assert f"{m['precision']:.1%} / {m['recall']:.1%}" in readme
-    assert f"{latest['extraction_micro']['f1']:.3f}" in readme
-    assert f"{latest['injection']['resisted']} / {latest['injection']['attempts']}" in readme
+    for provider in ("mock", "openai"):
+        r = _latest(provider)
+        c, e, m = r["classification"], r["escalation"], r["missing_info"]
+        for needle in (
+            f"{c['accuracy']:.1%} / {c['macro_f1']:.3f}",
+            f"{m['precision']:.1%} / {m['recall']:.1%}",
+            f"{r['extraction_micro']['f1']:.3f}",
+            f"{r['tokens_per_message']:.0f}",
+        ):
+            assert needle in readme, (provider, needle)
+        assert (
+            f"{e['precision']:.1%}" in readme and f"{e['recall']:.1%}, {e['fn']} missed" in readme
+        )
 
 
 def test_docs_exist_and_cover_required_sections() -> None:

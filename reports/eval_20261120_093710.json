@@ -1,0 +1,392 @@
+{
+  "provider": "openai",
+  "model": "gpt-4.1-mini",
+  "n_messages": 80,
+  "generated_at": "2026-11-20T09:37:10+00:00",
+  "classification": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "labels": [
+      "order_request",
+      "invoice_query",
+      "refund_or_return",
+      "complaint",
+      "supplier_document",
+      "access_or_it_request",
+      "general_inquiry",
+      "spam_or_irrelevant"
+    ],
+    "confusion": [
+      [
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        13,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        11,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ]
+    ],
+    "per_class": {
+      "order_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 15
+      },
+      "invoice_query": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 13
+      },
+      "refund_or_return": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "complaint": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 11
+      },
+      "supplier_document": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8
+      },
+      "access_or_it_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 8
+      },
+      "general_inquiry": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "spam_or_irrelevant": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 5
+      }
+    }
+  },
+  "extraction": {
+    "order_request": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 92,
+      "fp": 0,
+      "fn": 0
+    },
+    "invoice_query": {
+      "precision": 1.0,
+      "recall": 0.98,
+      "f1": 0.9899,
+      "tp": 49,
+      "fp": 0,
+      "fn": 1
+    },
+    "refund_or_return": {
+      "precision": 0.9024,
+      "recall": 0.9024,
+      "f1": 0.9024,
+      "tp": 37,
+      "fp": 4,
+      "fn": 4
+    },
+    "complaint": {
+      "precision": 0.975,
+      "recall": 0.9286,
+      "f1": 0.9512,
+      "tp": 39,
+      "fp": 1,
+      "fn": 3
+    },
+    "supplier_document": {
+      "precision": 0.9394,
+      "recall": 0.9394,
+      "f1": 0.9394,
+      "tp": 31,
+      "fp": 2,
+      "fn": 2
+    },
+    "access_or_it_request": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 30,
+      "fp": 0,
+      "fn": 0
+    },
+    "general_inquiry": {
+      "precision": 0.55,
+      "recall": 0.55,
+      "f1": 0.55,
+      "tp": 11,
+      "fp": 9,
+      "fn": 9
+    }
+  },
+  "extraction_micro": {
+    "precision": 0.9475,
+    "recall": 0.9383,
+    "f1": 0.9429
+  },
+  "missing_info": {
+    "precision": 0.8421,
+    "recall": 1.0,
+    "f1": 0.9143,
+    "tp": 16,
+    "fp": 3,
+    "fn": 0,
+    "message_level": {
+      "precision": 0.8235,
+      "recall": 1.0,
+      "f1": 0.9032,
+      "tp": 14,
+      "fp": 3,
+      "fn": 0,
+      "tn": 63
+    }
+  },
+  "validation_issues": {
+    "precision": 0.7778,
+    "recall": 1.0,
+    "f1": 0.875
+  },
+  "escalation": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 27,
+    "fp": 0,
+    "fn": 0,
+    "tn": 53,
+    "false_negatives": [],
+    "false_positives": [],
+    "rules_only": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 27,
+      "fp": 0,
+      "fn": 0,
+      "tn": 53
+    },
+    "per_reason": {
+      "amount_over_5000": {
+        "support": 11,
+        "recall": 1.0
+      },
+      "legal_language": {
+        "support": 3,
+        "recall": 1.0
+      },
+      "high_severity_complaint": {
+        "support": 4,
+        "recall": 1.0
+      },
+      "vip_customer": {
+        "support": 7,
+        "recall": 1.0
+      },
+      "prompt_injection": {
+        "support": 3,
+        "recall": 1.0
+      },
+      "unresolved_thread": {
+        "support": 3,
+        "recall": 1.0
+      }
+    }
+  },
+  "injection": {
+    "attempts": 3,
+    "resisted": 3,
+    "failed_ids": []
+  },
+  "pii_leaks": {
+    "count": 0,
+    "ids": []
+  },
+  "latency_ms": {
+    "ingest": {
+      "p50": 1.0,
+      "p95": 4.0,
+      "n": 80
+    },
+    "sanitize": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 80
+    },
+    "classify": {
+      "p50": 804.5,
+      "p95": 1103.15,
+      "n": 80
+    },
+    "extract": {
+      "p50": 1617.0,
+      "p95": 2893.5,
+      "n": 80
+    },
+    "validate": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 80
+    },
+    "assess_priority": {
+      "p50": 805.0,
+      "p95": 1000.75,
+      "n": 80
+    },
+    "draft_info_request": {
+      "p50": 1269.5,
+      "p95": 2178.0,
+      "n": 26
+    },
+    "create_task": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 48
+    },
+    "audit": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 53
+    },
+    "draft_response": {
+      "p50": 1520.0,
+      "p95": 2533.8,
+      "n": 49
+    },
+    "queue_review": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 27
+    },
+    "archive": {
+      "p50": 1.0,
+      "p95": 1.0,
+      "n": 5
+    }
+  },
+  "end_to_end_ms": {
+    "p50": 4858.5,
+    "p95": 6718.35
+  },
+  "tokens_per_message": 1980.4,
+  "cost_per_message_eur": 0.001044,
+  "error_analysis": [
+    {
+      "id": "EM-022",
+      "category": "invoice_query",
+      "reason": "extraction missed company; false missing-info: company",
+      "score": 3
+    },
+    {
+      "id": "EM-024",
+      "category": "complaint",
+      "reason": "extraction missed severity_signal; false missing-info: severity_signal",
+      "score": 3
+    },
+    {
+      "id": "EM-032",
+      "category": "complaint",
+      "reason": "extraction missed severity_signal; false missing-info: severity_signal",
+      "score": 3
+    },
+    {
+      "id": "EM-002",
+      "category": "refund_or_return",
+      "reason": "extraction reason: expected 'does not meet specification', got 'entspricht nicht der Spezifikation'",
+      "score": 1
+    },
+    {
+      "id": "EM-009",
+      "category": "general_inquiry",
+      "reason": "extraction topic: expected 'lead times', got 'typical lead time for hydraulic valves'",
+      "score": 1
+    }
+  ]
+}

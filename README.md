@@ -76,21 +76,22 @@ Open **http://localhost:8501**. You will see a populated dashboard; open **Human
 
 `make test` · `make lint` · `make eval` (writes `reports/eval_<timestamp>.md`) · `make eval PROVIDER=openai` (real model, needs `OPENAI_API_KEY`). Requires Python 3.12 and [uv](https://docs.astral.sh/uv/). Optional n8n: `COMPOSE_PROFILES=n8n make up`, then import `integrations/n8n/opspilot_workflow.json` (n8n UI > Workflows > Import from file; attach IMAP, Slack and SMTP credentials).
 
-## Results (latest evaluation, mock provider, 80 emails)
+## Results (evaluation on the 80-email synthetic set)
 
-| Metric | Result |
-|---|---|
-| Classification accuracy / macro-F1 | 100.0% / 1.000 |
-| Escalation recall (system) | 100.0%, 0 missed |
-| Escalation precision (system) | 87.1% (4 unneeded, all low-confidence safety net) |
-| Missing-info precision / recall | 100.0% / 100.0% |
-| Extraction F1, micro | 0.981 (refund 0.90, general inquiry 0.90) |
-| Injection resistance | 3 / 3 |
-| PII reaching the model | 0 |
-| Tokens per message | 461 |
-| Cost per message | €0.00 (mock); real-model cost not yet measured |
+| Metric | Mock provider | OpenAI `gpt-4.1-mini` |
+|---|---|---|
+| Classification accuracy / macro-F1 | 100.0% / 1.000 | 100.0% / 1.000 |
+| Escalation recall (system) | 100.0%, 0 missed | 100.0%, 0 missed |
+| Escalation precision (system) | 87.1% (4 unneeded, all low-confidence safety net) | 100.0% |
+| Missing-info precision / recall | 100.0% / 100.0% | 84.2% / 100.0% (3 false "missing": model left a field null) |
+| Extraction F1, micro | 0.981 | 0.943 (general-inquiry `topic` free text drags it: 0.55) |
+| Injection resistance | 3 / 3 | 3 / 3 |
+| PII reaching the model | 0 | 0 |
+| Tokens per message | 461 | 1980 |
+| Cost per message | €0.00 | €0.0010 |
+| End-to-end latency p50 / p95 | under 10 ms | 4.9 s / 6.7 s |
 
-> **Read this honestly.** The mock provider's rules were written against the same synthetic templates that generated the data, so these scores are a **regression check, not evidence of generalisation**. The hard cases it still gets wrong are listed in the report's error analysis (German free-text reasons vs English ground truth, a forwarded vague email). The real model has **not** been run against this set (no API key was available while building), so no real-model accuracy is claimed. Latencies in mock mode are sub-millisecond and floored to 1 ms.
+> **Read this honestly.** Both runs use the same *synthetic* data set, which is easy and written by the same hand as the mock's rules, so 100% classification says "the plumbing and prompts work", not "it will be 100% on real mail". The mock's numbers are a regression check only. The OpenAI run is the first real-model measurement (`reports/eval_20261120_*`). Worst remaining errors are in each report's error analysis (e.g. German free-text reasons vs English ground truth; the model sometimes leaves `company` or `severity_signal` empty, which the deterministic validator then flags as missing information). A separate smoke test on 15 real emails from the author's personal inbox (newsletters, promotions, job alerts) went from 14 of 15 wrongly sent to human review with the mock to 14 of 15 archived as irrelevant with the real model; that is anecdotal, not a measurement. Cost uses the built-in price table (EUR per message), which has not been reconciled with an OpenAI invoice.
 
 ## Key design decisions
 
@@ -105,14 +106,14 @@ All 41 decisions with alternatives are in [`docs/DECISIONS.md`](docs/DECISIONS.m
 ## Limitations and roadmap
 
 **Limitations (honest):**
-- Data is synthetic and the mock is tuned to it; real-model quality is **unmeasured**. Priority: run `make eval PROVIDER=openai` and publish the numbers.
-- The OpenAI provider is unit-tested against a fake client (retries, schema binding, usage accounting) but was **never called against the live API**. The default model `gpt-4.1-mini` and the pricing table are unverified.
+- Data is synthetic. The real-model run measures the system on that set only; real-world accuracy (messy attachments, long threads, other languages) is **unmeasured**. The mock is tuned to the synthetic data and fails on real mail.
+- The OpenAI provider has been run against the live API for the 80-email eval and 15 real emails, but only with `gpt-4.1-mini`; the pricing table is unreconciled with billing.
 - `docker compose` files and the n8n workflow were written but **not executed** (no Docker on the build machine); the embedded-Postgres path (`make demo-local`) is what was run and verified.
 - No auth beyond a shared API key; no multi-tenant isolation; the dashboard has no user login (reviewer name is typed in).
 - Replies are never sent: there is no SMTP/Gmail send integration by design.
 - Tools are invoked by deterministic nodes, not chosen by a tool-calling loop (schemas are exported for that).
 
-**Roadmap:** live-model eval and prompt iteration; held-out and real (anonymised) test data; send-after-approve integration; attachment OCR for scanned PDFs; per-customer SLA overrides; feedback loop turning reviewer edits into few-shot examples; LangSmith dashboards.
+**Roadmap:** prompt iteration for company/severity extraction; held-out and real (anonymised) test data; send-after-approve integration; attachment OCR for scanned PDFs; per-customer SLA overrides; feedback loop turning reviewer edits into few-shot examples; LangSmith dashboards.
 
 ## What this demonstrates
 
