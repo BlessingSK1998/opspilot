@@ -42,6 +42,7 @@ class TaskOut(BaseModel):
     escalation_reasons: list[str]
     confidence: float | None = None
     has_draft: bool = False
+    profile: Literal["ops", "personal"] = "ops"
 
 
 class TaskPatch(BaseModel):

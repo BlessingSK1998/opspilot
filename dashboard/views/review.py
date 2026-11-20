@@ -10,8 +10,11 @@ st.caption(
     "Escalated cases wait here. Nothing is sent: approving makes the draft ready for a person to send."
 )
 
+MAILBOXES = {"My inbox (live Gmail)": "personal", "Northwind samples": "ops", "All": None}
+mailbox = st.radio("Mailbox", list(MAILBOXES), horizontal=True, key="review_mailbox")
+
 try:
-    pending = api.get("/reviews/pending")
+    pending = api.get("/reviews/pending", profile=MAILBOXES[mailbox])
 except api.ApiError as exc:
     st.error(str(exc))
     st.stop()

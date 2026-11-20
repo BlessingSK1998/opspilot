@@ -17,6 +17,12 @@ from dashboard.helpers import (
 
 st.title("Inbox & tasks")
 
+MAILBOXES = {"My inbox (live Gmail)": "personal", "Northwind samples": "ops", "All": None}
+m1, m2 = st.columns([2, 1])
+mailbox = m1.radio("Mailbox", list(MAILBOXES), horizontal=True, key="mailbox")
+sort = m2.radio("Sort", ["Newest first", "Priority"], horizontal=True, key="sort")
+
+
 f1, f2, f3, f4, f5 = st.columns(5)
 status = f1.selectbox(
     "Status",
@@ -35,6 +41,7 @@ category = f3.selectbox("Category", ["All", *ALL_CATEGORIES])
 team = f4.selectbox("Team", ["All", *TEAMS])
 esc = f5.selectbox("Escalated", ["All", "Yes", "No"])
 
+
 try:
     tasks = api.get(
         "/tasks",
@@ -43,13 +50,22 @@ try:
         category=category,
         assignee=team,
         escalated={"Yes": True, "No": False}.get(esc),
+        profile=MAILBOXES[mailbox],
+        sort="newest" if sort == "Newest first" else "priority",
     )
 except api.ApiError as exc:
     st.error(str(exc))
     st.stop()
 
 if not tasks:
-    theme.empty("No tasks match these filters.")
+    theme.empty(
+        "No tasks match these filters."
+        + (
+            " No live mail has arrived yet: run <code>make sync</code> or start <code>make demo</code> with IMAP set in .env."
+            if MAILBOXES[mailbox] == "personal"
+            else ""
+        )
+    )
     st.stop()
 
 df = pd.DataFrame(

@@ -8,11 +8,11 @@ from collections.abc import Callable, Iterator
 from contextlib import asynccontextmanager
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Annotated, Any
+from typing import Annotated, Any, Literal
 
 from fastapi import Depends, FastAPI, Header, HTTPException, Query, Request
 from fastapi.responses import JSONResponse, RedirectResponse, StreamingResponse
-from sqlalchemy import select
+from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from opspilot import __version__
@@ -50,11 +50,12 @@ SAMPLE_DIRS = {"ops": SEED_DIR, "personal": Path("data/seed_personal")}
 REPORTS_DIR = Path("reports")
 
 
-def _task_out(t: Task, m: Message, confidence: float | None) -> TaskOut:
+def _task_out(t: Task, m: Message, confidence: float | None, profile: str | None = None) -> TaskOut:
     return TaskOut(
         id=str(t.id), run_id=str(t.run_id), subject=m.subject, sender=m.sender, received_at=m.received_at,
         category=t.category, priority=t.priority, status=t.status, assignee_team=t.assignee_team, sla_due_at=t.sla_due_at,
         escalation_reasons=list(t.escalation_reasons), confidence=confidence, has_draft=t.draft_id is not None,
+        profile="personal" if profile == "personal" else "ops",
     )  # fmt: skip
 
 
@@ -207,12 +208,22 @@ def create_app(
     # ---- tasks ------------------------------------------------------------
     @app.get("/tasks", response_model=list[TaskOut], tags=["tasks"], dependencies=[Auth])
     def list_tasks(
-        s: S, status: TaskStatus | None = None, priority: Priority | None = None, category: Category | None = None,
-        assignee: str | None = None, escalated: bool | None = None, limit: Annotated[int, Query(ge=1, le=500)] = 200, offset: Annotated[int, Query(ge=0)] = 0,
-    ) -> list[TaskOut]:  # fmt: skip
+        s: S,
+        status: TaskStatus | None = None,
+        priority: Priority | None = None,
+        category: Category | None = None,
+        assignee: str | None = None,
+        escalated: bool | None = None,
+        profile: Literal["ops", "personal"] | None = None,
+        sort: Literal["priority", "newest"] = "priority",
+        limit: Annotated[int, Query(ge=1, le=500)] = 200,
+        offset: Annotated[int, Query(ge=0)] = 0,
+    ) -> list[TaskOut]:
+        profile_col = func.coalesce(Run.final_state["profile"].as_string(), "ops")
         q = (
-            select(Task, Message, Extraction.confidence)
+            select(Task, Message, Extraction.confidence, profile_col)
             .join(Message, Message.id == Task.message_id)
+            .join(Run, Run.id == Task.run_id)
             .outerjoin(Extraction, Extraction.run_id == Task.run_id)
         )
         if status:
@@ -223,9 +234,13 @@ def create_app(
             q = q.where(Task.category == category)
         if assignee:
             q = q.where(Task.assignee_team == assignee)
-        q = q.order_by(Task.priority, Task.sla_due_at).limit(limit).offset(offset)
-        rows = s.execute(q).all()
-        out = [_task_out(t, m, conf) for t, m, conf in rows]
+        if profile:
+            q = q.where(profile_col == profile)
+        q = q.order_by(
+            Message.received_at.desc() if sort == "newest" else Task.priority, Task.sla_due_at
+        )
+        rows = s.execute(q.limit(limit).offset(offset)).all()
+        out = [_task_out(t, m, conf, prof) for t, m, conf, prof in rows]
         if escalated is not None:
             out = [t for t in out if bool(t.escalation_reasons) == escalated]
         return out
@@ -266,13 +281,24 @@ def create_app(
         tags=["reviews"],
         dependencies=[Auth],
     )
-    def pending_reviews(s: S) -> list[PendingReview]:
-        rows = s.execute(select(Task, Message, Extraction.confidence).join(Message, Message.id == Task.message_id).outerjoin(Extraction, Extraction.run_id == Task.run_id)
-                         .where(Task.status == TaskStatus.PENDING_REVIEW).order_by(Task.priority, Task.sla_due_at)).all()  # fmt: skip
+    def pending_reviews(
+        s: S, profile: Literal["ops", "personal"] | None = None
+    ) -> list[PendingReview]:
+        profile_col = func.coalesce(Run.final_state["profile"].as_string(), "ops")
+        q = (
+            select(Task, Message, Extraction.confidence, profile_col)
+            .join(Message, Message.id == Task.message_id)
+            .join(Run, Run.id == Task.run_id)
+            .outerjoin(Extraction, Extraction.run_id == Task.run_id)
+            .where(Task.status == TaskStatus.PENDING_REVIEW)
+            .order_by(Task.priority, Task.sla_due_at)
+        )
+        if profile:
+            q = q.where(profile_col == profile)
         out = []
-        for t, m, conf in rows:
+        for t, m, conf, prof in s.execute(q).all():
             d = s.get(Draft, t.draft_id) if t.draft_id else None
-            out.append(PendingReview(task=_task_out(t, m, conf), draft=_draft_out(d)))
+            out.append(PendingReview(task=_task_out(t, m, conf, prof), draft=_draft_out(d)))
         return out
 
     @app.post("/reviews/{run_id}", response_model=IngestResponse, tags=["reviews"], dependencies=[Auth],

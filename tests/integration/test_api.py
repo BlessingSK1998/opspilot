@@ -320,3 +320,31 @@ def test_llm_outage_is_a_clear_503_not_a_500(
         headers=H,
     )
     assert res.status_code == 503 and "no credits" in res.json()["detail"]
+
+
+def test_tasks_can_be_filtered_by_mailbox_and_sorted_newest_first(client: TestClient) -> None:
+    body = payload(
+        "Your application at Acme",
+        "Dear Alex,\n\nThank you for your interest in joining Acme Corp. We have received your application for the Analyst position.\n\nBest regards,\nTalent Team\nAcme Corp mailbox",
+    )
+    body["profile"] = "personal"
+    out = client.post("/ingest", json=body, headers=H).json()
+    mine = client.get("/tasks", params={"profile": "personal", "sort": "newest"}, headers=H).json()
+    assert (
+        mine
+        and all(t["profile"] == "personal" for t in mine)
+        and any(t["id"] == out["task_id"] for t in mine)
+    )
+    received = [t["received_at"] for t in mine]
+    assert received == sorted(received, reverse=True)
+    ops = client.get("/tasks", params={"profile": "ops"}, headers=H).json()
+    assert (
+        ops
+        and all(t["profile"] == "ops" for t in ops)
+        and not any(t["id"] == out["task_id"] for t in ops)
+    )
+    assert client.get("/tasks", params={"profile": "bogus"}, headers=H).status_code == 422
+    assert all(
+        p["task"]["profile"] == "personal"
+        for p in client.get("/reviews/pending", params={"profile": "personal"}, headers=H).json()
+    )
