@@ -68,7 +68,7 @@ Every node is a pure function `(OpsState, Deps) -> state update`, individually u
 ## Quickstart
 
 ```bash
-git clone <this repo> && cd apps/opspilot
+git clone https://github.com/BlessingSK1998/opspilot && cd opspilot
 make demo        # Docker if present, otherwise an embedded Postgres. No API key needed.
 ```
 
